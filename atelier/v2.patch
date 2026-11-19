@@ -1,0 +1,240 @@
+--- a/make_video.py	2026-11-18 10:17:48.953862318 +0100
++++ b/make_video.py	2026-11-18 10:17:48.955598661 +0100
+@@ -43,7 +43,7 @@
+ 
+ # ---------------------------------------------------------------- voix
+ PRONONCIATION = [  # appliqué au texte lu par la voix uniquement (les sous-titres gardent l'original)
+-    (r"\bGTA 6\b", "GTA six"), (r"\bGTA 5\b", "GTA cinq"), (r"\bGTA VI\b", "GTA six"), (r"\bGTA V\b", "GTA cinq"),
++    (r"\bGTA 6\b", "GTA sisse"), (r"\bGTA 5\b", "GTA cinq"), (r"\bGTA VI\b", "GTA sisse"), (r"\bGTA V\b", "GTA cinq"),
+     (r"\bPSN\b", "P.S.N."), (r"\bPS5\b", "PS cinq"), (r"\bLeonida\b", "Léonida"), (r"\bgigas\b", "gigas"),
+     (r"\bDrops\b", "drops"), (r"\bGame Pass\b", "Game Pass"), (r"(\d+) H\b", r"\1 heures"),
+ ]
+@@ -60,7 +60,8 @@
+     key = open(os.path.join(ROOT, ".gemini_key")).read().strip()
+     model = os.environ.get("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts")
+     style = ("Lis ce texte EXACTEMENT mot pour mot, sans rien ajouter, retirer ni reformuler, en français, d'une seule traite, "
+-             "comme un jeune créateur TikTok gaming qui raconte une info à son pote : énergique et naturel, débit rapide mais "
++             "« GTA sisse » se prononce exactement « G T A sisse ». Prononce chaque mot du texte, n'en saute aucun. "
++             "Parle comme un jeune créateur TikTok gaming qui raconte une info à son pote : énergique et naturel, débit rapide mais "
+              "en articulant bien chaque mot, le MÊME ton du début à la fin, pas de pause entre les phrases. Texte : ")
+     body = {"contents": [{"parts": [{"text": style + text}]}],
+             "generationConfig": {"responseModalities": ["AUDIO"],
+@@ -140,7 +141,7 @@
+             print(f"prise {take + 1} : fidélité {score:.0%}")
+             if score > best_score:
+                 best, best_score = cand, score
+-            if score >= 0.985 or engine != "gemini":
++            if score >= 0.995 or engine != "gemini":
+                 break
+         shutil.copy(best, raw)
+     af = ("silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.02,"
+@@ -326,7 +327,7 @@
+ 
+ 
+ # ---------------------------------------------------------------- images
+-RUSH_DIRS = [os.path.join(ROOT, "rush_tv"), RUSH]   # plans verticaux natifs en priorité
++RUSH_DIRS = [os.path.join(ROOT, "rush_v2"), os.path.join(ROOT, "rush_tv"), RUSH]   # plans verticaux natifs en priorité (rush_v2 = Drive partagé « RUSH VIDEO »)
+ EXCLUDE = {"launch trailer", "launch trailer_1"}
+ 
+ 
+@@ -398,13 +399,13 @@
+ REMOTION = os.path.join(ROOT, "remotion")
+ 
+ 
+-def plan_shots(sections, bounds, total):
++def plan_shots(sections, bounds, total, max_shot=2.2):
+     """Même logique de choix des plans que build_visuals, sans encoder : retourne la liste pour Remotion."""
+     idx_path = os.path.join(ROOT, "rush_index.json")
+     meta = {c["name"].lower(): c for c in json.load(open(idx_path))} if os.path.exists(idx_path) else {}
+     bad = {n for n, c in meta.items() if {"sombre", "detail"} & set(c["tags"])}
+     pool = [c for c in all_clips() if c.lower() not in bad]
+-    pool.sort(key=lambda n: -(meta.get(n.lower(), {}).get("coverage", 0)))  # plans avec personnages d'abord
++    pool.sort(key=lambda n: -(meta.get(n.lower(), {}).get("coverage", 1.0 if n.startswith("v_") else 0)))  # plans avec personnages d'abord
+     used, shots, t = set(), [], 0.0
+     reserved = {c.split("|")[0].split("@")[0] for s in sections for c in s["clips"]}  # plans prévus ailleurs
+     for si, (s, (a, b)) in enumerate(zip(sections, bounds)):
+@@ -426,7 +427,7 @@
+             if dur(src) - offset < 0.6:
+                 offset = 0.0
+             cd = dur(src) - offset
+-            take = min(cd - 0.05, 2.2, need) if need - min(cd, 2.2) > 0.4 else need
++            take = min(cd - 0.05, max_shot, need) if need - min(cd, max_shot) > 0.4 else need
+             take = max(min(take, need, cd - 0.03), 0.3)
+             rel = os.path.relpath(src, ROOT)
+             # cadrage 9:16 centré sur les personnages (rushes 16:9)
+@@ -455,19 +456,65 @@
+           "subscribe": [("sfx/pop.wav", 0.5, 0), ("sfx/tick.wav", 0.5, 18), ("sfx/ding.wav", 0.4, 20)], "image": [("sfx/card_in.wav", 0.5, 0)]}
+ 
+ 
++# ---------------------------------------------------------------- style v2 (référence @gtanews.1 / Drive partagé)
++V2_FX_SFX = {"label": [("sfx/v2_text_pop.wav", 0.35, -9)], "sticker": [("sfx/v2_ui10.wav", 0.4, 0)],
++             "big": [("sfx/v2_hit.wav", 0.55, -15)], "counter": [("sfx/v2_ui07.wav", 0.4, 0), ("sfx/v2_keyboard.wav", 0.25, 2)],
++             "clock": [("sfx/v2_ui07.wav", 0.4, 0)], "bars": [("sfx/v2_ui10.wav", 0.35, 4), ("sfx/v2_ui10.wav", 0.35, 9)],
++             "stars": [("sfx/v2_ui06.wav", 0.4, 0), ("sfx/sparkle.wav", 0.35, 2)], "source": [("sfx/v2_marker.wav", 0.5, 0)],
++             "alert": [("sfx/notif.wav", 0.35, 0)], "emoji": [("sfx/v2_ui10.wav", 0.4, 0), ("sfx/v2_ui10.wav", 0.4, 6)],
++             "image": [("sfx/v2_cam_shutter.wav", 0.55, -5)], "logo": [("sfx/v2_hit.wav", 0.45, -15)],
++             "subscribe": [("sfx/pop.wav", 0.5, 0), ("sfx/tick.wav", 0.5, 18), ("sfx/ding.wav", 0.4, 20)]}
++LEAKS = [("leaks/leak1.mp4", 12), ("leaks/leak2.mp4", 18), ("leaks/scratch3.mp4", 9)]
++
++
++def v2_design(S, I, cards, FX, title, bounds, sections, F, total):
++    sfx = [{"src": "sfx/v2_deep_woosh.wav", "frame": -10, "volume": 0.45}]       # ouverture : zoom + whoosh
++    leaks, shakes, flashes = [], [], []
++    drop = F(bounds[1][0]) if len(bounds) > 1 else None
++    hard = ["sfx/v2_swoosh_low.wav", "sfx/v2_swoosh_quick.wav", "sfx/v2_trans_basic03.wav"]
++    k = 0
++    for s in S[1:]:
++        if s["cut"] == "section":
++            if s["from"] == drop:
++                continue
++            sfx.append({"src": "sfx/v2_swoosh_low.wav", "frame": s["from"] - 6, "volume": 0.22})   # 1 whoosh discret par partie
++            src, d = LEAKS[k % len(LEAKS)]; k += 1
++            leaks.append({"src": src, "frame": s["from"] - 3, "dur": d})
++        # coupes rapides : aucun son (trop de whooshes au premier test)
++    if drop:  # le « drop » : riser, impact, flash, secousse, musique
++        sfx.append({"src": "sfx/v2_riser.wav", "frame": drop - 50, "volume": 0.35})
++        sfx.append({"src": "sfx/v2_big_one.wav", "frame": drop - 16, "volume": 0.6})
++        flashes.append(drop); shakes.append(drop)
++        leaks.append({"src": "leaks/leak2.mp4", "frame": drop - 2, "dur": 18})
++    for it in I:  # chaque partie : impact sourd + secousse
++        sfx.append({"src": "sfx/v2_hit.wav", "frame": it["start"] - 15, "volume": 0.4})
++        shakes.append(it["start"])
++    for x in FX:
++        for src, vol, dl in V2_FX_SFX.get(x["type"], []):
++            sfx.append({"src": src, "frame": x["start"] + dl, "volume": vol})
++        if x["type"] in ("big", "alert"):
++            shakes.append(x["start"])
++    if title:
++        sfx.append({"src": "sfx/v2_taiko.wav", "frame": title["start"] - 3, "volume": 0.45})
++        shakes.append(title["start"])
++    sfx = [x for x in sfx if x["frame"] < F(total) - 3]
++    return sfx, leaks, sorted(set(shakes)), flashes
++
++
+ def render_remotion(cfg, sections, bounds, groups, voice_wav, total, out, work, words=None):
+     import shutil
+     fps = FPS
+     F = lambda x: int(round(x * fps))
+     pub = os.path.join(REMOTION, "public")
+     os.makedirs(pub, exist_ok=True)
+-    for d in ["rush", "rush_tv", "fonts", "music", "sfx", "logos", "gallery"]:
++    for d in ["rush", "rush_tv", "rush_v2", "fonts", "music", "music_pack", "sfx", "leaks", "assets", "logos", "gallery"]:
+         link = os.path.join(pub, d)
+         if os.path.isdir(os.path.join(ROOT, d)) and not os.path.exists(link):
+             os.symlink(os.path.join(ROOT, d), link)
+     vname = f"voice_{os.path.basename(work)}.wav"
+     shutil.copy(voice_wav, os.path.join(pub, vname))
+-    shots = plan_shots(sections, bounds, total)
++    v2 = cfg.get("style") == "v2"
++    shots = plan_shots(sections, bounds, total, float(cfg.get("max_shot", 2.2)))
+     S, sec_i = [], -1
+     for s in shots:
+         if s["cut"] == "section":
+@@ -529,9 +576,16 @@
+     if title:
+         sfx.append({"src": "sfx/riser.wav", "frame": title["start"] - 30, "volume": 0.3})
+         sfx.append({"src": "sfx/soft_boom.wav", "frame": title["start"], "volume": 0.55})
++    leaks, shakes, flashes = [], [], []
++    music_in = 0
++    if v2:  # style « remap » : coupes rapides, light leaks, sound design du Drive partagé
++        sfx, leaks, shakes, flashes = v2_design(S, I, cards, FX, title, bounds, sections, F, total)
++        music_in = 0 if cfg.get("music_from_start", True) else (F(bounds[1][0]) if len(bounds) > 1 else 0)
+     props = {"fps": fps, "durationInFrames": F(total), "shots": S, "groups": G, "items": I, "sfx": sfx,
+-             "fx": FX, "cards": cards, "title": title, "voice": vname, "music": "music/theme.mp3",
+-             "musicStartFrom": F(MUSIC_START), "musicVolume": MUSIC_VOL, "duck": [[F(a), F(b)] for a, b in bounds],
++             "fx": FX, "cards": cards, "title": title, "voice": vname, "music": cfg.get("music", "music/theme.mp3"),
++             "musicStartFrom": F(float(cfg.get("music_offset", MUSIC_START))), "musicVolume": float(cfg.get("music_volume", MUSIC_VOL)),
++             "musicIn": music_in, "leaks": leaks, "shakes": shakes, "flashes": flashes, "punch": 1.28 if v2 else 1.18,
++             "duck": [[F(a), F(b)] for a, b in bounds],
+              "logo": cfg.get("logo"), "handle": cfg.get("handle", "@rockstat433")}
+     pp = os.path.join(work, "props.json")
+     json.dump(props, open(pp, "w"), ensure_ascii=False)
+--- a/remotion_Video.tsx	2026-11-18 10:17:48.957215177 +0100
++++ b/remotion_Video.tsx	2026-11-18 10:17:48.958805043 +0100
+@@ -18,6 +18,7 @@
+   voice: string; music: string; musicStartFrom: number; musicVolume: number;
+   logo?: string | null; handle?: string | null;
+   duck: [number, number][];
++  musicIn?: number; leaks?: { src: string; frame: number; dur: number }[]; shakes?: number[]; flashes?: number[]; punch?: number;
+ };
+ 
+ const PINK = "#FF4FA3";
+@@ -49,7 +50,7 @@
+ );
+ 
+ // transitions d'entrée : whip, zoomblur, glitch, swipeup, spin, punch
+-const ShotView: React.FC<{ shot: Shot; index: number }> = ({ shot, index }) => {
++const ShotView: React.FC<{ shot: Shot; index: number; punch?: number }> = ({ shot, index, punch = 1.18 }) => {
+   const f = useCurrentFrame();
+   const kb = interpolate(f, [0, shot.dur], [1.0, 1.08]);
+   const IN = shot.trans === "zoomin" ? 14 : shot.cut === "section" ? 8 : 5;
+@@ -82,7 +83,7 @@
+       break;
+     }
+     default:
+-      transform = `scale(${1 + (1 - t) * 0.18})`; filter = shot.fit ? "" : `blur(${(1 - t) * 10}px)`;
++      transform = `scale(${1 + (1 - t) * (punch - 1)})`; filter = shot.fit ? "" : `blur(${(1 - t) * 10}px)`;
+   }
+   return (
+     <AbsoluteFill style={{ transform: `${transform} scale(${kb})`, filter: `${filter} saturate(1.15) contrast(1.05)` }}>
+@@ -349,7 +350,27 @@
+ );
+ 
+ // ---------------------------------------------------------------- composition
++const shakeAt = (fr: number, shakes: number[]) => {
++  let x = 0, y = 0, r = 0;
++  for (const s of shakes) {
++    const d = fr - s;
++    if (d >= 0 && d < 10) {
++      const a = (1 - d / 10) * 26;
++      x += Math.sin(d * 2.7) * a; y += Math.cos(d * 3.1) * a * 0.6; r += Math.sin(d * 1.9) * a * 0.04;
++    }
++  }
++  return `translate(${x}px, ${y}px) rotate(${r}deg)`;
++};
++
++const Leak: React.FC<{ src: string }> = ({ src }) => (
++  <AbsoluteFill style={{ mixBlendMode: "screen" }}>
++    <OffthreadVideo src={staticFile(src)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
++  </AbsoluteFill>
++);
++
+ export const GtaVideo: React.FC<Props> = (p) => {
++  const frame = useCurrentFrame();
++  const shakes = p.shakes || [];
+   const musicVol = (fr: number) => {
+     const talking = p.duck.some(([a, b]) => fr >= a && fr <= b);
+     const fadeOut = interpolate(fr, [p.durationInFrames - 36, p.durationInFrames], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+@@ -360,12 +381,20 @@
+   return (
+     <AbsoluteFill style={{ background: "black" }}>
+       <svg width="0" height="0"><filter id="r"><feColorMatrix type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" /></filter></svg>
++      <AbsoluteFill style={{ transform: shakeAt(frame, shakes) }}>
+       {p.shots.map((s, i) => (
+         <Sequence key={i} from={s.from} durationInFrames={s.dur} layout="none">
+-          <AbsoluteFill><ShotView shot={s} index={i} /></AbsoluteFill>
++          <AbsoluteFill><ShotView shot={s} index={i} punch={p.punch} /></AbsoluteFill>
+           {s.cut === "section" && i > 0 ? <Flash color={i % 3 === 0 ? PINK : "white"} /> : null}
+         </Sequence>
+       ))}
++      </AbsoluteFill>
++      {(p.leaks || []).map((l, i) => (
++        <Sequence key={"leak" + i} from={Math.max(l.frame, 0)} durationInFrames={l.dur}><Leak src={l.src} /></Sequence>
++      ))}
++      {(p.flashes || []).map((f0, i) => (
++        <Sequence key={"fl" + i} from={f0} durationInFrames={10}><Flash /></Sequence>
++      ))}
+       <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%)" }} />
+       {/* cartes : un plan par carte, recouvre le plein écran */}
+       {p.cards.map((c, i) => (
+@@ -390,7 +419,9 @@
+       {p.handle ? <Handle text={p.handle} /> : null}
+       <Progress />
+       <Audio src={staticFile(p.voice)} />
+-      <Audio src={staticFile(p.music)} startFrom={p.musicStartFrom} volume={musicVol} loop />
++      <Sequence from={p.musicIn || 0} layout="none">
++        <Audio src={staticFile(p.music)} startFrom={p.musicStartFrom} volume={(f) => musicVol(f + (p.musicIn || 0))} loop />
++      </Sequence>
+       {p.sfx.map((s, i) => (
+         <Sequence key={"sfx" + i} from={Math.max(s.frame, 0)} layout="none"><Audio src={staticFile(s.src)} volume={s.volume} /></Sequence>
+       ))}

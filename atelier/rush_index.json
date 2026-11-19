@@ -1,0 +1,1179 @@
+[
+ {
+  "name": "TV_00",
+  "format": "vertical",
+  "tags": [
+   "lieu",
+   "vice city",
+   "panneau",
+   "marina"
+  ],
+  "desc": "Panneau 'The Keys' puis marina",
+  "subject": true,
+  "focus_x": 0.522,
+  "spread": 0.105,
+  "start_ok": 1.95,
+  "coverage": 0.05
+ },
+ {
+  "name": "TV_01",
+  "format": "vertical",
+  "tags": [
+   "jason",
+   "bateau",
+   "visage"
+  ],
+  "desc": "Gros plan Jason dans un bateau",
+  "subject": true,
+  "focus_x": 0.461,
+  "spread": 1.07,
+  "start_ok": 1.15,
+  "coverage": 0.47
+ },
+ {
+  "name": "TV_02",
+  "format": "vertical",
+  "tags": [
+   "jason",
+   "bateau",
+   "action"
+  ],
+  "desc": "Jason monte à l'échelle d'un yacht",
+  "subject": true,
+  "focus_x": 0.452,
+  "spread": 0.626,
+  "start_ok": 0,
+  "coverage": 0.9
+ },
+ {
+  "name": "TV_03",
+  "format": "vertical",
+  "tags": [
+   "jason",
+   "telephone",
+   "visage"
+  ],
+  "desc": "Jason au téléphone, plan rapproché",
+  "subject": true,
+  "focus_x": 0.557,
+  "spread": 0.985,
+  "start_ok": 0.55,
+  "coverage": 0.73
+ },
+ {
+  "name": "TV_04",
+  "format": "vertical",
+  "tags": [
+   "vice city",
+   "avion",
+   "eau",
+   "paysage"
+  ],
+  "desc": "Hydravion sur l'eau, contre-jour",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "TV_05",
+  "format": "vertical",
+  "tags": [
+   "gang",
+   "voiture",
+   "arme",
+   "pnj"
+  ],
+  "desc": "Gars dans une voiture verte avec arme",
+  "subject": true,
+  "focus_x": 0.508,
+  "spread": 0.529,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "TV_06",
+  "format": "vertical",
+  "tags": [
+   "animal",
+   "iguane",
+   "drole"
+  ],
+  "desc": "Iguane devant un panneau routier",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "TV_07",
+  "format": "vertical",
+  "tags": [
+   "lucia",
+   "voiture",
+   "visage"
+  ],
+  "desc": "Lucia accoudée à la voiture",
+  "subject": true,
+  "focus_x": 0.537,
+  "spread": 1.319,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "TV_08",
+  "format": "vertical",
+  "tags": [
+   "arme",
+   "marais",
+   "soldats",
+   "coucher de soleil"
+  ],
+  "desc": "Hommes armés dans un marais au coucher du soleil",
+  "subject": true,
+  "focus_x": 0.595,
+  "spread": 0.142,
+  "start_ok": 0,
+  "coverage": 0.5
+ },
+ {
+  "name": "TV_09",
+  "format": "vertical",
+  "tags": [
+   "sombre"
+  ],
+  "desc": "Plan très sombre",
+  "subject": true,
+  "focus_x": 0.553,
+  "spread": 0.976,
+  "start_ok": 1.15,
+  "coverage": 0.59
+ },
+ {
+  "name": "TV_10",
+  "format": "vertical",
+  "tags": [
+   "jason",
+   "bateau"
+  ],
+  "desc": "Jason sur un bateau, éclairage chaud",
+  "subject": true,
+  "focus_x": 0.728,
+  "spread": 0.311,
+  "start_ok": 0.15,
+  "coverage": 0.5
+ },
+ {
+  "name": "TV_11",
+  "format": "vertical",
+  "tags": [
+   "arme",
+   "braquage",
+   "sombre"
+  ],
+  "desc": "Homme armé dans la fumée",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "TV_12",
+  "format": "vertical",
+  "tags": [
+   "braquage",
+   "coffre",
+   "argent",
+   "lucia"
+  ],
+  "desc": "Silhouette qui avance dans un coffre-fort fracturé",
+  "subject": true,
+  "focus_x": 0.592,
+  "spread": 0.847,
+  "start_ok": 0,
+  "coverage": 0.57
+ },
+ {
+  "name": "TV_13",
+  "format": "vertical",
+  "tags": [
+   "couple",
+   "amour",
+   "coucher de soleil"
+  ],
+  "desc": "Couple au coucher du soleil, fenêtre",
+  "subject": true,
+  "focus_x": 0.259,
+  "spread": 0.475,
+  "start_ok": 0.35,
+  "coverage": 0.12
+ },
+ {
+  "name": "TV_14",
+  "format": "vertical",
+  "tags": [
+   "fete",
+   "club",
+   "danse"
+  ],
+  "desc": "Danseuse sous lumière rouge",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "TV_15",
+  "format": "vertical",
+  "tags": [
+   "voiture",
+   "avion",
+   "poursuite"
+  ],
+  "desc": "Voiture sous un avion au décollage",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "TV_16",
+  "format": "vertical",
+  "tags": [
+   "lucia",
+   "voiture",
+   "arme"
+  ],
+  "desc": "Lucia près d'une voiture, au soleil",
+  "subject": true,
+  "focus_x": 0.59,
+  "spread": 0.864,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "TV_17",
+  "format": "vertical",
+  "tags": [
+   "bateau",
+   "nuit",
+   "main",
+   "detail"
+  ],
+  "desc": "Main sur un bateau, lumière bleue",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "TV_18",
+  "format": "vertical",
+  "tags": [
+   "couple",
+   "baiser",
+   "sombre"
+  ],
+  "desc": "Baiser, plan sombre",
+  "subject": true,
+  "focus_x": 0.346,
+  "spread": 0.748,
+  "start_ok": 0.95,
+  "coverage": 0.25
+ },
+ {
+  "name": "TV_19",
+  "format": "vertical",
+  "tags": [
+   "fete",
+   "club",
+   "neon"
+  ],
+  "desc": "Club, néons violets",
+  "subject": true,
+  "focus_x": 0.335,
+  "spread": 0.47,
+  "start_ok": 0.75,
+  "coverage": 0.11
+ },
+ {
+  "name": "TV_20",
+  "format": "vertical",
+  "tags": [
+   "voiture",
+   "police",
+   "flics"
+  ],
+  "desc": "Voiture rouge puis voiture de police",
+  "subject": true,
+  "focus_x": 0.706,
+  "spread": 0.822,
+  "start_ok": 0,
+  "coverage": 0.5
+ },
+ {
+  "name": "TV_21",
+  "format": "vertical",
+  "tags": [
+   "moto",
+   "pnj",
+   "vehicule"
+  ],
+  "desc": "Motard sur un pont",
+  "subject": true,
+  "focus_x": 0.43,
+  "spread": 0.747,
+  "start_ok": 0,
+  "coverage": 0.75
+ },
+ {
+  "name": "TV_22",
+  "format": "vertical",
+  "tags": [
+   "sombre",
+   "detail"
+  ],
+  "desc": "Plan très sombre",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "TV_23",
+  "format": "vertical",
+  "tags": [
+   "jason",
+   "arme",
+   "explosion",
+   "nuit"
+  ],
+  "desc": "Jason armé de nuit, explosion",
+  "subject": true,
+  "focus_x": 0.731,
+  "spread": 0.695,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "TV_24",
+  "format": "vertical",
+  "tags": [
+   "vice city",
+   "plage",
+   "avion",
+   "paysage"
+  ],
+  "desc": "Biplan avec fumée rose au-dessus de la plage",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "TV_25",
+  "format": "vertical",
+  "tags": [
+   "pnj",
+   "muscu",
+   "gym",
+   "drole"
+  ],
+  "desc": "Homme musclé à la salle de sport",
+  "subject": true,
+  "focus_x": 0.517,
+  "spread": 0.469,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "TV_26",
+  "format": "vertical",
+  "tags": [
+   "sombre",
+   "detail"
+  ],
+  "desc": "Jambes, plan sombre",
+  "subject": true,
+  "focus_x": 0.883,
+  "spread": 0.258,
+  "start_ok": 0,
+  "coverage": 0.86
+ },
+ {
+  "name": "TV_27",
+  "format": "vertical",
+  "tags": [
+   "braquage",
+   "masques",
+   "fete",
+   "arme"
+  ],
+  "desc": "Deux femmes cagoulées en club",
+  "subject": true,
+  "focus_x": 0.869,
+  "spread": 0.668,
+  "start_ok": 0.35,
+  "coverage": 0.6
+ },
+ {
+  "name": "TV_28",
+  "format": "vertical",
+  "tags": [
+   "arme",
+   "fusillade",
+   "nuit"
+  ],
+  "desc": "Tir de nuit",
+  "subject": true,
+  "focus_x": 0.65,
+  "spread": 0.332,
+  "start_ok": 0.55,
+  "coverage": 0.73
+ },
+ {
+  "name": "TV_29",
+  "format": "vertical",
+  "tags": [
+   "lucia",
+   "visage",
+   "coucher de soleil"
+  ],
+  "desc": "Lucia sur un balcon au coucher du soleil",
+  "subject": true,
+  "focus_x": 0.731,
+  "spread": 0.317,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "TV_30",
+  "format": "vertical",
+  "tags": [
+   "voiture",
+   "nuit",
+   "ville"
+  ],
+  "desc": "Voiture verte de nuit en ville",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "TV_32",
+  "format": "vertical",
+  "tags": [
+   "couple",
+   "amour",
+   "jason",
+   "lucia"
+  ],
+  "desc": "Jason et Lucia enlacés",
+  "subject": true,
+  "focus_x": 0.757,
+  "spread": 0.246,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "TV_33",
+  "format": "vertical",
+  "tags": [
+   "action",
+   "verre",
+   "braquage"
+  ],
+  "desc": "Vitre qui explose",
+  "subject": true,
+  "focus_x": 0.841,
+  "spread": 0.319,
+  "start_ok": 0.15,
+  "coverage": 0.14
+ },
+ {
+  "name": "TV_34",
+  "format": "vertical",
+  "tags": [
+   "action",
+   "chute",
+   "nuit",
+   "ville"
+  ],
+  "desc": "Chute au-dessus de la ville de nuit",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "TV_35",
+  "format": "vertical",
+  "tags": [
+   "police",
+   "flics",
+   "nuit",
+   "poursuite"
+  ],
+  "desc": "Voiture de police de nuit",
+  "subject": true,
+  "focus_x": 0.072,
+  "spread": 0.147,
+  "start_ok": 0,
+  "coverage": 0.17
+ },
+ {
+  "name": "TV_36",
+  "format": "vertical",
+  "tags": [
+   "jason",
+   "arme",
+   "sniper",
+   "nuit"
+  ],
+  "desc": "Jason au fusil de précision",
+  "subject": true,
+  "focus_x": 0.788,
+  "spread": 0.465,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "TV_37",
+  "format": "vertical",
+  "tags": [
+   "lucia",
+   "arme",
+   "explosion",
+   "action"
+  ],
+  "desc": "Lucia tire, explosion derrière",
+  "subject": true,
+  "focus_x": 0.203,
+  "spread": 0.561,
+  "start_ok": 0.15,
+  "coverage": 0.8
+ },
+ {
+  "name": "TV_38",
+  "format": "vertical",
+  "tags": [
+   "parachute",
+   "chute",
+   "neon"
+  ],
+  "desc": "Chute libre sur fond bleu",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "Car",
+  "format": "horizontal",
+  "tags": [
+   "voiture",
+   "paysage",
+   "keys"
+  ],
+  "desc": "Route des Keys",
+  "subject": true,
+  "focus_x": 0.398,
+  "spread": 0.105,
+  "start_ok": 0,
+  "coverage": 0.08
+ },
+ {
+  "name": "Car_1",
+  "format": "horizontal",
+  "tags": [
+   "voiture",
+   "gang",
+   "pnj"
+  ],
+  "desc": "Gang dans une voiture verte",
+  "subject": true,
+  "focus_x": 0.493,
+  "spread": 0.493,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "Car_2",
+  "format": "horizontal",
+  "tags": [
+   "logo",
+   "gta6",
+   "titre"
+  ],
+  "desc": "Logo GTA VI (utiliser |fit)",
+  "subject": true,
+  "focus_x": 0.415,
+  "spread": 0.133,
+  "start_ok": 2.75,
+  "coverage": 0.08
+ },
+ {
+  "name": "Car_3",
+  "format": "horizontal",
+  "tags": [
+   "voiture",
+   "avion",
+   "poursuite"
+  ],
+  "desc": "Voiture sous un avion",
+  "subject": true,
+  "focus_x": 0.773,
+  "spread": 0.173,
+  "start_ok": 0.95,
+  "coverage": 0.12
+ },
+ {
+  "name": "Car_4",
+  "format": "horizontal",
+  "tags": [
+   "police",
+   "flics",
+   "voiture",
+   "poursuite"
+  ],
+  "desc": "Voitures de police en ville",
+  "subject": true,
+  "focus_x": 0.548,
+  "spread": 0.787,
+  "start_ok": 0,
+  "coverage": 0.2
+ },
+ {
+  "name": "Car_5",
+  "format": "horizontal",
+  "tags": [
+   "moto",
+   "saut",
+   "cascade"
+  ],
+  "desc": "Saut en moto",
+  "subject": true,
+  "focus_x": 0.468,
+  "spread": 0.674,
+  "start_ok": 0.15,
+  "coverage": 0.85
+ },
+ {
+  "name": "car_6",
+  "format": "horizontal",
+  "tags": [
+   "voiture",
+   "nuit",
+   "ville"
+  ],
+  "desc": "Voiture de nuit en ville",
+  "subject": true,
+  "focus_x": 0.814,
+  "spread": 0.105,
+  "start_ok": 0.75,
+  "coverage": 0.2
+ },
+ {
+  "name": "Car_7",
+  "format": "horizontal",
+  "tags": [
+   "action",
+   "chute",
+   "nuit"
+  ],
+  "desc": "Chute au-dessus de la ville",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "Car_8",
+  "format": "horizontal",
+  "tags": [
+   "voiture",
+   "nuit",
+   "poursuite"
+  ],
+  "desc": "Voiture de nuit, phares",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "Djayson",
+  "format": "horizontal",
+  "tags": [
+   "jason",
+   "lucia",
+   "groupe",
+   "nuit"
+  ],
+  "desc": "Jason, Lucia et un groupe",
+  "subject": true,
+  "focus_x": 0.541,
+  "spread": 0.574,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "Gun",
+  "format": "horizontal",
+  "tags": [
+   "arme",
+   "marais",
+   "soldats"
+  ],
+  "desc": "Hommes armés dans le marais",
+  "subject": true,
+  "focus_x": 0.568,
+  "spread": 0.388,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "Gun_1",
+  "format": "horizontal",
+  "tags": [
+   "arme",
+   "braquage",
+   "fumee"
+  ],
+  "desc": "Homme armé dans la fumée",
+  "subject": true,
+  "focus_x": 0.636,
+  "spread": 0.198,
+  "start_ok": 0.35,
+  "coverage": 0.5
+ },
+ {
+  "name": "Gun_2",
+  "format": "horizontal",
+  "tags": [
+   "masques",
+   "fete",
+   "arme"
+  ],
+  "desc": "Deux femmes cagoulées en club",
+  "subject": true,
+  "focus_x": 0.601,
+  "spread": 0.06,
+  "start_ok": 0,
+  "coverage": 0.6
+ },
+ {
+  "name": "Gun_3",
+  "format": "horizontal",
+  "tags": [
+   "arme",
+   "explosion",
+   "nuit"
+  ],
+  "desc": "Tir et explosion de nuit",
+  "subject": true,
+  "focus_x": 0.389,
+  "spread": 0.369,
+  "start_ok": 0.55,
+  "coverage": 0.4
+ },
+ {
+  "name": "Gun_4",
+  "format": "horizontal",
+  "tags": [
+   "arme",
+   "braquage",
+   "masque"
+  ],
+  "desc": "Braqueur masqué, lumière verte",
+  "subject": true,
+  "focus_x": 0.491,
+  "spread": 0.17,
+  "start_ok": 0.15,
+  "coverage": 0.17
+ },
+ {
+  "name": "Gun_5",
+  "format": "horizontal",
+  "tags": [
+   "jason",
+   "sniper",
+   "arme",
+   "nuit"
+  ],
+  "desc": "Jason au fusil de précision",
+  "subject": true,
+  "focus_x": 0.613,
+  "spread": 0.483,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "Gun_6",
+  "format": "horizontal",
+  "tags": [
+   "lucia",
+   "arme",
+   "explosion"
+  ],
+  "desc": "Lucia tire, explosion",
+  "subject": true,
+  "focus_x": 0.391,
+  "spread": 0.437,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "Jayson",
+  "format": "horizontal",
+  "tags": [
+   "jason",
+   "bateau"
+  ],
+  "desc": "Jason ponce un bateau",
+  "subject": true,
+  "focus_x": 0.723,
+  "spread": 0.404,
+  "start_ok": 0.95,
+  "coverage": 0.67
+ },
+ {
+  "name": "Jayson_1",
+  "format": "horizontal",
+  "tags": [
+   "jason",
+   "bateau"
+  ],
+  "desc": "Jason sur un yacht",
+  "subject": true,
+  "focus_x": 0.55,
+  "spread": 0.462,
+  "start_ok": 0.75,
+  "coverage": 0.6
+ },
+ {
+  "name": "Jayson_2",
+  "format": "horizontal",
+  "tags": [
+   "jason",
+   "telephone"
+  ],
+  "desc": "Jason au téléphone",
+  "subject": true,
+  "focus_x": 0.603,
+  "spread": 0.628,
+  "start_ok": 0.35,
+  "coverage": 0.83
+ },
+ {
+  "name": "Jayson_3",
+  "format": "horizontal",
+  "tags": [
+   "jason",
+   "visage",
+   "nuit"
+  ],
+  "desc": "Jason sous un panneau EXIT",
+  "subject": true,
+  "focus_x": 0.655,
+  "spread": 0.597,
+  "start_ok": 0,
+  "coverage": 0.83
+ },
+ {
+  "name": "Jayson_4",
+  "format": "horizontal",
+  "tags": [
+   "jason",
+   "sombre"
+  ],
+  "desc": "Jason dans l'ombre",
+  "subject": true,
+  "focus_x": 0.513,
+  "spread": 0.17,
+  "start_ok": 0.55,
+  "coverage": 0.5
+ },
+ {
+  "name": "Jayson_5",
+  "format": "horizontal",
+  "tags": [
+   "jason",
+   "bateau",
+   "soleil"
+  ],
+  "desc": "Jason sur un bateau au soleil",
+  "subject": true,
+  "focus_x": 0.351,
+  "spread": 0.159,
+  "start_ok": 0,
+  "coverage": 0.6
+ },
+ {
+  "name": "Jayson_6",
+  "format": "horizontal",
+  "tags": [
+   "jason",
+   "nuit",
+   "action"
+  ],
+  "desc": "Jason glisse, néons bleus",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "Jayson_7",
+  "format": "horizontal",
+  "tags": [
+   "jason",
+   "arme",
+   "explosion",
+   "nuit"
+  ],
+  "desc": "Jason armé, explosion",
+  "subject": true,
+  "focus_x": 0.57,
+  "spread": 0.149,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "Love",
+  "format": "horizontal",
+  "tags": [
+   "couple",
+   "amour"
+  ],
+  "desc": "Couple, contre-jour",
+  "subject": true,
+  "focus_x": 0.516,
+  "spread": 0.134,
+  "start_ok": 0,
+  "coverage": 0.25
+ },
+ {
+  "name": "Love_1",
+  "format": "horizontal",
+  "tags": [
+   "fete",
+   "club"
+  ],
+  "desc": "Danse sous lumière rouge",
+  "subject": true,
+  "focus_x": 0.597,
+  "spread": 0.046,
+  "start_ok": 0.35,
+  "coverage": 0.2
+ },
+ {
+  "name": "Love_3",
+  "format": "horizontal",
+  "tags": [
+   "sombre",
+   "detail"
+  ],
+  "desc": "Plan sombre",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "Love_4",
+  "format": "horizontal",
+  "tags": [
+   "couple",
+   "jason",
+   "lucia",
+   "coucher de soleil"
+  ],
+  "desc": "Jason et Lucia enlacés",
+  "subject": true,
+  "focus_x": 0.573,
+  "spread": 0.084,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "Love_5",
+  "format": "horizontal",
+  "tags": [
+   "parachute",
+   "chute",
+   "neon"
+  ],
+  "desc": "Chute libre, fond bleu",
+  "subject": true,
+  "focus_x": 0.503,
+  "spread": 0.781,
+  "start_ok": 0,
+  "coverage": 0.17
+ },
+ {
+  "name": "love_2",
+  "format": "horizontal",
+  "tags": [
+   "couple",
+   "baiser",
+   "sombre"
+  ],
+  "desc": "Baiser, sombre",
+  "subject": true,
+  "focus_x": 0.601,
+  "spread": 0.57,
+  "start_ok": 0.55,
+  "coverage": 0.56
+ },
+ {
+  "name": "Lucia",
+  "format": "horizontal",
+  "tags": [
+   "lucia",
+   "jason",
+   "voiture"
+  ],
+  "desc": "Lucia et Jason en décapotable",
+  "subject": true,
+  "focus_x": 0.517,
+  "spread": 0.479,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "Lucia_1",
+  "format": "horizontal",
+  "tags": [
+   "lucia",
+   "jason",
+   "voiture"
+  ],
+  "desc": "Jason et Lucia assis sur une voiture",
+  "subject": true,
+  "focus_x": 0.453,
+  "spread": 0.508,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "Lucia_2",
+  "format": "horizontal",
+  "tags": [
+   "lucia",
+   "coucher de soleil"
+  ],
+  "desc": "Lucia sur un balcon",
+  "subject": true,
+  "focus_x": 0.566,
+  "spread": 0.095,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "Money",
+  "format": "horizontal",
+  "tags": [
+   "braquage",
+   "coffre",
+   "argent"
+  ],
+  "desc": "Silhouette dans un coffre-fort",
+  "subject": true,
+  "focus_x": 0.382,
+  "spread": 0.475,
+  "start_ok": 0,
+  "coverage": 1.0
+ },
+ {
+  "name": "Money_1",
+  "format": "horizontal",
+  "tags": [
+   "braquage",
+   "verre",
+   "action"
+  ],
+  "desc": "Vitre qui explose",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "PArty",
+  "format": "horizontal",
+  "tags": [
+   "fete",
+   "club",
+   "neon"
+  ],
+  "desc": "Club rose",
+  "subject": true,
+  "focus_x": 0.559,
+  "spread": 0.236,
+  "start_ok": 0.15,
+  "coverage": 0.3
+ },
+ {
+  "name": "Plane",
+  "format": "horizontal",
+  "tags": [
+   "vice city",
+   "plage",
+   "avion"
+  ],
+  "desc": "Biplan au-dessus de la plage",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "Vice City",
+  "format": "horizontal",
+  "tags": [
+   "vice city",
+   "marina",
+   "paysage"
+  ],
+  "desc": "Vue aérienne de la marina",
+  "subject": false,
+  "focus_x": 0.5,
+  "spread": 0,
+  "start_ok": 0,
+  "coverage": 0
+ },
+ {
+  "name": "Vice city_1",
+  "format": "horizontal",
+  "tags": [
+   "vice city",
+   "eau",
+   "paysage"
+  ],
+  "desc": "Personnage face à l'eau, hydravion",
+  "subject": true,
+  "focus_x": 0.311,
+  "spread": 0.15,
+  "start_ok": 0,
+  "coverage": 1.0
+ }
+]

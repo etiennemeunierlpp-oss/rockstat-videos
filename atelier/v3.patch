@@ -1,0 +1,71 @@
+diff -ru a/make_video.py b/make_video.py
+--- a/make_video.py	2026-11-18 11:37:24.722458460 +0100
++++ b/make_video.py	2026-11-18 11:37:24.723737275 +0100
+@@ -463,7 +463,8 @@
+              "stars": [("sfx/v2_ui06.wav", 0.4, 0), ("sfx/sparkle.wav", 0.35, 2)], "source": [("sfx/v2_marker.wav", 0.5, 0)],
+              "alert": [("sfx/notif.wav", 0.35, 0)], "emoji": [("sfx/v2_ui10.wav", 0.4, 0), ("sfx/v2_ui10.wav", 0.4, 6)],
+              "image": [("sfx/v2_cam_shutter.wav", 0.55, -5)], "logo": [("sfx/v2_hit.wav", 0.45, -15)],
+-             "subscribe": [("sfx/pop.wav", 0.5, 0), ("sfx/tick.wav", 0.5, 18), ("sfx/ding.wav", 0.4, 20)]}
++             "subscribe": [("sfx/v2_swoosh_quick.wav", 0.35, -4), ("sfx/v2_ui10.wav", 0.5, 1), ("sfx/v2_text_pop.wav", 0.28, 8),
++                           ("sfx/v2_ui07.wav", 0.55, 28), ("sfx/v2_ui06.wav", 0.45, 30), ("sfx/ding.wav", 0.25, 32)]}
+ LEAKS = [("leaks/leak1.mp4", 12), ("leaks/leak2.mp4", 18), ("leaks/scratch3.mp4", 9)]
+ 
+ 
+diff -ru a/remotion_Video.tsx b/remotion_Video.tsx
+--- a/remotion_Video.tsx	2026-11-18 11:37:24.722493909 +0100
++++ b/remotion_Video.tsx	2026-11-18 11:37:24.724993657 +0100
+@@ -311,19 +311,41 @@
+             fontSize: 140, transform: `scale(${si})`, border: "6px solid white", boxShadow: `0 0 40px ${PINK}` }}>{e}</div>;
+         })}
+       </AbsoluteFill>;
+-    case "subscribe": { // bouton S'abonner cliqué
+-      const clicked = f > 20;
+-      const tap = interpolate(f, [8, 18, 22, 30], [80, 0, 0, 60], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+-      const press = f >= 18 && f <= 23 ? 0.92 : 1;
+-      return wrap(<div style={{ position: "relative", display: "flex", alignItems: "center", gap: 22, background: "rgba(15,15,22,0.92)",
+-        padding: "18px 22px 18px 18px", borderRadius: 80, border: "3px solid rgba(255,255,255,0.3)", boxShadow: `0 0 40px ${PINK}66` }}>
+-        <div style={{ width: 104, height: 104, borderRadius: 52, background: `linear-gradient(135deg, ${PINK}, ${PURPLE})`, display: "flex",
+-          alignItems: "center", justifyContent: "center", fontFamily: "MBlack", fontSize: 44, color: "white", border: "4px solid white" }}>VI</div>
+-        <div style={{ fontFamily: "MBlack", fontSize: 46, color: "white" }}>{fx.handle || "@rockstat433"}</div>
+-        <div style={{ fontFamily: "MBlack", fontSize: 44, color: "white", padding: "16px 34px", borderRadius: 50, transform: `scale(${press})`,
+-          background: clicked ? "rgba(255,255,255,0.18)" : "#FE2C55" }}>{clicked ? "Abonné ✓" : "S'abonner"}</div>
+-        <div style={{ position: "absolute", right: 40, bottom: -70, fontSize: 90, transform: `translate(${tap}px, ${tap}px)`, opacity: f < 34 ? 1 : 0 }}>👆</div>
+-      </div>);
++    case "subscribe": { // logo RS + @rockstat433 + bouton S'abonner cliqué (v3, 18/11)
++      const sp = (d: number, damping = 9) => spring({ frame: f - d, fps, config: { damping, stiffness: 170, mass: 0.7 } });
++      const logoIn = sp(0, 7);
++      const pill = sp(7, 14);
++      const clicked = f >= 30;
++      const press = f >= 27 && f <= 31 ? 0.88 : 1;
++      const bump = clicked ? 1 + 0.18 * Math.max(0, 1 - (f - 30) / 10) : 1;
++      const tapX = interpolate(f, [16, 27, 32, 42], [140, 0, 0, 90], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
++      const ring = interpolate(f, [2, 22], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
++      const burst = interpolate(f, [30, 46], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
++      const exit = interpolate(f, [fx.dur - 8, fx.dur], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
++      const W = interpolate(pill, [0, 1], [0, 770]);
++      return <AbsoluteFill style={{ alignItems: "center", opacity: out }}>
++        <div style={{ position: "absolute", top: y, transform: `translateY(-50%) scale(${0.85 + 0.15 * exit})`, display: "flex", alignItems: "center" }}>
++          <div style={{ position: "relative", width: 210, height: 210, zIndex: 2, transform: `scale(${logoIn * bump}) rotate(${interpolate(logoIn, [0, 1], [-25, 0])}deg)` }}>
++            <div style={{ position: "absolute", inset: -10, borderRadius: 999, border: `6px solid ${PINK}`, transform: `scale(${1 + ring * 0.9})`, opacity: 1 - ring }} />
++            <Img src={staticFile(fx.logo || "assets/logo_rs.png")} style={{ width: 210, height: 210, borderRadius: 999, objectFit: "cover", border: "6px solid white",
++              boxShadow: `0 0 ${30 + 30 * Math.sin(f / 5) ** 2}px ${PINK}, 0 12px 30px rgba(0,0,0,0.55)` }} />
++            {clicked ? [0, 1, 2, 3, 4, 5, 6, 7].map((k) => {
++              const ang = (k / 8) * Math.PI * 2; const r = 120 + burst * 90;
++              return <div key={k} style={{ position: "absolute", left: 105 + Math.cos(ang) * r - 9, top: 105 + Math.sin(ang) * r - 9, width: 18, height: 18,
++                borderRadius: 9, background: k % 2 ? PINK : "white", opacity: 1 - burst, transform: `scale(${1 - burst * 0.6})` }} />;
++            }) : null}
++          </div>
++          <div style={{ width: W, overflow: "hidden", marginLeft: -40, height: 150, borderRadius: "0 80px 80px 0", background: "rgba(14,10,24,0.88)",
++            border: "3px solid rgba(255,255,255,0.25)", borderLeft: "none", boxShadow: `0 0 36px ${PINK}55`, display: "flex", alignItems: "center" }}>
++            <div style={{ display: "flex", alignItems: "center", gap: 22, paddingLeft: 66, whiteSpace: "nowrap" }}>
++              <div style={{ fontFamily: "MBlack", fontSize: 44, color: "white" }}>{fx.handle || "@rockstat433"}</div>
++              <div style={{ position: "relative", fontFamily: "MBlack", fontSize: 40, color: clicked ? "#111" : "white", padding: "14px 30px", borderRadius: 50,
++                transform: `scale(${press})`, background: clicked ? "white" : "#FE2C55", boxShadow: clicked ? `0 0 24px ${PINK}` : "none" }}>{clicked ? "Abonné ✓" : "S'abonner"}</div>
++            </div>
++          </div>
++          <div style={{ position: "absolute", right: 30, bottom: -80, fontSize: 96, transform: `translate(${tapX}px, ${tapX}px) scale(${press})`, opacity: f >= 14 && f < 44 ? 1 : 0 }}>👆</div>
++        </div>
++      </AbsoluteFill>;
+     }
+     case "logo":
+       return logo ? wrap(<Img src={staticFile(logo)} style={{ width: fx.width || 420, filter: "drop-shadow(0 10px 20px rgba(0,0,0,0.6))" }} />) : null;

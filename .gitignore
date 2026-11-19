@@ -1,0 +1,7 @@
+.gemini_key
+.tg_token
+.apify_token
+.tg_radar_token
+*_token.txt
+gemini_key.txt
+*.mp4
