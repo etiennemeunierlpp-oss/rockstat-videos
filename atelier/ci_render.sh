@@ -22,7 +22,7 @@ for f in /tmp/q/*.json; do [ -e "$f" ] || continue
   git -C $REPO ls-remote --exit-code --heads origin "v-$s" >/dev/null 2>&1 || todo+=("$f")
 done
 [ ${#todo[@]} -eq 0 ] && { echo "rien à rendre"; exit 0; }
-bash $REPO/atelier/bootstrap.sh
+bash $REPO/atelier/bootstrap.sh > /tmp/boot.log 2>&1; tail -5 /tmp/boot.log
 H=$(git -C $REPO config --get http.https://github.com/.extraheader || true)
 [ -n "$H" ] && git -C ~/rv config http.https://github.com/.extraheader "$H"
 cd ~/gta
@@ -34,5 +34,8 @@ print(q["slug"],*[str(x).replace(" "," ") for x in q["thumb"]])
 PY
 )
   u(){ echo "${1//$' '/ }"; }
-  bash video.sh "$S" "scripts/$S.json" "$(u "$T1")" "$(u "$T2")" "$(u "$T3")" "$(u "$T4")" "$(u "$T5")" || python3 tg.py send "❌ Rendu GitHub échoué : $S"
+  if ! bash -x video.sh "$S" "scripts/$S.json" "$(u "$T1")" "$(u "$T2")" "$(u "$T3")" "$(u "$T4")" "$(u "$T5")" > /tmp/$S.log 2>&1; then
+    python3 tg.py send "❌ Rendu GitHub échoué : $S — $(tail -c 300 /tmp/$S.log)"
+    (cd ~/rv && git checkout -q --orphan log-$S && git rm -rqf . 2>/dev/null; cp /tmp/$S.log /tmp/boot.log . 2>/dev/null; cp ~/gta/work/$S/*.log . 2>/dev/null; git add -A && git commit -qm "log $S" && git push -qf origin log-$S) || true
+  fi
 done
