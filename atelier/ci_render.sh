@@ -29,11 +29,20 @@ cd ~/gta
 for f in "${todo[@]}"; do
   read -r S T1 T2 T3 T4 T5 < <(python3 - "$f" <<'PY'
 import json,sys
-q=json.load(open(sys.argv[1])); json.dump(q["cfg"],open(f"scripts/{q['slug']}.json","w"),ensure_ascii=False)
+q=json.load(open(sys.argv[1])); cfg=q["cfg"]
+sys.path.insert(0,"."); from montage import Picker, check
+P=Picker(seed=q["slug"])
+for s in cfg["sections"]:
+    if not s.get("clips"): s["clips"]=P.take(s.pop("kws",["vice city"]), int(s.pop("n",12)))
+    for f in s.get("fx",[]):
+        if f.get("type")=="subscribe": f.setdefault("logo","assets/logo_rs.png"); f.setdefault("handle","@rockstat433")
+assert not check(cfg), check(cfg)
+json.dump(cfg,open(f"scripts/{q['slug']}.json","w"),ensure_ascii=False)
 print(q["slug"],*[str(x).replace(" "," ") for x in q["thumb"]])
 PY
 )
   u(){ echo "${1//$' '/ }"; }
+  export TG_MSG="$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('tg_msg',''))" "$f")"
   if ! bash -x video.sh "$S" "scripts/$S.json" "$(u "$T1")" "$(u "$T2")" "$(u "$T3")" "$(u "$T4")" "$(u "$T5")" > /tmp/$S.log 2>&1; then
     python3 tg.py send "❌ Rendu GitHub échoué : $S — $(tail -c 300 /tmp/$S.log)"
     (cd ~/rv && git checkout -q --orphan log-$S && git rm -rqf . 2>/dev/null; cp /tmp/$S.log /tmp/boot.log . 2>/dev/null; cp ~/gta/work/$S/*.log . 2>/dev/null; git add -A && git commit -qm "log $S" && git push -qf origin log-$S) || true

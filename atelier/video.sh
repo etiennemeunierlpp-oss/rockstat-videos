@@ -13,4 +13,4 @@ cp ~/gta/out/${S}_web.mp4 $S.mp4 && cp ~/gta/out/${S}_thumb.jpg ${S}_thumb.jpg
 git add $S.mp4 ${S}_thumb.jpg && git commit -qm "$S" && git -c push.negotiate=true push -q origin v-$S
 URL="https://raw.githubusercontent.com/etiennemeunierlpp-oss/rockstat-videos/v-$S/$S.mp4"
 echo "LIEN $URL"; cd ~/gta
-python3 tg.py video out/${S}_web.mp4 "🎬 $S — réponds « go » + créneau (ou « go maintenant ») pour publier sur les 4 réseaux."
+python3 tg.py video out/${S}_web.mp4 "${TG_MSG:-🎬 $S — réponds « go » + créneau (ou « go maintenant ») pour publier sur les 4 réseaux.}"
