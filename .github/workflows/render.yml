@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths: ["queue/**"]
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/10 * * * *"
 permissions:
   contents: write
 concurrency: { group: rendu, cancel-in-progress: false }
@@ -19,7 +19,7 @@ jobs:
         with: { node-version: 20 }
       - name: Rendu
         env:
-          DRIVE_QUEUE: ${{ vars.DRIVE_QUEUE }}
+          DRIVE_QUEUE: 1byK6mh96ug-qG_9PH7J2lXyu4VoPcLPt
         run: |
           git config --global user.name "rockstat-bot"; git config --global user.email "bot@rockstat433"
           bash atelier/ci_render.sh

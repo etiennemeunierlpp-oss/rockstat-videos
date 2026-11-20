@@ -9,7 +9,7 @@ s=max(W/im.width,H/im.height); im=im.resize((int(im.width*s),int(im.height*s)))
 im=im.crop(((im.width-W)//2,(im.height-H)//2,(im.width-W)//2+W,(im.height-H)//2+H))
 g=Image.new("L",(1,H)); [g.putpixel((0,y),int(200*max(0,(y-H*0.45)/(H*0.55)))) for y in range(H)]
 im.paste(Image.new("RGB",(W,H),(0,0,0)),(0,0),g.resize((W,H)))
-F="/root/gta/fonts/Montserrat-Black.ttf"
+import os; F=os.path.expanduser("~/gta/fonts/Montserrat-Black.ttf")
 def fit(txt,maxs):
     s=maxs
     while ImageFont.truetype(F,s).getlength(txt)>W-100: s-=4
