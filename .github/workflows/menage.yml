@@ -1,0 +1,30 @@
+name: Ménage
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches: [main]
+    paths: [".github/workflows/menage.yml"]
+permissions:
+  contents: write
+jobs:
+  menage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - name: Supprime les vidéos publiées (> 6 h) et les fichiers de file d'attente traités
+        run: |
+          git config --global user.name "rockstat-bot"; git config --global user.email "bot@rockstat433"
+          now=$(date +%s)
+          for b in $(git ls-remote --heads origin | awk '{print $2}' | sed 's#refs/heads/##' | grep -E '^(v-|log-)'); do
+            git fetch -q --depth 1 origin "$b"
+            t=$(git log -1 --format=%ct FETCH_HEAD)
+            if [ $((now - t)) -gt 21600 ]; then git push -q origin --delete "$b" && echo "supprimé $b"; fi
+          done
+          ch=0
+          for f in queue/*.json; do [ -e "$f" ] || continue
+            s=$(basename "$f" .json)
+            if ! git ls-remote --exit-code --heads origin "v-$s" >/dev/null && [ $((now - $(git log -1 --format=%ct -- "$f"))) -gt 21600 ]; then git rm -q "$f"; ch=1; fi
+          done
+          [ $ch = 1 ] && git commit -qm "ménage : file d'attente traitée" && git push -q origin HEAD:main || true

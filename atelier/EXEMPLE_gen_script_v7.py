@@ -1,5 +1,5 @@
 import json, sys
-sys.path.insert(0, '/root/gta')
+import os; sys.path.insert(0, os.path.expanduser('~/gta'))
 from montage import Picker, check
 LOGO={"type":"logo","at":0.0,"dur":1.5,"y":640,"width":640}
 def ABO(P): return {"id":"abo","text":"Abonne-toi pour rien rater de GTA 6.","clips":P.take(["vice city","nuit","neon"],4),
@@ -31,7 +31,7 @@ cfg={"title":"Glitch argent infini GTA 6","style":"v2","max_shot":1.25,"music":"
  "sources":["Game Rant - Use This Infinite Money Glitch in GTA 6 Before It's Patched (19/11/2026)","xboxplay.games - GTA 6 Money Glitch","timesaver.gg / boostingfactory - coffres de banque jusqu'à 205 000 $, fin du chapitre 4"],
  "sections":S}
 assert not check(cfg), check(cfg); P.save("glitch-argent")
-json.dump(cfg,open('/root/gta/scripts/glitch-argent.json','w'),ensure_ascii=False,indent=1)
+json.dump(cfg,open(os.path.expanduser('~/gta/scripts/')+'glitch-argent.json','w'),ensure_ascii=False,indent=1)
 print("argent",sum(len(s['text'].split()) for s in S),'mots')
 
 # ---------- 2) NEWS : flash 4 news
@@ -57,5 +57,5 @@ cfg={"title":"4 news GTA 6 du 20 novembre","style":"v2","max_shot":0.95,"music":
  "sources":["PC Gamer - Cyberleek drops what they claim is a near-complete GTA 6 Xbox build online","PC Gamer - How to reach 6 stars in GTA 6","Vice / Beebom - pas de mode première personne (Rob Nelson)","SVG / Kotaku - édition physique = code, pas de revente"],
  "sections":S}
 assert not check(cfg), check(cfg); P.save("news-20-11")
-json.dump(cfg,open('/root/gta/scripts/news-20-11.json','w'),ensure_ascii=False,indent=1)
+json.dump(cfg,open(os.path.expanduser('~/gta/scripts/')+'news-20-11.json','w'),ensure_ascii=False,indent=1)
 print("news",sum(len(s['text'].split()) for s in S),'mots')

@@ -61,5 +61,8 @@ providers tiktok, instagram, youtube, facebook ; media = [URL] ; `videoCoverMill
 tiktokData.title = accroche ; instagramData.type REEL ; youtubeData {title: accroche + " #shorts", type "short", privacy "public", category "GAMING", madeForKids false} ; facebookData.type REEL ; text = caption.
 Puis `python3 tg.py send "✅ <titre> programmée à <heure>"`.
 
+## 6. Projet propre
+Metricool garde sa propre copie du MP4 : la branche `v-<slug>` et `queue/<slug>.json` sont supprimées automatiquement par le workflow « Ménage » (chaque nuit, tout ce qui a plus de 6 h). Ne rien créer d'autre (pas de doc, pas de fichier dans le Drive ni dans le projet Claude). Seul `sujets_faits.txt` grossit.
+
 ## Interdits
 Ne pas recréer de tâche programmée. Ne pas toucher au Drive (quota plein). Pas de Drive partagé 0AKiz…, pas d'Atelier 1bTQ…, pas de « GTA VI DATA ».
