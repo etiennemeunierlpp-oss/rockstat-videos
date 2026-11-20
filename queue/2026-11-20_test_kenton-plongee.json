@@ -1,0 +1,192 @@
+{
+ "slug": "2026-11-20_test_kenton-plongee",
+ "thumb": [
+  "rush_v2/b_146.mp4",
+  3,
+  "TRÉSOR SOUS L'EAU",
+  "JUSQU'À 50 000 $",
+  "SANS ÉTOILES"
+ ],
+ "tg_msg": "🧪 TEST voix Achird + musique Flower 1:20 + nouveaux SFX — PAS de publication",
+ "cfg": {
+  "title": "Plonge avec Kenton : le trésor caché de GTA 6",
+  "style": "v2",
+  "max_shot": 1.0,
+  "music": "music_pack/flower.mp3",
+  "music_offset": 80,
+  "music_volume": 0.12,
+  "logo": "assets/logo_gta6.webp",
+  "handle": "@rockstat433",
+  "caption": "La plongée au trésor avec Kenton, la meilleure méthode d'argent du début de GTA 6 🤿💰 Tu l'as déjà rencontré ? #gta6 #gtavi #gta #gta6news #lucia",
+  "sources": [
+   "GMTreks - GTA 6 Money Guide",
+   "AlcastHQ - How to Make Money in GTA 6"
+  ],
+  "sections": [
+   {
+    "id": "hook",
+    "text": "Dans GTA 6, la meilleure façon de te faire de l'argent au début du jeu, ce n'est pas un braquage. C'est sous l'eau. Et tu peux toucher jusqu'à 50 000 dollars sans une seule étoile de police.",
+    "kws": [
+     "bateau",
+     "plage"
+    ],
+    "n": 11,
+    "fx": [
+     {
+      "type": "logo",
+      "at": 0.0,
+      "dur": 1.5,
+      "y": 640,
+      "width": 640
+     },
+     {
+      "type": "counter",
+      "to": 50000,
+      "suffix": " $",
+      "label": "SANS ÉTOILES",
+      "word": "50",
+      "dur": 2.2,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "abo",
+    "text": "Abonne-toi pour rien rater de GTA 6.",
+    "kws": [
+     "vice city",
+     "neon"
+    ],
+    "n": 4,
+    "fx": [
+     {
+      "type": "subscribe",
+      "at": 0.0,
+      "dur": 2.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "1",
+    "text": "D'abord, dès le chapitre 1, va rencontrer Kenton. C'est un des personnages étranges du jeu, et c'est lui qui t'ouvre la chasse aux trésors.",
+    "kws": [
+     "marais",
+     "plage"
+    ],
+    "n": 10,
+    "fx": [
+     {
+      "type": "label",
+      "text": "📍 CHAPITRE 1",
+      "word": "chapitre",
+      "dur": 1.8,
+      "y": 640
+     },
+     {
+      "type": "alert",
+      "text": "⚠️ KENTON T'ATTEND",
+      "word": "Kenton",
+      "dur": 1.8,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "2",
+    "text": "Ensuite, prends un bateau et ton équipement de plongée, et file vers les épaves autour des Leonida Keys. C'est là que se cachent les objets à récupérer.",
+    "kws": [
+     "bateau",
+     "jet ski"
+    ],
+    "n": 11,
+    "fx": [
+     {
+      "type": "image",
+      "src": "assets/map_gta6.png",
+      "word": "Keys",
+      "dur": 2.0,
+      "y": 640
+     },
+     {
+      "type": "sticker",
+      "text": "🤿 ÉPAVES",
+      "word": "épaves",
+      "dur": 1.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "3",
+    "text": "Il y a 7 collections à compléter. Selon le guide GMTreks, chaque collection terminée rapporte au moins 50 000 dollars. Et ça, sans fusillade.",
+    "kws": [
+     "coucher soleil",
+     "bateau"
+    ],
+    "n": 10,
+    "fx": [
+     {
+      "type": "big",
+      "text": "7 COLLECTIONS",
+      "word": "collections",
+      "dur": 1.6,
+      "y": 640
+     },
+     {
+      "type": "counter",
+      "to": 50000,
+      "suffix": " $",
+      "label": "PAR COLLECTION",
+      "word": "rapporte",
+      "dur": 2.2,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "4",
+    "text": "Petite astuce en plus : passe chaque matin par la boîte aux lettres de Jason. Les paiements de tes missions s'y accumulent, et beaucoup de joueurs les oublient.",
+    "kws": [
+     "appart",
+     "telephone"
+    ],
+    "n": 10,
+    "fx": [
+     {
+      "type": "emoji",
+      "word": "boîte",
+      "dur": 1.6,
+      "y": 640
+     },
+     {
+      "type": "source",
+      "word": "oublient",
+      "dur": 1.6,
+      "y": 700,
+      "name": "GMTreks",
+      "sub": "guide argent"
+     }
+    ]
+   },
+   {
+    "id": "outro",
+    "text": "Alors, tu vas plonger ou tu préfères braquer une banque ? Dis-le en commentaire, et abonne-toi.",
+    "kws": [
+     "vice city",
+     "skyline"
+    ],
+    "n": 8,
+    "fx": [
+     {
+      "type": "stars",
+      "word": "plonger",
+      "dur": 1.6,
+      "y": 640,
+      "n": 4
+     }
+    ]
+   }
+  ]
+ }
+}

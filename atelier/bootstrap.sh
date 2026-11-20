@@ -42,6 +42,7 @@ bash setup.sh $G >/tmp/setup.log 2>&1; tail -1 /tmp/setup.log
 python3 setup_v2.py | tail -2
 grep -q "v3" remotion/src/Video.tsx && grep -q 'subscribe' remotion/src/Video.tsx || { cp remotion/src/Video.tsx remotion_Video.tsx && patch -p1 -i v3.patch && cp remotion_Video.tsx remotion/src/Video.tsx; }
 python3 fix_sans_numeros.py
+python3 sfx_v5.py
 # 4) index de la banque disponible
 python3 - <<'PY'
 import csv,os
