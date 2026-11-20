@@ -22,7 +22,7 @@ Slug : `AAAA-MM-JJ_10h_<sujet-court>` ou `_18h_`. Fichier `queue/<slug>.json` :
 {"slug":"<slug>",
  "thumb":["rush_v2/b_146.mp4",3,"LIGNE ROSE","LIGNE 2","LIGNE 3"],
  "tg_msg":"🎬 <titre> — publication auto à 10 h sur les 4 réseaux. Réponds « stop » pour bloquer.",
- "cfg":{"title":"…","style":"v2","max_shot":1.1,"music":"music_pack/m1_1114.mp3","music_offset":<0 à 60, changer à chaque vidéo>,"music_volume":0.12,
+ "cfg":{"title":"…","style":"v2","max_shot":1.1,"music":"music_pack/flower.mp3","music_offset":80,"music_volume":0.12,
   "logo":"assets/logo_gta6.webp","handle":"@rockstat433",
   "caption":"<phrase> <question> #gta6 #gtavi #gta #gta6news #lucia",
   "sources":["…"],
@@ -35,7 +35,7 @@ Slug : `AAAA-MM-JJ_10h_<sujet-court>` ou `_18h_`. Fichier `queue/<slug>.json` :
 ```
 Règles :
 - 230-280 mots (≈ 60-70 s). Hook : « Dans GTA 6, … » + promesse chiffrée. 4 à 6 parties. Outro : question + abonne-toi.
-- **Varier le format** d'une vidéo à l'autre (tuto pas à pas, top 3 méthodes, « arrête de faire ça », comparatif rentabilité, défi « 0 à 100 000 $ »), la musique (offset), le max_shot (0,9 à 1,3) et les fx.
+- **Varier le format** d'une vidéo à l'autre (tuto pas à pas, top 3 méthodes, « arrête de faire ça », comparatif rentabilité, défi « 0 à 100 000 $ »), le max_shot (0,9 à 1,3) et les fx.
 - `kws` = mots-clés des plans (tags de la banque : braquage, bijouterie, superette, labo, drogue, sac, fusillade, conduite, decapotable, van, berline, fuite, poursuite, police, moto, bateau, jet ski, hydravion, marais, plage, vice city, nuit, neon, soiree, bar, fete, appart, garage, parking, telephone, jumelles, skyline, coucher soleil…). `n` ≈ durée de la partie (mots/3,9) / max_shot + 2. Le choix des plans (jamais deux fois le même) est fait par `montage.py` sur GitHub.
 - fx 1-2 par partie : sticker, label, big, alert, counter (tout montant cité), stars, source, image (`assets/map_gta6.png` pour un lieu), emoji. `"word"` = mot du texte qui déclenche l'effet. y 640/700 alternés. Jamais de layout card, aucune numérotation.
 - Faits sourcés ; rumeur/méthode non vérifiée = « selon <source> ».

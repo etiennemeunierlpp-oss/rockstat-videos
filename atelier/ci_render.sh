@@ -32,6 +32,7 @@ import json,sys
 q=json.load(open(sys.argv[1])); cfg=q["cfg"]
 sys.path.insert(0,"."); from montage import Picker, check
 P=Picker(seed=q["slug"])
+cfg["music"]="music_pack/flower.mp3"; cfg["music_offset"]=80   # musique unique (Etienne 20/11) : Flower In A Hurricane remix, départ à 1:20
 for s in cfg["sections"]:
     if not s.get("clips"): s["clips"]=P.take(s.pop("kws",["vice city"]), int(s.pop("n",12)))
     for f in s.get("fx",[]):
