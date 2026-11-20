@@ -1,0 +1,25 @@
+name: Rendu vidéos GTA VI
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["queue/**"]
+  schedule:
+    - cron: "*/30 * * * *"
+permissions:
+  contents: write
+concurrency: { group: rendu, cancel-in-progress: false }
+jobs:
+  rendu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Rendu
+        env:
+          DRIVE_QUEUE: ${{ vars.DRIVE_QUEUE }}
+        run: |
+          git config --global user.name "rockstat-bot"; git config --global user.email "bot@rockstat433"
+          bash atelier/ci_render.sh
