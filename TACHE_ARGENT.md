@@ -9,7 +9,7 @@ mkdir -p ~/gta && cd ~/gta
 curl -sSL -o .tg_token "https://drive.usercontent.google.com/download?id=10dqt-uGTmtvOztO4KxMxFmrBWeAlUjOb&export=download&confirm=t"
 cp /home/claude/rockstat-videos/atelier/tg.py . && python3 tg.py read   # messages d'Etienne (idées, consignes)
 ```
-Lire `sujets_faits.txt` (racine du dépôt) : ne JAMAIS refaire un sujet déjà fait.
+Lire `sujets_faits.txt` (racine du dépôt) : ne JAMAIS refaire un sujet déjà fait. Lire aussi `idees_etienne.txt` s'il existe (idées prioritaires).
 
 ## 1. Veille (3-5 recherches web max)
 Chercher les méthodes d'argent GTA 6 du moment : `GTA 6 money glitch`, `GTA 6 make money fast`, `GTA 6 hidden cash stash`, `GTA 6 best heist payout`, guides Game Rant / Vice / Dexerto / PowerPyx / GTA Base, + comptes TikTok GTA qui buzzent.
@@ -66,3 +66,14 @@ Metricool garde sa propre copie du MP4 : la branche `v-<slug>` et `queue/<slug>.
 
 ## Interdits
 Ne pas recréer de tâche programmée. Ne pas toucher au Drive (quota plein). Pas de Drive partagé 0AKiz…, pas d'Atelier 1bTQ…, pas de « GTA VI DATA ».
+
+## 7. Retours d'Etienne sur Telegram (tâche « Retours Telegram GTA 6 », toutes les heures 9 h-22 h)
+1. Préparer comme au §0, puis `python3 tg.py read` (attention : lire VIDE la file, donc tout traiter ici). Aucun message → s'arrêter sans rien envoyer.
+2. « stop » → `getScheduledPosts` (blogId 7690282, aujourd'hui → demain) : passer le prochain post GTA en `draft: true`, répondre « OK, bloquée ».
+3. Retour sur une vidéo (anim, son, texte, CTA…) = la dernière programmée/publiée sauf précision :
+   - `python3 tg.py send "👍 Bien reçu : <résumé>. V2 en rendu, aperçu dans ~25 min."`
+   - Copier `queue/<slug>.json` en `queue/<slug>-v2.json` (v3…), slug mis à jour, appliquer les retours (texte, fx, compteur…). Si le retour vaut pour toutes les vidéos (son, DA, CTA), corriger aussi `atelier/` ou ce fichier.
+   - Push, attendre `v-<slug>-v2` (§4) : l'aperçu part tout seul sur Telegram.
+   - Si le post n'est pas encore publié : `updateScheduledPost` avec le nouveau media (URL raw de la v2), même date. S'il est déjà publié : ne rien republier, envoyer la v2 et demander « go » pour la reposter.
+   - `python3 tg.py send "✅ V2 en place pour <heure>"`.
+4. Idée de sujet / consigne générale → l'ajouter en fin de `idees_etienne.txt` (lu par la veille) et répondre « 📝 Noté ».
