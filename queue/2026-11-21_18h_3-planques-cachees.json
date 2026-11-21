@@ -1,0 +1,198 @@
+{
+ "slug": "2026-11-21_18h_3-planques-cachees",
+ "thumb": [
+  "rush_v2/b_146.mp4",
+  3,
+  "4 000 $",
+  "3 PLANQUES",
+  "CACHÉES"
+ ],
+ "tg_msg": "🎬 3 planques cachées : 4 000 $ dans GTA 6 — publication auto à 18 h sur les 4 réseaux. Réponds « stop » pour bloquer.",
+ "cfg": {
+  "title": "3 planques cachées : 4 000 $ dans GTA 6",
+  "style": "v2",
+  "max_shot": 1.2,
+  "music": "music_pack/flower.mp3",
+  "music_offset": 120,
+  "music_volume": 0.12,
+  "logo": "assets/logo_gta6.webp",
+  "handle": "@rockstat433",
+  "caption": "3 planques cachées pour presque 4 000 $ en début de partie dans GTA 6 💰 Tu les avais trouvées ? #gta6 #gtavi #gta #gta6news #lucia",
+  "sources": [
+   "Beebom - Best Early Money Spots in GTA 6 (21/11/2026)",
+   "GTABase - How to make money in GTA 6 (20/11/2026)"
+  ],
+  "sections": [
+   {
+    "id": "hook",
+    "text": "Dans GTA 6, voici 3 planques cachées qui te rapportent près de 4 000 dollars en début de partie, sans braquer une seule banque. Et la troisième, presque personne ne l'a trouvée.",
+    "kws": [
+     "sac",
+     "conduite"
+    ],
+    "n": 9,
+    "fx": [
+     {
+      "type": "logo",
+      "at": 0.0,
+      "dur": 1.5,
+      "y": 640,
+      "width": 640
+     },
+     {
+      "type": "counter",
+      "to": 3920,
+      "suffix": " $",
+      "label": "3 PLANQUES",
+      "word": "4",
+      "dur": 2.2,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "abo",
+    "text": "Abonne-toi pour rien rater de GTA 6.",
+    "kws": [
+     "vice city",
+     "nuit"
+    ],
+    "n": 4,
+    "fx": [
+     {
+      "type": "subscribe",
+      "at": 0.0,
+      "dur": 2.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "1",
+    "text": "Première planque : les voitures en panne au bord de la route. Selon Beebom, certains conducteurs cachent de la drogue dans le coffre. Ouvre-le : tu peux tomber sur un sac de sport rempli de marchandise à 1 280 dollars. Dépose-le à Brian's Lockup, et l'argent arrive dans ta boîte aux lettres le lendemain.",
+    "kws": [
+     "berline",
+     "sac",
+     "garage"
+    ],
+    "n": 14,
+    "fx": [
+     {
+      "type": "sticker",
+      "text": "🚗 VOITURE EN PANNE",
+      "word": "panne",
+      "dur": 1.8,
+      "y": 640
+     },
+     {
+      "type": "counter",
+      "to": 1280,
+      "suffix": " $",
+      "label": "LE SAC",
+      "word": "1",
+      "dur": 2.0,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "2",
+    "text": "Deuxième : les crashs d'avion dans les Grassrivers, les marais. Fouille le sol sous l'épave en feu : il y a de la cocaïne pour environ 1 000 dollars par site. Mais ne traîne pas, les gangs rivaux et la police débarquent très vite.",
+    "kws": [
+     "marais",
+     "hydravion",
+     "police"
+    ],
+    "n": 12,
+    "fx": [
+     {
+      "type": "image",
+      "src": "assets/map_gta6.png",
+      "word": "Grassrivers",
+      "dur": 2.0,
+      "y": 640
+     },
+     {
+      "type": "stars",
+      "word": "police",
+      "dur": 1.6,
+      "y": 700,
+      "n": 3
+     }
+    ]
+   },
+   {
+    "id": "3",
+    "text": "Troisième, la meilleure : un motel délabré au sud de Hamlet. Aucune icône sur la carte. Approche-toi et suis les cris. À l'intérieur, un coffre avec plus de 1 000 dollars, de la cocaïne à 640 dollars, et une mallette avec un fusil de sniper.",
+    "kws": [
+     "nuit",
+     "appart",
+     "neon"
+    ],
+    "n": 12,
+    "fx": [
+     {
+      "type": "alert",
+      "text": "🔊 SUIS LES CRIS",
+      "word": "cris",
+      "dur": 1.8,
+      "y": 640
+     },
+     {
+      "type": "big",
+      "text": "+1 640 $",
+      "word": "coffre",
+      "dur": 1.8,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "4",
+    "text": "Bonus si tu as débloqué Kenton : ses chasses au trésor sous-marines dans les Leonida Keys rapportent 2 600 dollars par épave, plus 200 dollars par pièce, selon Beebom.",
+    "kws": [
+     "bateau",
+     "jet ski",
+     "plage"
+    ],
+    "n": 9,
+    "fx": [
+     {
+      "type": "counter",
+      "to": 2600,
+      "suffix": " $",
+      "label": "PAR ÉPAVE",
+      "word": "2",
+      "dur": 2.0,
+      "y": 640
+     },
+     {
+      "type": "source",
+      "text": "Source : Beebom",
+      "word": "Beebom",
+      "dur": 1.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "outro",
+    "text": "Tu commences par laquelle : la voiture, l'avion ou le motel ? Dis-le en commentaire, et abonne-toi.",
+    "kws": [
+     "coucher soleil",
+     "skyline"
+    ],
+    "n": 6,
+    "fx": [
+     {
+      "type": "emoji",
+      "text": "💬",
+      "word": "commentaire",
+      "dur": 1.6,
+      "y": 640
+     }
+    ]
+   }
+  ]
+ }
+}
