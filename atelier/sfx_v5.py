@@ -44,9 +44,15 @@ NEW = '''def v2_design(S, I, cards, FX, title, bounds, sections, F, total):
         shakes.append(it["start"])
     for x in FX:
         if x["type"] == "counter":
-            big = float(x.get("to", 0) or 0) >= 10000
-            sfx.append({"src": M("mk_10_coins"), "frame": x["start"], "volume": 0.45})
-            sfx.append({"src": M("mk_13_money_bag" if big else "mk_11_coin_magic"), "frame": x["start"] + max(x["dur"] - 20, 10), "volume": 0.5})
+            # argent : plus de sons (Etienne 21/11) — pièces au départ, cliquetis pendant le défilement, sac + pièce magique à l'arrivée
+            sfx.append({"src": M("mk_10_coins"), "frame": x["start"], "volume": 0.55})
+            for k in range(4, 24, 5):
+                sfx.append({"src": M("mk_12_coin_game"), "frame": x["start"] + k, "volume": 0.22})
+            sfx.append({"src": M("mk_13_money_bag"), "frame": x["start"] + 24, "volume": 0.6})
+            sfx.append({"src": M("mk_11_coin_magic"), "frame": x["start"] + 26, "volume": 0.35})
+        if x["type"] == "big" and "$" in str(x.get("text", "")):
+            sfx.append({"src": M("mk_10_coins"), "frame": x["start"], "volume": 0.5})
+            sfx.append({"src": M("mk_13_money_bag"), "frame": x["start"] + 8, "volume": 0.5})
         for src, vol, dl in MK.get(x["type"], []):
             sfx.append({"src": M(src), "frame": x["start"] + dl, "volume": vol})
         if x["type"] in ("big", "alert"):

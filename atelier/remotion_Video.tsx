@@ -243,9 +243,9 @@ const FxView: React.FC<{ fx: Fx; logo?: string | null }> = ({ fx, logo }) => {
       </AbsoluteFill>;
     case "counter": { // chiffre qui défile (SNIR)
       const v = interpolate(f, [0, Math.min(24, fx.dur - 4)], [fx.from ?? 0, fx.to], { extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
-      const txt = Number.isInteger(fx.to) ? Math.round(v).toLocaleString("fr-FR") : v.toFixed(1).replace(".", ",");
+      const txt = Number.isInteger(fx.to) ? String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, "\u00a0") : v.toFixed(1).replace(".", ","); // séparateur fixe (Etienne 21/11)
       return wrap(<div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-        <div style={{ fontFamily: "MBlack", fontSize: 190, color: PINK, ...stroke(12), textShadow: `0 0 50px ${PINK}` }}>{txt}<span style={{ fontSize: 100, color: "white" }}>{fx.suffix || ""}</span></div>
+        <div style={{ fontFamily: "MBlack", fontSize: 190, color: PINK, fontVariantNumeric: "tabular-nums", whiteSpace: "nowrap", ...stroke(12), textShadow: `0 0 50px ${PINK}` }}>{txt}<span style={{ fontSize: 100, color: "white" }}>{fx.suffix || ""}</span></div>
         {fx.label ? <div style={{ fontFamily: "MBlack", fontSize: 50, color: "white", background: "rgba(0,0,0,0.6)", padding: "8px 26px", borderRadius: 40, marginTop: -10 }}>{fx.label}</div> : null}
       </div>);
     }

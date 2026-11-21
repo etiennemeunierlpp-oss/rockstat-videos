@@ -28,7 +28,7 @@ Slug : `AAAA-MM-JJ_10h_<sujet-court>` ou `_18h_`. Fichier `queue/<slug>.json` :
   "sources":["…"],
   "sections":[
    {"id":"hook","text":"Dans GTA 6, …","kws":["braquage","sac"],"n":9,"fx":[{"type":"logo","at":0.0,"dur":1.5,"y":640,"width":640},{"type":"counter","to":8000,"suffix":" $","label":"…","word":"…","dur":2.2,"y":700}]},
-   {"id":"abo","text":"Abonne-toi pour rien rater de GTA 6.","kws":["vice city","nuit"],"n":4,"fx":[{"type":"subscribe","at":0.0,"dur":2.6,"y":700}]},
+   {"id":"abo","text":"Abonne-toi pour avoir toutes les astuces argent facile sur GTA 6.","kws":["vice city","nuit"],"n":4,"fx":[{"type":"subscribe","at":0.0,"dur":2.6,"y":700}]},
    {"id":"1","text":"…","kws":["…"],"n":12,"fx":[…]},
    {"id":"outro","text":"… question … Dis-le en commentaire, et abonne-toi.","kws":["…"],"n":10,"fx":[…]}
  ]}}
