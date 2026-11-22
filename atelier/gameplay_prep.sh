@@ -30,7 +30,8 @@ for f in $REPO/gameplay_req/*.json; do [ -e "$f" ] || continue
     (cd $REPO/atelier && python3 tg.py send "❌ Gameplay $ID : téléchargement YouTube refusé — $(tail -c 250 $W/yt.log)" 2>/dev/null) || true
     cd $REPO; git checkout -q --orphan "log-g-$ID"; git rm -rqf . 2>/dev/null; cp $W/yt.log .; git add yt.log; git commit -qm "log g-$ID"; git push -qf origin "log-g-$ID"; git checkout -q main; continue
   fi
-  ffmpeg -nostdin -v error -y -i "$V" -an -vf "scale=-2:1080,fps=30" -c:v libx264 -preset veryfast -crf 20 -pix_fmt yuv420p -movflags +faststart src.mp4
+  DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$V" | cut -d. -f1); BR=$(( 85*8000/(${DUR:-180}+1) )); [ $BR -gt 6000 ] && BR=6000   # src.mp4 < 90 Mo (limite GitHub 100 Mo)
+  ffmpeg -nostdin -v error -y -i "$V" -an -vf "scale=-2:1080,fps=30" -c:v libx264 -preset veryfast -crf 21 -maxrate ${BR}k -bufsize $((BR*2))k -pix_fmt yuv420p -movflags +faststart src.mp4
   python3 - <<'PY'
 import json,re,glob
 d=json.load(open(glob.glob("dl.info.json")[0]))
@@ -61,6 +62,6 @@ PY
     ffmpeg -nostdin -v error -y -ss $ss -t 60 -i src.mp4 -vf "fps=1/2,scale=320:-1,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='%{eif\:t+$ss\:d}s':x=4:y=4:fontsize=22:fontcolor=yellow:box=1:boxcolor=black,tile=6x5" -frames:v 1 -q:v 5 sheet_$(printf %02d $i).jpg; i=$((i+1)); done
   cd $REPO; git checkout -q --orphan "g-$ID"; git rm -rqf . 2>/dev/null
   cp $W/src.mp4 $W/transcript.txt $W/info.txt $W/sheet_*.jpg .
-  git add src.mp4 transcript.txt info.txt sheet_*.jpg && git commit -qm "gameplay $ID" && git push -qf origin "g-$ID"
+  git add src.mp4 transcript.txt info.txt sheet_*.jpg && git commit -qm "gameplay $ID" && git push -qf origin "g-$ID" || (cd $REPO/atelier && python3 tg.py send "❌ Gameplay $ID : push de g-$ID refusé ($(du -m $W/src.mp4 | cut -f1) Mo)" 2>/dev/null) || true
   git checkout -q main
 done
