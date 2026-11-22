@@ -48,9 +48,11 @@ PY
   if grep -q "pas de sous-titres" transcript.txt; then   # TikTok : pas de sous-titres -> Whisper
     pip install -q faster-whisper >/dev/null 2>&1
     ffmpeg -nostdin -v error -y -i "$V" -vn -ac 1 -ar 16000 a.wav && python3 - <<'PY'
+import wave,numpy as np
 from faster_whisper import WhisperModel
+w=wave.open("a.wav"); a=np.frombuffer(w.readframes(w.getnframes()),dtype=np.int16).astype(np.float32)/32768
 m=WhisperModel("small",device="cpu",compute_type="int8")
-seg,_=m.transcribe("a.wav",vad_filter=True)
+seg,_=m.transcribe(a,vad_filter=True)
 open("transcript.txt","w").write("\n".join(f"{int(x.start)//60:02d}:{int(x.start)%60:02d} {x.text.strip()}" for x in seg))
 PY
   fi
