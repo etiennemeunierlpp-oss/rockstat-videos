@@ -17,7 +17,7 @@ jobs:
         run: |
           git config --global user.name "rockstat-bot"; git config --global user.email "bot@rockstat433"
           now=$(date +%s)
-          for b in $(git ls-remote --heads origin | awk '{print $2}' | sed 's#refs/heads/##' | grep -E '^(v-|log-)'); do
+          for b in $(git ls-remote --heads origin | awk '{print $2}' | sed 's#refs/heads/##' | grep -E '^(v-|log-|g-)'); do
             git fetch -q --depth 1 origin "$b"
             t=$(git log -1 --format=%ct FETCH_HEAD)
             if [ $((now - t)) -gt 21600 ]; then git push -q origin --delete "$b" && echo "supprimé $b"; fi
@@ -26,5 +26,8 @@ jobs:
           for f in queue/*.json; do [ -e "$f" ] || continue
             s=$(basename "$f" .json)
             if ! git ls-remote --exit-code --heads origin "v-$s" >/dev/null && [ $((now - $(git log -1 --format=%ct -- "$f"))) -gt 21600 ]; then git rm -q "$f"; ch=1; fi
+          done
+          for f in gameplay_req/*.json; do [ -e "$f" ] || continue
+            [ $((now - $(git log -1 --format=%ct -- "$f"))) -gt 172800 ] && { git rm -q "$f"; ch=1; }
           done
           [ $ch = 1 ] && git commit -qm "ménage : file d'attente traitée" && git push -q origin HEAD:main || true
