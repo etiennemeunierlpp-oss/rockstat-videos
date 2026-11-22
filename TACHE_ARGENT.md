@@ -68,7 +68,7 @@ git add -A && git commit -qm "<slug>" && git -c push.negotiate=true push -q orig
 Le push sur `queue/` lance GitHub Actions (~20-30 min) : voix, montage, miniature, MP4 sur la branche `v-<slug>`, aperçu Telegram.
 
 ## 4. FIN de la tâche « Création » (économie de tokens, 22/11)
-Après le push du §3 : S'ARRÊTER. Ne pas attendre le rendu (chaque attente relit tout le contexte, images comprises). La publication est faite par la tâche « Publication GTA 6 » (9 h 23 pour 10 h, 17 h 07 pour 18 h), qui suit le §5.
+Après le push du §3 : S'ARRÊTER. Ne pas attendre le rendu (chaque attente relit tout le contexte, images comprises). La publication est faite par la tâche « Publication GTA 6 » (9 h 23 pour 10 h, 17 h 23 pour 18 h), qui suit le §5.
 Le slug DOIT contenir `_10h_` ou `_18h_` : c'est ainsi que la tâche Publication retrouve `queue/<slug>.json`.
 
 ## 5. Publier (tâche « Publication GTA 6 », légère)
