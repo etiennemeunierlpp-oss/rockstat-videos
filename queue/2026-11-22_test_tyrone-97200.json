@@ -1,0 +1,548 @@
+{
+ "slug": "2026-11-22_test_tyrone-97200",
+ "preset": "v4",
+ "thumb": [
+  "rush_tv/gp_cash.mp4",
+  1.0,
+  "97 200 $",
+  "D'UN SEUL COUP",
+  "CHEZ TYRONE"
+ ],
+ "tg_msg": "🧪 ESSAI nouveau workflow : Tyrone 97 200 $ — PAS de publication auto, j'attends le go d'Etienne.",
+ "gameplay": {
+  "src": "g-jqjl2",
+  "cuts": [
+   [
+    "gp_perso1",
+    0,
+    0,
+    0.45
+   ],
+   [
+    "gp_perso2",
+    3,
+    0,
+    0.45
+   ],
+   [
+    "gp_map1",
+    8,
+    0,
+    0.6
+   ],
+   [
+    "gp_map2",
+    10.5,
+    0,
+    0.6
+   ],
+   [
+    "gp_tyrone1",
+    12,
+    0,
+    0.65
+   ],
+   [
+    "gp_tyrone2",
+    14.5,
+    0,
+    0.65
+   ],
+   [
+    "gp_tyrone3",
+    17,
+    0,
+    0.65
+   ],
+   [
+    "gp_map3",
+    9,
+    0,
+    0.5
+   ],
+   [
+    "gp_cash",
+    20,
+    0,
+    0.72
+   ],
+   [
+    "gp_van1",
+    24,
+    0,
+    0.45
+   ],
+   [
+    "gp_van2",
+    26.5,
+    0,
+    0.5
+   ],
+   [
+    "gp_van3",
+    28.5,
+    0,
+    0.45
+   ],
+   [
+    "gp_van4",
+    31,
+    0,
+    0.45
+   ],
+   [
+    "gp_porte",
+    32.5,
+    0,
+    0.45
+   ],
+   [
+    "gp_hangar1",
+    35,
+    1,
+    0.6
+   ],
+   [
+    "gp_hangar2",
+    37.5,
+    1,
+    0.5
+   ],
+   [
+    "gp_hangar3",
+    40,
+    1,
+    0.5
+   ],
+   [
+    "gp_bureau1",
+    43.5,
+    0,
+    0.5
+   ],
+   [
+    "gp_bureau2",
+    46,
+    0,
+    0.5
+   ],
+   [
+    "gp_coffre1",
+    48.5,
+    0,
+    0.5
+   ],
+   [
+    "gp_coffre2",
+    51,
+    0,
+    0.5
+   ],
+   [
+    "gp_coffre3",
+    53.5,
+    0,
+    0.5
+   ],
+   [
+    "gp_sortie1",
+    56,
+    0,
+    0.5
+   ],
+   [
+    "gp_sortie2",
+    58,
+    0,
+    0.5
+   ],
+   [
+    "gp_trunk1",
+    60,
+    0,
+    0.4
+   ],
+   [
+    "gp_trunk2",
+    62.5,
+    0,
+    0.45
+   ],
+   [
+    "gp_depart",
+    65,
+    0,
+    0.4
+   ],
+   [
+    "gp_route1",
+    71,
+    0,
+    0.5
+   ],
+   [
+    "gp_route2",
+    74,
+    0,
+    0.45
+   ],
+   [
+    "gp_pont",
+    78,
+    0,
+    0.45
+   ],
+   [
+    "gp_route3",
+    84,
+    0,
+    0.55
+   ],
+   [
+    "gp_retour1",
+    92,
+    0,
+    0.45
+   ],
+   [
+    "gp_retour2",
+    102,
+    0,
+    0.45
+   ],
+   [
+    "gp_reprise1",
+    108.5,
+    0,
+    0.45
+   ],
+   [
+    "gp_reprise2",
+    111,
+    0,
+    0.45
+   ],
+   [
+    "gp_autoroute1",
+    124,
+    0,
+    0.5
+   ],
+   [
+    "gp_autoroute2",
+    127,
+    0,
+    0.5
+   ],
+   [
+    "gp_tyronecasa",
+    134,
+    0,
+    0.4
+   ],
+   [
+    "gp_vente1",
+    137,
+    1,
+    0.5
+   ],
+   [
+    "gp_vente2",
+    139.5,
+    1,
+    0.5
+   ],
+   [
+    "gp_vente3",
+    142,
+    1,
+    0.5
+   ],
+   [
+    "gp_tel1",
+    150,
+    0,
+    0.45
+   ],
+   [
+    "gp_tel2",
+    152.5,
+    0,
+    0.45
+   ],
+   [
+    "gp_tel3",
+    155,
+    0,
+    0.45
+   ],
+   [
+    "gp_tel4",
+    157.5,
+    0,
+    0.45
+   ],
+   [
+    "gp_tel5",
+    160,
+    0,
+    0.45
+   ],
+   [
+    "gp_tel6",
+    162,
+    0,
+    0.45
+   ],
+   [
+    "gp_perso3",
+    144,
+    0,
+    0.5
+   ]
+  ]
+ },
+ "cfg": {
+  "title": "97 200 $ d'un coup chez Tyrone dans GTA 6",
+  "style": "v2",
+  "max_shot": 1.6,
+  "music": "music_pack/m1_1114.mp3",
+  "music_offset": 22,
+  "music_volume": 0.12,
+  "logo": "assets/logo_gta6.webp",
+  "handle": "@rockstat433",
+  "caption": "Remplis ton coffre en boucle et revends tout à Tyrone : 97 200 $ d'un coup dans GTA 6 💰 Tu connaissais l'astuce Buckme ? #gta6 #gtavi #gta #gta6news #lucia #argentgta6",
+  "sources": [
+   "Gameplay YouTube jqJl_-wo77Q (22/11/2026)"
+  ],
+  "sections": [
+   {
+    "id": "hook",
+    "text": "Dans GTA 6, ce joueur a revendu 97 200 dollars de marchandise d'un seul coup à Tyrone. Et il a rempli son coffre en faisant juste des allers-retours.",
+    "kws": [
+     "drogue",
+     "sac",
+     "vice city"
+    ],
+    "n": 9,
+    "fx": [
+     {
+      "type": "logo",
+      "at": 0.0,
+      "dur": 1.5,
+      "y": 640,
+      "width": 640
+     },
+     {
+      "type": "counter",
+      "to": 97200,
+      "suffix": " $",
+      "label": "D'UN SEUL COUP",
+      "word": "97",
+      "dur": 2.2,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "abo",
+    "text": "Abonne-toi et enregistre cette vidéo si tu veux connaître toutes les astuces argent facile dans GTA 6.",
+    "kws": [
+     "vice city",
+     "nuit"
+    ],
+    "n": 4,
+    "fx": [
+     {
+      "type": "subscribe",
+      "at": 0.0,
+      "dur": 2.6,
+      "y": 700,
+      "handle": "@rockstat433",
+      "logo": "assets/logo_rs.png"
+     }
+    ]
+   },
+   {
+    "id": "1",
+    "text": "D'abord, avance jusqu'au chapitre 3 et termine la mission Kitty Kitty avec Jason. Elle débloque Tyrone, un receleur qui rachète la drogue, les bijoux et les billets marqués à bon prix.",
+    "clips": [
+     "gp_perso1",
+     "gp_perso2",
+     "gp_map1",
+     "gp_map2",
+     "gp_tyrone1",
+     "gp_tyrone2",
+     "gp_tyrone3",
+     "gp_map3"
+    ],
+    "fx": [
+     {
+      "type": "label",
+      "text": "📖 CHAPITRE 3",
+      "word": "chapitre",
+      "dur": 1.6,
+      "y": 640
+     },
+     {
+      "type": "sticker",
+      "text": "🤝 TYRONE",
+      "word": "Tyrone",
+      "dur": 1.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "2",
+    "text": "Ensuite, file à Apollo Aggregates, dans le comté de Vice-Dale. Vide la drogue du van garé dehors, puis entre dans l'entrepôt : un deuxième van t'attend, plein lui aussi.",
+    "clips": [
+     "gp_van1",
+     "gp_van2",
+     "gp_van3",
+     "gp_van4",
+     "gp_porte",
+     "gp_hangar1",
+     "gp_hangar2",
+     "gp_hangar3"
+    ],
+    "fx": [
+     {
+      "type": "label",
+      "text": "📍 APOLLO AGGREGATES",
+      "word": "Apollo",
+      "dur": 1.8,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "3",
+    "text": "Première fois ici ? Ouvre aussi le coffre-fort dans le bureau. Selon lui, tu y trouves une carte à revendre chez le prêteur sur gages, pour quelques billets de plus.",
+    "clips": [
+     "gp_bureau1",
+     "gp_bureau2",
+     "gp_coffre1",
+     "gp_coffre2",
+     "gp_coffre3",
+     "gp_sortie1",
+     "gp_sortie2"
+    ],
+    "fx": [
+     {
+      "type": "alert",
+      "text": "🔐 COFFRE",
+      "word": "coffre-fort",
+      "dur": 1.5,
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "4",
+    "text": "Range le sac dans le coffre de ta voiture perso et roule. Passe sous le pont, fais demi-tour, reviens : la drogue est réapparue. Recommence jusqu'à remplir ton coffre. Plus ton véhicule est grand, moins tu fais de trajets.",
+    "clips": [
+     "gp_trunk1",
+     "gp_trunk2",
+     "gp_depart",
+     "gp_route1",
+     "gp_route2",
+     "gp_pont",
+     "gp_route3",
+     "gp_retour1",
+     "gp_retour2",
+     "gp_reprise1",
+     "gp_reprise2"
+    ],
+    "fx": [
+     {
+      "type": "big",
+      "text": "BOUCLE",
+      "word": "réapparue",
+      "dur": 1.5,
+      "y": 700
+     },
+     {
+      "type": "emoji",
+      "text": "🔁",
+      "word": "Recommence",
+      "dur": 1.4,
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "5",
+    "text": "Coffre plein ? Direction l'appart de Tyrone. Choisis vendre la planque et regarde le compteur : 97 200 dollars d'un seul coup.",
+    "clips": [
+     "gp_autoroute1",
+     "gp_autoroute2",
+     "gp_tyronecasa",
+     "gp_vente1",
+     "gp_vente2",
+     "gp_vente3",
+     "gp_cash"
+    ],
+    "fx": [
+     {
+      "type": "counter",
+      "to": 97200,
+      "suffix": " $",
+      "label": "CHEZ TYRONE",
+      "word": "97",
+      "dur": 2.2,
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "6",
+    "text": "Dernière astuce : ton compte en banque a un plafond. Si l'argent reste en attente, ouvre l'appli Buckme et dépose le maximum en épargne. Le paiement arrive juste après.",
+    "clips": [
+     "gp_perso3",
+     "gp_tel1",
+     "gp_tel2",
+     "gp_tel3",
+     "gp_tel4",
+     "gp_tel5",
+     "gp_tel6"
+    ],
+    "fx": [
+     {
+      "type": "alert",
+      "text": "⚠️ PLAFOND",
+      "word": "plafond",
+      "dur": 1.5,
+      "y": 700
+     },
+     {
+      "type": "sticker",
+      "text": "📱 BUCKME",
+      "word": "Buckme",
+      "dur": 1.6,
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "outro",
+    "text": "Tu ferais combien d'allers-retours avant d'aller voir Tyrone ? Dis-le en commentaire, et abonne-toi.",
+    "kws": [
+     "conduite",
+     "van",
+     "vice city"
+    ],
+    "n": 6,
+    "fx": [
+     {
+      "type": "emoji",
+      "text": "💰",
+      "word": "Tyrone",
+      "dur": 1.5,
+      "y": 640
+     }
+    ]
+   }
+  ]
+ }
+}
