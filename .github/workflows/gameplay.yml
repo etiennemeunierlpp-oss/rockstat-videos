@@ -1,0 +1,19 @@
+name: Préparation gameplay
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["gameplay_req/**"]
+permissions:
+  contents: write
+concurrency: { group: gameplay, cancel-in-progress: false }
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Télécharge, transcrit et prépare les planches
+        run: |
+          git config --global user.name "rockstat-bot"; git config --global user.email "bot@rockstat433"
+          bash atelier/gameplay_prep.sh
