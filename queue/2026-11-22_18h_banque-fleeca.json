@@ -206,6 +206,11 @@
     "gp_fence3",
     127,
     1
+   ],
+   [
+    "gp_ruelle3",
+    9.5,
+    1
    ]
   ]
  },
@@ -280,7 +285,7 @@
      "gp_entree",
      "gp_ruelle",
      "gp_ruelle2",
-     "gp_van1@0.6"
+     "gp_ruelle3"
     ],
     "fx": [
      {
