@@ -11,7 +11,13 @@ cp /home/claude/rockstat-videos/atelier/tg.py . && python3 tg.py read   # messag
 ```
 Lire `sujets_faits.txt` (racine du dépôt) : ne JAMAIS refaire un sujet déjà fait. Lire aussi `idees_etienne.txt` s'il existe (idées prioritaires).
 
-## 1. Veille (3-5 recherches web max)
+## ÉCONOMIE DE TOKENS (Etienne, 22/11)
+- Attentes : UNIQUEMENT `bash atelier/attendre.sh <branche>` (timeout Bash 540000 ms) ; elle n'affiche qu'une ligne. Relancer seulement si PAS_ENCORE. Jamais de petites boucles ls-remote/sleep à la main, jamais de `gh run view --log`.
+- Pas de veille web quand la vidéo source (transcription) donne déjà le lieu, les étapes et les montants. Au plus 1 recherche si un montant est flou.
+- Planches : lire la transcription d'abord, puis n'ouvrir que les planches des passages utiles (1 planche = 60 s de vidéo). Pas de re-lecture de fichiers déjà lus.
+- Pas de narration entre les étapes ; sorties de commandes courtes (`-q`, `| tail -3`).
+
+## 1. Veille (seulement si pas de vidéo source exploitable ; 3 recherches web max)
 Chercher les méthodes d'argent GTA 6 du moment : `GTA 6 money glitch`, `GTA 6 make money fast`, `GTA 6 hidden cash stash`, `GTA 6 best heist payout`, guides Game Rant / Vice / Dexerto / PowerPyx / GTA Base, + comptes TikTok GTA qui buzzent.
 Choisir LE sujet le plus « argent facile » pas encore fait. Vérifier les faits sur 2 sources si possible ; sinon « selon <source> ».
 Écrire avec des étapes concrètes (lieu, chapitre, code, montant). Montants en chiffres.
@@ -20,8 +26,8 @@ Choisir LE sujet le plus « argent facile » pas encore fait. Vérifier les fait
 La vidéo qui a percé (Wish List de Randy, 21/11) + le test gameplay du 22/11 : on garde hook/abo/animations et on monte les parties sur le **vrai gameplay** d'une vidéo qui a bien marché.
 1. Trouver la vidéo source : `cd /home/claude/rockstat-videos && python3 atelier/veille_youtube.py` → vidéos **YouTube de la semaine, 30 s à 3 min, « GTA 6 money »**, triées par vues (Apify, 1 recherche/jour gardée dans `veille/youtube_<date>.json`, déjà utilisées écartées). Prendre la plus vue dont le sujet n'est pas dans `sujets_faits.txt` et dont on voit le gameplay (titre/miniature = tuto, pas une réaction). Lien envoyé par Etienne (Telegram / `idees_etienne.txt`) = prioritaire. Sinon TikTok (WebSearch `site:tiktok.com gta 6 money`). Le sujet de la vidéo = le sujet du jour : la veille web (§1) sert à vérifier les montants.
    Noter l'id choisi en fin de `veille/gameplay_utilises.txt` (« <videoId> <date> <slug> »).
-2. Demander la préparation : `gameplay_req/<id>.json` = `{"id":"<id court>","url":"<lien>"}` → commit + push sur main, puis attendre la branche (`git ls-remote --exit-code --heads origin g-<id>`, `sleep 30` entre deux essais, max 15 min). Le workflow « Préparation gameplay » (~3-5 min) crée la branche `g-<id>` : `src.mp4` (sans son), `transcript.txt` (timecodes mm:ss), `info.txt`, `sheet_00.jpg…` (1 image toutes les 2 s, temps en secondes écrit en jaune). YouTube est téléchargé via Apify (epctex/youtube-video-downloader, 1080p, ~0,10 $ la vidéo) car YouTube bloque GitHub ; transcription Whisper (anglais). Échec → branche `log-g-<id>` + Telegram → essayer la vidéo suivante de la liste, sinon format classique (§2) avec le preset v4.
-3. Lire : `git fetch -q --depth 1 origin g-<id> && git show FETCH_HEAD:transcript.txt` ; extraire les planches (`git show FETCH_HEAD:sheet_00.jpg > /tmp/s0.jpg`) et les REGARDER (Read) pour repérer les moments clés : carte/lieu, trajet, arrivée, action (fouille, coffre, braquage…), argent gagné, revente.
+2. Demander la préparation : `gameplay_req/<id>.json` = `{"id":"<id court>","url":"<lien>"}` → commit + push sur main, puis attendre la branche : `bash atelier/attendre.sh g-<id>` (relancer une fois si PAS_ENCORE). Le workflow « Préparation gameplay » (~3-5 min) crée la branche `g-<id>` : `src.mp4` (sans son), `transcript.txt` (timecodes mm:ss), `info.txt`, `sheet_00.jpg…` (1 image toutes les 2 s, temps en secondes écrit en jaune). YouTube est téléchargé via Apify (epctex/youtube-video-downloader, 1080p, ~0,10 $ la vidéo) car YouTube bloque GitHub ; transcription Whisper (anglais). Échec → branche `log-g-<id>` + Telegram → essayer la vidéo suivante de la liste, sinon format classique (§2) avec le preset v4.
+3. Lire : `git fetch -q --depth 1 origin g-<id> && git show FETCH_HEAD:transcript.txt` ; puis extraire SEULEMENT les planches utiles (`git show FETCH_HEAD:sheet_00.jpg > /tmp/s0.jpg`, sheet_NN = secondes NN*60 à NN*60+60) et les REGARDER (Read) pour repérer les moments clés : carte/lieu, trajet, arrivée, action (fouille, coffre, braquage…), argent gagné, revente.
 4. Écrire le script FR (même règles que §2) en suivant les étapes de la vidéo source, puis les plans : `"gameplay":{"src":"g-<id>","cuts":[["gp_map1",20.5,0],["gp_corps1",46,1],["gp_x",12,0,0.3],…]}` = [nom gp_…, début en s, sombre 0/1, (option) cadrage horizontal 0-1 si la source est en 16:9]. Chaque plan dure 2,5 s. Prévoir ~1 plan par 1,6 s de voix (≈ mots/4,3) et 1-2 plans de marge par partie.
 5. Dans les parties : `"clips":["gp_map1","gp_route1",…]` au lieu de kws/n (un même gp_ jamais deux fois dans une partie ; pour le réutiliser ailleurs : `"gp_route1@0.8"`). Hook, abo et outro restent sur la banque (`kws`/`n`) avec logo + counter + subscribe. Miniature : `"thumb":["rush_tv/gp_<plan parlant>.mp4",1.0,"MONTANT","LIGNE 2","LIGNE 3"]`.
 6. Ne pas créditer le créateur dans la description (consigne d'Etienne). Couper son son (fait automatiquement).
@@ -62,9 +68,8 @@ git add -A && git commit -qm "<slug>" && git -c push.negotiate=true push -q orig
 Le push sur `queue/` lance GitHub Actions (~20-30 min) : voix, montage, miniature, MP4 sur la branche `v-<slug>`, aperçu Telegram.
 
 ## 4. Attendre le MP4 (max 90 min)
-Boucle (commandes Bash de ≤ 9 min, `sleep 120` entre deux essais) :
-`git ls-remote --exit-code --heads origin v-<slug>` → présent = prêt.
-Si `log-<slug>` apparaît ou rien après 90 min : `python3 tg.py send "❌ …"` et s'arrêter.
+`cd /home/claude/rockstat-videos && bash atelier/attendre.sh v-<slug>` (timeout 540000 ms ; le rendu prend ~15-25 min, donc 2-4 appels). PRET = prêt.
+Si ECHEC, ou toujours PAS_ENCORE après 90 min : `python3 tg.py send "❌ …"` et s'arrêter.
 URL : `https://raw.githubusercontent.com/etiennemeunierlpp-oss/rockstat-videos/v-<slug>/<slug>.mp4`
 
 ## 5. Publier (Metricool)
