@@ -27,6 +27,7 @@ H=$(git -C $REPO config --get http.https://github.com/.extraheader || true)
 [ -n "$H" ] && git -C ~/rv config http.https://github.com/.extraheader "$H"
 cd ~/gta
 for f in "${todo[@]}"; do
+  python3 gameplay_cut.py "$f" || { python3 tg.py send "❌ Découpe gameplay échouée : $(basename $f)"; continue; }
   read -r S T1 T2 T3 T4 T5 < <(python3 - "$f" <<'PY'
 import json,sys
 q=json.load(open(sys.argv[1])); cfg=q["cfg"]
