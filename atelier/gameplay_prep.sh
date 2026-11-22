@@ -12,6 +12,9 @@ for f in $REPO/gameplay_req/*.json; do [ -e "$f" ] || continue
   W=/tmp/g_$ID; rm -rf $W; mkdir -p $W; cd $W
   yt-dlp -q --no-warnings -f "bv*[vcodec^=avc1][height<=1080]/bv*[height<=1080]" --write-auto-subs --sub-langs "en.*,fr.*" --sub-format vtt \
          --write-info-json -o "dl.%(ext)s" "$URL" > yt.log 2>&1 || true
+  for pc in tv mweb web_safari android_vr; do [ -n "$(ls dl.mp4 dl.webm dl.mkv 2>/dev/null)" ] && break   # YouTube bloque souvent les serveurs GitHub
+    yt-dlp -q --no-warnings --extractor-args "youtube:player_client=$pc" -f "bv*[vcodec^=avc1][height<=1080]/bv*[height<=1080]/b" --write-auto-subs --sub-langs "en.*,fr.*" --sub-format vtt \
+           --write-info-json -o "dl.%(ext)s" "$URL" >> yt.log 2>&1 || true; done
   V=$(ls dl.mp4 dl.webm dl.mkv 2>/dev/null | head -1)
   if [ -z "$V" ]; then
     (cd $REPO/atelier && python3 tg.py send "❌ Gameplay $ID : téléchargement YouTube refusé — $(tail -c 250 $W/yt.log)" 2>/dev/null) || true
@@ -32,6 +35,15 @@ for v in glob.glob("dl.*.vtt")[:1]:
         if t and t!=last: out.append(m.group(1)[3:]+" "+t); last=t
 open("transcript.txt","w").write("\n".join(out) or "(pas de sous-titres)")
 PY
+  if grep -q "pas de sous-titres" transcript.txt; then   # TikTok : pas de sous-titres -> Whisper
+    pip install -q faster-whisper >/dev/null 2>&1
+    ffmpeg -nostdin -v error -y -i "$V" -vn -ac 1 -ar 16000 a.wav && python3 - <<'PY'
+from faster_whisper import WhisperModel
+m=WhisperModel("small",device="cpu",compute_type="int8")
+seg,_=m.transcribe("a.wav",vad_filter=True)
+open("transcript.txt","w").write("\n".join(f"{int(x.start)//60:02d}:{int(x.start)%60:02d} {x.text.strip()}" for x in seg))
+PY
+  fi
   D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 src.mp4 | cut -d. -f1)
   i=0; for ((ss=0; ss<D; ss+=60)); do
     ffmpeg -nostdin -v error -y -ss $ss -t 60 -i src.mp4 -vf "fps=1/2,scale=320:-1,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='%{eif\:t+$ss\:d}s':x=4:y=4:fontsize=22:fontcolor=yellow:box=1:boxcolor=black,tile=6x5" -frames:v 1 -q:v 5 sheet_$(printf %02d $i).jpg; i=$((i+1)); done
