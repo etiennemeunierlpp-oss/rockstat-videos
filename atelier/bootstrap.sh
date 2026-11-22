@@ -3,7 +3,7 @@
 # Usage : bash /home/claude/rockstat-videos/atelier/bootstrap.sh
 set -uo pipefail
 REPO=$(cd "$(dirname "$0")/.." && pwd); A=$REPO/atelier
-G=~/gta; mkdir -p $G/tools $G/raw $G/bank $G/remotion/src $G/scripts $G/assets $G/out; cd $G
+G=~/gta; mkdir -p $G/tools $G/raw $G/bank $G/remotion/src $G/scripts $G/assets $G/out $G/rush_tv; cd $G
 export SSL_CERT_FILE=~/.ccr/ca-bundle.crt REQUESTS_CA_BUNDLE=~/.ccr/ca-bundle.crt
 dl(){ curl -sS -L -m 300 -o "$2" "https://drive.usercontent.google.com/download?id=$1&export=download&confirm=t"; }
 # 0) code depuis le dépôt (jamais depuis le Drive)
@@ -36,12 +36,25 @@ while IFS=$'\t' read -r id path; do
     0[1-6]_*/*.mp4|99_HABILLAGE/*.mp4) [ -s "bank/${path##*/}" ] || dl "$id" "bank/${path##*/}" & ;;
   esac
 done < all_ids.tsv; wait
+# 2b) plans gameplay découpés (Drive « GTA VI » du Mac / gameplay/plans, partagé par lien) -> rush_tv/gp_*.mp4
+python3 -I - <<'PY' | { while IFS=$'\t' read -r id n; do [ -s "rush_tv/$n" ] || dl "$id" "rush_tv/$n" & done; wait; }
+import re,urllib.request,html
+h=urllib.request.urlopen("https://drive.google.com/embeddedfolderview?id=15Sh5ZxqX3uy1HK7oDAuZZSnFCA2fXqJ-",timeout=60).read().decode()
+for m in re.finditer(r'<a href="([^"]+)"[^>]*>.*?<div class="flip-entry-title">([^<]*)</div>',h,re.S):
+    i=re.search(r'/d/([A-Za-z0-9_-]{20,})',m.group(1)); n=html.unescape(m.group(2))
+    if i and n.startswith("gp_") and n.endswith(".mp4"): print(f"{i.group(1)}\t{n}")
+PY
+echo "gameplay : $(ls rush_tv/gp_*.mp4 2>/dev/null | wc -l) plans"
 for k in .gemini_key .tg_token .apify_token .tg_radar_token; do [ -f $k ] && tr -d '\n\r ' < $k > $k.t && mv $k.t $k && chmod 600 $k; done
 # 3) installation
 bash setup.sh $G >/tmp/setup.log 2>&1; tail -1 /tmp/setup.log
 python3 setup_v2.py | tail -2
 grep -q "v3" remotion/src/Video.tsx && grep -q 'subscribe' remotion/src/Video.tsx || { cp remotion/src/Video.tsx remotion_Video.tsx && patch -p1 -i v3.patch && cp remotion_Video.tsx remotion/src/Video.tsx; }
 python3 fix_sans_numeros.py
+# plans gameplay gp_* : jamais pris en bouche-trou dans les autres vidéos
+sed -i 's/if f.endswith(".mp4") and n.lower() not in EXCLUDE:/if f.endswith(".mp4") and n.lower() not in EXCLUDE and not n.startswith("gp_"):/' make_video.py; grep -c 'startswith("gp_")' make_video.py
+# copie AVANT sfx v5 = rendu de la vidéo Randy du 21/11 (voix Fenrir énergique, SFX v4) -> preset "v4"
+cp make_video.py make_video_v4.py
 python3 sfx_v5.py
 # 4) index de la banque disponible
 python3 - <<'PY'
