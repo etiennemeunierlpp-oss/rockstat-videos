@@ -67,13 +67,16 @@ git add -A && git commit -qm "<slug>" && git -c push.negotiate=true push -q orig
 ```
 Le push sur `queue/` lance GitHub Actions (~20-30 min) : voix, montage, miniature, MP4 sur la branche `v-<slug>`, aperçu Telegram.
 
-## 4. Attendre le MP4 (max 90 min)
-`cd /home/claude/rockstat-videos && bash atelier/attendre.sh v-<slug>` (timeout 540000 ms ; le rendu prend ~15-25 min, donc 2-4 appels). PRET = prêt.
-Si ECHEC, ou toujours PAS_ENCORE après 90 min : `python3 tg.py send "❌ …"` et s'arrêter.
-URL : `https://raw.githubusercontent.com/etiennemeunierlpp-oss/rockstat-videos/v-<slug>/<slug>.mp4`
+## 4. FIN de la tâche « Création » (économie de tokens, 22/11)
+Après le push du §3 : S'ARRÊTER. Ne pas attendre le rendu (chaque attente relit tout le contexte, images comprises). La publication est faite par la tâche « Publication GTA 6 » (9 h 23 pour 10 h, 17 h 07 pour 18 h), qui suit le §5.
+Le slug DOIT contenir `_10h_` ou `_18h_` : c'est ainsi que la tâche Publication retrouve `queue/<slug>.json`.
 
-## 5. Publier (Metricool)
-Juste avant : `python3 tg.py read` ; si Etienne a écrit « stop » → ne rien publier, répondre « OK, bloquée » sur Telegram.
+## 5. Publier (tâche « Publication GTA 6 », légère)
+1. `cd /home/claude/rockstat-videos` ; créneau = 10h si l'heure Paris < 12 h, sinon 18h. Fichier = `ls queue/<AAAA-MM-JJ>_<créneau>_*.json` (sans suffixe -v2…). Aucun fichier → s'arrêter sans rien envoyer (la tâche Création a déjà signalé son échec).
+2. Si le slug est dans `bloquees.txt` → ne rien publier, s'arrêter.
+3. Attendre `bash atelier/attendre.sh v-<slug>` (timeout 540000 ms) ; relancer tant que PAS_ENCORE et que l'heure < créneau + 60 min. ECHEC ou trop tard → `python3 tg.py send "❌ …"` et s'arrêter.
+4. Lire seulement `cfg.title` et `cfg.caption` du JSON (`python3 -c` ou `jq`), rien d'autre. URL : `https://raw.githubusercontent.com/etiennemeunierlpp-oss/rockstat-videos/v-<slug>/<slug>.mp4`
+Juste avant : `python3 tg.py read` ; si Etienne a écrit « stop » → ne rien publier, répondre « OK, bloquée » sur Telegram. (Autres messages : les ajouter à `idees_etienne.txt` et le dire en une ligne sur Telegram.)
 Sinon `createScheduledPost` : blogId `7690282`, date = créneau (10:00 ou 18:00 Europe/Paris ; si passé : maintenant + 5 min), autoPublish true,
 providers tiktok, instagram, youtube, facebook ; media = [URL] ; `videoCoverMilliseconds: 100` ;
 tiktokData.title = accroche ; instagramData.type REEL ; youtubeData {title: accroche + " #shorts", type "short", privacy "public", category "GAMING", madeForKids false} ; facebookData.type REEL ; text = caption.
@@ -85,9 +88,9 @@ Metricool garde sa propre copie du MP4 : la branche `v-<slug>` et `queue/<slug>.
 ## Interdits
 Ne pas recréer de tâche programmée. Ne pas toucher au Drive (quota plein). Pas de Drive partagé 0AKiz…, pas d'Atelier 1bTQ…, pas de « GTA VI DATA ».
 
-## 7. Retours d'Etienne sur Telegram (tâche « Retours Telegram GTA 6 », toutes les heures 9 h-22 h)
+## 7. Retours d'Etienne sur Telegram (tâche « Retours Telegram GTA 6 », toutes les 2 h, Sonnet)
 1. Préparer comme au §0, puis `python3 tg.py read` (attention : lire VIDE la file, donc tout traiter ici). Aucun message → s'arrêter sans rien envoyer.
-2. « stop » → `getScheduledPosts` (blogId 7690282, aujourd'hui → demain) : passer le prochain post GTA en `draft: true`, répondre « OK, bloquée ».
+2. « stop » → `getScheduledPosts` (blogId 7690282, aujourd'hui → demain) : passer le prochain post GTA en `draft: true`, répondre « OK, bloquée » Si le post n'est pas encore créé (rendu en cours) : ajouter le slug du prochain créneau en fin de `bloquees.txt`, push sur main.
 3. Retour sur une vidéo (anim, son, texte, CTA…) = la dernière programmée/publiée sauf précision :
    - `python3 tg.py send "👍 Bien reçu : <résumé>. V2 en rendu, aperçu dans ~25 min."`
    - Copier `queue/<slug>.json` en `queue/<slug>-v2.json` (v3…), slug mis à jour, appliquer les retours (texte, fx, compteur…). Si le retour vaut pour toutes les vidéos (son, DA, CTA), corriger aussi `atelier/` ou ce fichier.
