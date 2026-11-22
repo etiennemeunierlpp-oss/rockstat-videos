@@ -21,7 +21,7 @@ for f in $REPO/gameplay_req/*.json; do [ -e "$f" ] || continue
     yt-dlp -q --skip-download --write-info-json -o "dl.%(ext)s" "$URL" >> yt.log 2>&1 || echo "{\"title\":\"$VID\",\"webpage_url\":\"$URL\"}" > dl.info.json
   fi
   [ -s dl.mp4 ] || yt-dlp -q --no-warnings -f "bv*[vcodec^=avc1][height<=1080]/bv*[height<=1080]" --write-auto-subs --sub-langs "en.*,fr.*" --sub-format vtt \
-         --write-info-json -o "dl.%(ext)s" "$URL" > yt.log 2>&1 || true
+         --write-info-json -o "dl.%(ext)s" "$URL" >> yt.log 2>&1 || true
   for pc in tv mweb web_safari android_vr; do [ -n "$(ls dl.mp4 dl.webm dl.mkv 2>/dev/null)" ] && break   # YouTube bloque souvent les serveurs GitHub
     yt-dlp -q --no-warnings --extractor-args "youtube:player_client=$pc" -f "bv*[vcodec^=avc1][height<=1080]/bv*[height<=1080]/b" --write-auto-subs --sub-langs "en.*,fr.*" --sub-format vtt \
            --write-info-json -o "dl.%(ext)s" "$URL" >> yt.log 2>&1 || true; done
