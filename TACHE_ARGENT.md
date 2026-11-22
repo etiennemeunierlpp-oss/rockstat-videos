@@ -38,13 +38,14 @@ Slug : `AAAA-MM-JJ_10h_<sujet-court>` ou `_18h_`. Fichier `queue/<slug>.json` :
   "sources":["…"],
   "sections":[
    {"id":"hook","text":"Dans GTA 6, …","kws":["braquage","sac"],"n":9,"fx":[{"type":"logo","at":0.0,"dur":1.5,"y":640,"width":640},{"type":"counter","to":8000,"suffix":" $","label":"…","word":"…","dur":2.2,"y":700}]},
-   {"id":"abo","text":"Abonne-toi pour avoir toutes les astuces argent facile sur GTA 6.","kws":["vice city","nuit"],"n":4,"fx":[{"type":"subscribe","at":0.0,"dur":2.6,"y":700}]},
+   {"id":"abo","text":"Abonne-toi et enregistre cette vidéo si tu veux connaître toutes les astuces argent facile dans GTA 6.","kws":["vice city","nuit"],"n":4,"fx":[{"type":"subscribe","at":0.0,"dur":2.6,"y":700}]},
    {"id":"1","text":"…","kws":["…"],"n":12,"fx":[…]},
    {"id":"outro","text":"… question … Dis-le en commentaire, et abonne-toi.","kws":["…"],"n":10,"fx":[…]}
  ]}}
 ```
 Règles :
-- **TOUJOURS `"preset":"v4"` + musique `m1_1114.mp3` offset 22** (musique, voix Fenrir énergique et SFX de la vidéo Randy qui a percé). max_shot 1,6 en format gameplay, 1,0-1,3 sinon.
+- abo = TOUJOURS exactement « Abonne-toi et enregistre cette vidéo si tu veux connaître toutes les astuces argent facile dans GTA 6. » (Etienne, 22/11).
+- **TOUJOURS `"preset":"v4"` + musique `m1_1114.mp3` offset 22** (musique, voix Fenrir énergique et SFX de la vidéo Randy qui a percé ; la voix Achird est abandonnée). max_shot 1,6 en format gameplay, 1,0-1,3 sinon.
 - Format gameplay (§1b) dès qu'une source est trouvée ; sinon format classique sur la banque (`kws`/`n`).
 - 230-280 mots (≈ 60-70 s). Hook : « Dans GTA 6, … » + promesse chiffrée. 4 à 6 parties. Outro : question + abonne-toi.
 - **Varier le format** d'une vidéo à l'autre (tuto pas à pas, top 3 méthodes, « arrête de faire ça », comparatif rentabilité, défi « 0 à 100 000 $ »), le max_shot (0,9 à 1,3) et les fx.

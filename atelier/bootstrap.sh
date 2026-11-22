@@ -36,15 +36,6 @@ while IFS=$'\t' read -r id path; do
     0[1-6]_*/*.mp4|99_HABILLAGE/*.mp4) [ -s "bank/${path##*/}" ] || dl "$id" "bank/${path##*/}" & ;;
   esac
 done < all_ids.tsv; wait
-# 2b) plans gameplay découpés (Drive « GTA VI » du Mac / gameplay/plans, partagé par lien) -> rush_tv/gp_*.mp4
-python3 -I - <<'PY' | { while IFS=$'\t' read -r id n; do [ -s "rush_tv/$n" ] || dl "$id" "rush_tv/$n" & done; wait; }
-import re,urllib.request,html
-h=urllib.request.urlopen("https://drive.google.com/embeddedfolderview?id=15Sh5ZxqX3uy1HK7oDAuZZSnFCA2fXqJ-",timeout=60).read().decode()
-for m in re.finditer(r'<a href="([^"]+)"[^>]*>.*?<div class="flip-entry-title">([^<]*)</div>',h,re.S):
-    i=re.search(r'/d/([A-Za-z0-9_-]{20,})',m.group(1)); n=html.unescape(m.group(2))
-    if i and n.startswith("gp_") and n.endswith(".mp4"): print(f"{i.group(1)}\t{n}")
-PY
-echo "gameplay : $(ls rush_tv/gp_*.mp4 2>/dev/null | wc -l) plans"
 for k in .gemini_key .tg_token .apify_token .tg_radar_token; do [ -f $k ] && tr -d '\n\r ' < $k > $k.t && mv $k.t $k && chmod 600 $k; done
 # 3) installation
 bash setup.sh $G >/tmp/setup.log 2>&1; tail -1 /tmp/setup.log

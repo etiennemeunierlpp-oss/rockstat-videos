@@ -33,7 +33,8 @@ import json,sys
 q=json.load(open(sys.argv[1])); cfg=q["cfg"]
 sys.path.insert(0,"."); from montage import Picker, check
 P=Picker(seed=q["slug"])
-if q.get("preset")!="v4": cfg["music"]="music_pack/flower.mp3"; cfg["music_offset"]=80   # preset v4 = garde la musique du fichier ; sinon musique unique (Etienne 20/11) : Flower In A Hurricane remix, départ à 1:20
+if q.get("preset","v4")=="v4": cfg.setdefault("music","music_pack/m1_1114.mp3"); cfg.setdefault("music_offset",22)   # preset v4 PAR DÉFAUT (vidéo Randy) : musique du fichier
+else: cfg["music"]="music_pack/flower.mp3"; cfg["music_offset"]=80   # preset v5 (abandonné) : musique unique (Etienne 20/11) : Flower In A Hurricane remix, départ à 1:20
 for s in cfg["sections"]:
     if not s.get("clips"): s["clips"]=P.take(s.pop("kws",["vice city"]), int(s.pop("n",12)))
     for f in s.get("fx",[]):
@@ -43,7 +44,7 @@ json.dump(cfg,open(f"scripts/{q['slug']}.json","w"),ensure_ascii=False)
 print(q["slug"],*[str(x).replace(" "," ") for x in q["thumb"]])
 PY
 )
-  if [ "$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('preset',''))" "$f")" = v4 ]; then export MV=make_video_v4.py VOICE=Fenrir; else unset MV VOICE; fi
+  if [ "$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('preset','v4'))" "$f")" = v4 ]; then export MV=make_video_v4.py VOICE=Fenrir; else unset MV VOICE; fi
   u(){ echo "${1//$' '/ }"; }
   export TG_MSG="$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('tg_msg',''))" "$f")"
   if ! bash -x video.sh "$S" "scripts/$S.json" "$(u "$T1")" "$(u "$T2")" "$(u "$T3")" "$(u "$T4")" "$(u "$T5")" > /tmp/$S.log 2>&1; then

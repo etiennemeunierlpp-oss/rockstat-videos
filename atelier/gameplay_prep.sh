@@ -63,5 +63,4 @@ PY
   cp $W/src.mp4 $W/transcript.txt $W/info.txt $W/sheet_*.jpg .
   git add src.mp4 transcript.txt info.txt sheet_*.jpg && git commit -qm "gameplay $ID" && git push -qf origin "g-$ID"
   git checkout -q main
-  (cd $REPO/atelier && python3 tg.py send "🎮 Gameplay $ID prêt ($(head -1 $W/info.txt))" 2>/dev/null) || true
 done
