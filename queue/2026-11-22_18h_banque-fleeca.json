@@ -1,0 +1,432 @@
+{
+ "slug": "2026-11-22_18h_banque-fleeca",
+ "preset": "v4",
+ "thumb": [
+  "rush_tv/gp_vault4.mp4",
+  1.0,
+  "85 000 $",
+  "EN 5 MINUTES",
+  "BANQUE FLEECA"
+ ],
+ "tg_msg": "🎬 J'ai vidé une banque Fleeca : 85 000 $ en 5 min dans GTA 6 — publication auto à 18 h sur les 4 réseaux. Réponds « stop » pour bloquer.",
+ "gameplay": {
+  "src": "g-dew3",
+  "cuts": [
+   [
+    "gp_van1",
+    0,
+    0
+   ],
+   [
+    "gp_van2",
+    2.5,
+    0
+   ],
+   [
+    "gp_entree",
+    5.5,
+    0
+   ],
+   [
+    "gp_ruelle",
+    8,
+    1
+   ],
+   [
+    "gp_ruelle2",
+    11,
+    1
+   ],
+   [
+    "gp_porte",
+    13.5,
+    0
+   ],
+   [
+    "gp_armes",
+    16,
+    0
+   ],
+   [
+    "gp_couloir",
+    18,
+    0
+   ],
+   [
+    "gp_bureau",
+    20,
+    0
+   ],
+   [
+    "gp_garde",
+    22,
+    0
+   ],
+   [
+    "gp_garde2",
+    25,
+    0
+   ],
+   [
+    "gp_garde3",
+    28,
+    0
+   ],
+   [
+    "gp_couloir2",
+    30.5,
+    0
+   ],
+   [
+    "gp_couloir3",
+    33,
+    0
+   ],
+   [
+    "gp_couloir4",
+    36,
+    0
+   ],
+   [
+    "gp_coffrefort",
+    39.5,
+    0
+   ],
+   [
+    "gp_couloir5",
+    42.5,
+    0
+   ],
+   [
+    "gp_hall",
+    45,
+    0
+   ],
+   [
+    "gp_fleeca",
+    47.5,
+    0
+   ],
+   [
+    "gp_vault1",
+    50,
+    0
+   ],
+   [
+    "gp_vault2",
+    52.5,
+    0
+   ],
+   [
+    "gp_vault3",
+    55.5,
+    0
+   ],
+   [
+    "gp_vault4",
+    58.5,
+    0
+   ],
+   [
+    "gp_vault5",
+    62,
+    0
+   ],
+   [
+    "gp_vault6",
+    65,
+    0
+   ],
+   [
+    "gp_vault7",
+    69,
+    0
+   ],
+   [
+    "gp_box1",
+    78,
+    0
+   ],
+   [
+    "gp_box2",
+    81,
+    0
+   ],
+   [
+    "gp_box3",
+    84,
+    0
+   ],
+   [
+    "gp_sortie",
+    90,
+    0
+   ],
+   [
+    "gp_sortie2",
+    93,
+    0
+   ],
+   [
+    "gp_alley",
+    97,
+    1
+   ],
+   [
+    "gp_police",
+    101.5,
+    0
+   ],
+   [
+    "gp_fuite1",
+    104,
+    0
+   ],
+   [
+    "gp_fuite2",
+    110,
+    0
+   ],
+   [
+    "gp_fuite3",
+    115,
+    0
+   ],
+   [
+    "gp_fence1",
+    120,
+    1
+   ],
+   [
+    "gp_fence2",
+    123,
+    1
+   ],
+   [
+    "gp_fence3",
+    127,
+    1
+   ]
+  ]
+ },
+ "cfg": {
+  "title": "J'ai vidé une banque Fleeca : 85 000 $ en 5 min dans GTA 6",
+  "style": "v2",
+  "max_shot": 1.6,
+  "music": "music_pack/m1_1114.mp3",
+  "music_offset": 22,
+  "music_volume": 0.12,
+  "logo": "assets/logo_gta6.webp",
+  "handle": "@rockstat433",
+  "caption": "Le braquage de banque qui rapporte 85 000 $ en 5 minutes dans GTA 6 🏦 Tu l'as déjà tenté ? #gta6 #gtavi #gta #gta6news #lucia #argentgta6",
+  "sources": [
+   "Gameplay YouTube Dew3lNAXzHY (22/11/2026)",
+   "games.gg - GTA 6 bank heists guide"
+  ],
+  "sections": [
+   {
+    "id": "hook",
+    "text": "Dans GTA 6, ce joueur a vidé une banque Fleeca en 5 minutes et il est reparti avec 85 000 dollars. Et tout a commencé en suivant un simple fourgon blindé.",
+    "kws": [
+     "braquage",
+     "sac",
+     "vice city"
+    ],
+    "n": 9,
+    "fx": [
+     {
+      "type": "logo",
+      "at": 0.0,
+      "dur": 1.5,
+      "y": 640,
+      "width": 640
+     },
+     {
+      "type": "counter",
+      "to": 85000,
+      "suffix": " $",
+      "label": "EN 5 MINUTES",
+      "word": "85",
+      "dur": 2.2,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "abo",
+    "text": "Abonne-toi et enregistre cette vidéo si tu veux connaître toutes les astuces argent facile dans GTA 6.",
+    "kws": [
+     "vice city",
+     "nuit"
+    ],
+    "n": 4,
+    "fx": [
+     {
+      "type": "subscribe",
+      "at": 0.0,
+      "dur": 2.6,
+      "y": 700,
+      "handle": "@rockstat433",
+      "logo": "assets/logo_rs.png"
+     }
+    ]
+   },
+   {
+    "id": "1",
+    "text": "Roule dans Vice City jusqu'à repérer un fourgon blindé. Suis-le : selon lui, il s'arrête devant cette agence Fleeca, à Ocean Beach, et le convoyeur entre avec une grosse mallette. C'est ton signal.",
+    "clips": [
+     "gp_van1",
+     "gp_van2",
+     "gp_entree",
+     "gp_ruelle",
+     "gp_ruelle2",
+     "gp_van1@0.6"
+    ],
+    "fx": [
+     {
+      "type": "label",
+      "text": "🚚 FOURGON BLINDÉ",
+      "word": "fourgon",
+      "dur": 1.6,
+      "y": 640
+     },
+     {
+      "type": "label",
+      "text": "📍 OCEAN BEACH",
+      "word": "Ocean",
+      "dur": 1.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "2",
+    "text": "Ne passe pas par la grande porte. Fais le tour par la ruelle, pose un explosif sur la porte de service à l'arrière, et sors une arme silencieuse. À l'intérieur, les gardes sont lents à réagir : avance bureau par bureau.",
+    "clips": [
+     "gp_porte",
+     "gp_armes",
+     "gp_couloir",
+     "gp_bureau",
+     "gp_garde",
+     "gp_garde2",
+     "gp_garde3",
+     "gp_couloir2"
+    ],
+    "fx": [
+     {
+      "type": "alert",
+      "text": "💥 PORTE ARRIÈRE",
+      "word": "explosif",
+      "dur": 1.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "3",
+    "text": "Le coffre est bien caché. Il a tourné plusieurs minutes dans les couloirs avant de trouver la porte blindée, au fond, derrière le hall. Garde ça en tête pour gagner du temps.",
+    "clips": [
+     "gp_couloir3",
+     "gp_couloir4",
+     "gp_coffrefort",
+     "gp_couloir5",
+     "gp_hall",
+     "gp_fleeca",
+     "gp_vault1"
+    ],
+    "fx": [
+     {
+      "type": "sticker",
+      "text": "🔐 AU FOND DU HALL",
+      "word": "blindée",
+      "dur": 1.8,
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "4",
+    "text": "Et là, jackpot : personne dedans, et des liasses de billets marqués empilées partout. Le compteur s'envole. Ramasse tout, puis ouvre les dizaines de coffres individuels autour. Trop de sacs pour un seul perso ? Passe-les à ton partenaire.",
+    "clips": [
+     "gp_vault2",
+     "gp_vault3",
+     "gp_vault4",
+     "gp_vault5",
+     "gp_vault6",
+     "gp_vault7",
+     "gp_box1",
+     "gp_box2",
+     "gp_box3"
+    ],
+    "fx": [
+     {
+      "type": "big",
+      "text": "JACKPOT",
+      "word": "jackpot",
+      "dur": 1.5,
+      "y": 640
+     },
+     {
+      "type": "emoji",
+      "text": "💰",
+      "word": "coffres",
+      "dur": 1.5,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "5",
+    "text": "La police arrive très vite. Son erreur : il s'était garé devant. Gare-toi derrière, près de la porte que tu as fait sauter, et tu fileras sans casse. Ensuite, direction ton receleur pour tout revendre : environ 85 000 dollars en 5 minutes.",
+    "clips": [
+     "gp_sortie",
+     "gp_sortie2",
+     "gp_police",
+     "gp_alley",
+     "gp_fuite1",
+     "gp_fuite2",
+     "gp_fuite3",
+     "gp_fence1",
+     "gp_fence2",
+     "gp_fence3"
+    ],
+    "fx": [
+     {
+      "type": "stars",
+      "word": "police",
+      "dur": 1.6,
+      "y": 640
+     },
+     {
+      "type": "counter",
+      "to": 85000,
+      "suffix": " $",
+      "label": "CHEZ LE RECELEUR",
+      "word": "85",
+      "dur": 2.0,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "outro",
+    "text": "Tu préfères braquer une banque ou faire des glitchs tranquilles ? Dis-le en commentaire, et abonne-toi.",
+    "kws": [
+     "braquage",
+     "fuite",
+     "nuit"
+    ],
+    "n": 6,
+    "fx": [
+     {
+      "type": "emoji",
+      "text": "🏦",
+      "word": "banque",
+      "dur": 1.5,
+      "y": 640
+     }
+    ]
+   }
+  ]
+ }
+}
