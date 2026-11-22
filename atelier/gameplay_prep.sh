@@ -10,7 +10,17 @@ for f in $REPO/gameplay_req/*.json; do [ -e "$f" ] || continue
   read -r ID URL < <(python3 -c "import json,sys;q=json.load(open(sys.argv[1]));print(q['id'],q['url'])" "$f")
   git -C $REPO ls-remote --exit-code --heads origin "g-$ID" >/dev/null 2>&1 && continue
   W=/tmp/g_$ID; rm -rf $W; mkdir -p $W; cd $W
-  yt-dlp -q --no-warnings -f "bv*[vcodec^=avc1][height<=1080]/bv*[height<=1080]" --write-auto-subs --sub-langs "en.*,fr.*" --sub-format vtt \
+  if echo "$URL" | grep -qE "youtube\.com|youtu\.be"; then   # YouTube bloque GitHub -> téléchargement via Apify (epctex, 0,00075 $/s en 1080p)
+    VID=$(python3 -c "import re,sys;print(re.search(r'(?:v=|youtu\.be/|shorts/)([\w-]{11})',sys.argv[1]).group(1))" "$URL")
+    AT=$(curl -sSL "https://drive.usercontent.google.com/download?id=1hyGTkqB1Zcjjnq2n-fJ1IeLA_e_vS1k6&export=download&confirm=t" | tr -d '\n\r ')
+    curl -s -m 600 -X POST -H "Authorization: Bearer $AT" -H "Content-Type: application/json" \
+      "https://api.apify.com/v2/acts/epctex~youtube-video-downloader/run-sync-get-dataset-items?timeout=580" \
+      -d "{\"videoIds\":[\"$VID\"],\"quality\":\"1080\",\"storageType\":\"apify\",\"apifyAutoDelete\":true}" > apify.json
+    U=$(python3 -c "import json;d=json.load(open('apify.json'));print(d[0]['output']['url'] if d and d[0].get('status')=='succeeded' else '')" 2>>yt.log)
+    [ -n "$U" ] && curl -sSL -o dl.mp4 "$U" || cat apify.json >> yt.log
+    yt-dlp -q --skip-download --write-info-json -o "dl.%(ext)s" "$URL" >> yt.log 2>&1 || echo "{\"title\":\"$VID\",\"webpage_url\":\"$URL\"}" > dl.info.json
+  fi
+  [ -s dl.mp4 ] || yt-dlp -q --no-warnings -f "bv*[vcodec^=avc1][height<=1080]/bv*[height<=1080]" --write-auto-subs --sub-langs "en.*,fr.*" --sub-format vtt \
          --write-info-json -o "dl.%(ext)s" "$URL" > yt.log 2>&1 || true
   for pc in tv mweb web_safari android_vr; do [ -n "$(ls dl.mp4 dl.webm dl.mkv 2>/dev/null)" ] && break   # YouTube bloque souvent les serveurs GitHub
     yt-dlp -q --no-warnings --extractor-args "youtube:player_client=$pc" -f "bv*[vcodec^=avc1][height<=1080]/bv*[height<=1080]/b" --write-auto-subs --sub-langs "en.*,fr.*" --sub-format vtt \
