@@ -508,6 +508,12 @@ def render_remotion(cfg, sections, bounds, groups, voice_wav, total, out, work, 
             item = {k: v for k, v in fx.items() if k not in ("at", "word", "dur")}
             item.update({"start": F(t), "dur": max(F(min(d, total - t)), 6)})
             FX.append(item)
+    # aucun effet par-dessus le logo GTA VI (Etienne 23/11) : ce qui démarre pendant le logo attend sa fin
+    for lg in [x for x in FX if x.get("type") == "logo"]:
+        end = lg["start"] + lg["dur"]
+        for x in FX:
+            if x is not lg and lg["start"] <= x["start"] < end:
+                shift = end - x["start"]; x["start"] = end; x["dur"] = max(x["dur"] - shift, 18)
     sfx = [{"src": "sfx/intro_whoosh.wav", "frame": 0, "volume": 0.7}]       # ouverture : whoosh + zoom
     card_starts = {c["start"] for c in cards}
     for s in S[1:]:

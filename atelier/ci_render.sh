@@ -40,6 +40,7 @@ for s in cfg["sections"]:
     if gp:   # format gameplay (Etienne 23/11) : TOUTES les parties sur le gameplay, jamais la banque du Drive
         assert s.get("clips") and all(c.split("@")[0].split("|")[0].startswith("gp_") for c in s["clips"]), f"partie {s['id']} : clips gp_ obligatoires"
     if not s.get("clips"): s["clips"]=P.take(s.pop("kws",["vice city"]), int(s.pop("n",12)))
+    s["fx"]=[f for f in s.get("fx",[]) if not (f.get("type")=="image" and "map" in f.get("src",""))]   # image de carte interdite (Etienne 23/11) : on montre la carte du gameplay
     for f in s.get("fx",[]):
         if f.get("type")=="subscribe": f.setdefault("logo","assets/logo_rs.png"); f.setdefault("handle","@rockstat433")
 assert not check(cfg), check(cfg)

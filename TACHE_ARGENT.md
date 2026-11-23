@@ -34,8 +34,9 @@ La vidéo qui a percé (Wish List de Randy, 21/11) + le test gameplay du 22/11 :
 
 ### Montage (modèle : reel koumaoff « Urus doré cheaté », Etienne 23/11)
 - **Un plan par idée, cut sur le mot** : chaque plan montre littéralement ce que dit la voix à cet instant (« ouvre ta map » → carte ; « discret » → perso accroupi ; « barre-toi » → fuite en voiture ; montant → écran d'argent du jeu). Les `clips` d'une partie sont dans l'ordre exact du texte.
+- **Aucun effet par-dessus le logo** (0-1,5 s) : le rendu décale automatiquement le counter après le logo.
 - **Rythme** : `max_shot` 1,0 (0,8-1,2), jamais un plan de plus de 1,5 s, jamais d'image fixe (zoom lent automatique).
-- **Hook** : 1er plan = l'objet/le résultat promis en pleine action (voiture qui drifte, sac d'argent, compteur), logo GTA VI en pop à 0 s ; la phrase du hook dit le sujet en moins de 1,5 s. Miniature (1re frame) = ce même plan.
+- **Hook = ARGENT d'entrée** (Etienne 23/11) : la 1re phrase parle tout de suite d'argent facile avec le montant (« Dans GTA 6, tu peux te faire 4 000 dollars toutes les 2 minutes sans rien faire. »), puis le comment. Jamais d'intro sur un lieu ou un bâtiment. 1er plan = l'argent ou le résultat promis en pleine action (voiture qui drifte, sac d'argent, compteur), logo GTA VI en pop à 0 s ; la phrase du hook dit le sujet en moins de 1,5 s. Miniature (1re frame) = ce même plan.
 - **Recadrage** : fait par `gameplay_cut.py` (bande centrale 1080x1600, sous-titres du créateur coupés, fond flouté). Choisir x pour garder le sujet (perso, voiture) au centre ; zoom 1,2-1,4 pour un gros plan. HUD du jeu (minimap, argent, « mission réussie ») = bonus, il prouve que c'est du vrai jeu.
 - **Son** : musique m1_1114 présente tout le long sous la voix (`music_volume` 0,16) ; whoosh seulement aux changements de partie (les coupes rapides restent sans son, retour d'Etienne).
 - **Fin** : l'outro boucle sur un plan du hook et finit par « Envoie ça à un pote qui joue à GTA 6, et abonne-toi. »
@@ -62,9 +63,9 @@ Règles :
 - abo = TOUJOURS exactement « Abonne-toi et enregistre cette vidéo si tu veux connaître toutes les astuces argent facile dans GTA 6. » (Etienne, 22/11).
 - **TOUJOURS `"preset":"v4"` + musique `m1_1114.mp3` offset 22** (musique, voix Fenrir énergique et SFX de la vidéo Randy qui a percé ; la voix Achird est abandonnée). max_shot 1,0 (0,8-1,2) ; music_volume 0,16.
 - Format gameplay (§1b) TOUJOURS : la banque du Drive (`kws`/`n`) n'est plus utilisée (Etienne, 23/11).
-- 230-280 mots (≈ 60-70 s). Hook : « Dans GTA 6, … » + promesse chiffrée. 4 à 6 parties. Outro : question + « Envoie ça à un pote qui joue à GTA 6, et abonne-toi. »
+- 230-280 mots (≈ 60-70 s). Hook : « Dans GTA 6, tu peux te faire <montant> … » (l'argent dans la 1re phrase). 4 à 6 parties. Outro : question + « Envoie ça à un pote qui joue à GTA 6, et abonne-toi. »
 - **Varier le format** d'une vidéo à l'autre (tuto pas à pas, top 3 méthodes, « arrête de faire ça », comparatif rentabilité, défi « 0 à 100 000 $ »), et les fx.
-- fx 1-2 par partie : sticker, label, big, alert, counter (tout montant cité), stars, source, image (`assets/map_gta6.png` pour un lieu), emoji. `"word"` = mot du texte qui déclenche l'effet. y 640/700 alternés. Jamais de layout card, aucune numérotation.
+- fx 1-2 par partie : sticker, label, big, alert, counter (tout montant cité), stars, source, emoji. **Jamais l'image de carte `assets/map_gta6.png`** (Etienne 23/11, elle cache le montage ; le rendu la retire) : pour un lieu, on montre la carte du jeu dans le gameplay (plans gp_ de la map). `"word"` = mot du texte qui déclenche l'effet. y 640/700 alternés. Jamais de layout card, aucune numérotation.
 - Faits sourcés ; rumeur/méthode non vérifiée = « selon <source> ».
 
 ## 3. Envoyer au rendu
