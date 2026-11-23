@@ -12,7 +12,7 @@
  "cfg": {
   "title": "Le glitch de la camionnette Apollo dans GTA 6",
   "style": "v2",
-  "max_shot": 1.0,
+  "max_shot": 1.1,
   "music": "music_pack/m1_1114.mp3",
   "music_offset": 22,
   "music_volume": 0.16,
@@ -46,21 +46,15 @@
     ],
     "clips": [
      "gp_hook",
-     "gp_t520@1.3",
-     "gp_t250",
-     "gp_t275",
-     "gp_t475",
-     "gp_t150",
-     "gp_t150@1.3",
-     "gp_t175",
-     "gp_t350",
-     "gp_t550",
-     "gp_t575",
-     "gp_t300",
-     "gp_t300@1.3",
-     "gp_t600",
-     "gp_t625",
-     "gp_t325"
+     "gp_t47",
+     "gp_t48",
+     "gp_t49",
+     "gp_t16",
+     "gp_t17",
+     "gp_t55",
+     "gp_t56",
+     "gp_t61",
+     "gp_t62"
     ]
    },
    {
@@ -75,37 +69,29 @@
      }
     ],
     "clips": [
-     "gp_t000",
-     "gp_t025",
-     "gp_t425",
-     "gp_t425@1.3",
-     "gp_t200",
-     "gp_t200@1.3",
-     "gp_t050",
-     "gp_t075",
-     "gp_t100@1.3"
+     "gp_t00",
+     "gp_t01",
+     "gp_t02",
+     "gp_t03",
+     "gp_t04",
+     "gp_t05"
     ]
    },
    {
     "id": "1",
     "text": "Va à la carrière Apollo Aggregates. Devant le hangar, tu trouves une camionnette blanche Apollo. Ouvre les portes arrière : tu peux y stocker jusqu'à 10 sacs de butin, alors démarre-la et garde-la à côté.",
     "clips": [
-     "gp_t100",
-     "gp_t100@1.3",
-     "gp_t125",
-     "gp_t125@1.3",
-     "gp_t150",
-     "gp_t150@1.3",
-     "gp_t175",
-     "gp_t175@1.3",
-     "gp_t200",
-     "gp_t200@1.3",
-     "gp_t550",
-     "gp_t575",
-     "gp_t575@1.3",
-     "gp_t600",
-     "gp_t425",
-     "gp_t350@1.3"
+     "gp_t08",
+     "gp_t09",
+     "gp_t10",
+     "gp_t11",
+     "gp_t12",
+     "gp_t14",
+     "gp_t15",
+     "gp_t18",
+     "gp_t19",
+     "gp_t20",
+     "gp_t21"
     ],
     "fx": [
      {
@@ -128,22 +114,17 @@
     "id": "2",
     "text": "Entre dans le bâtiment juste derrière. La première fois, c'est rempli de butin, fouille chaque pièce, et il y a même un coffre-fort plein de cash. Rien que ce premier passage rapporte plus de 4 000 dollars.",
     "clips": [
-     "gp_t225",
-     "gp_t225@1.3",
-     "gp_t250",
-     "gp_t250@1.3",
-     "gp_t275",
-     "gp_t275@1.3",
-     "gp_t475",
-     "gp_t475@1.3",
-     "gp_t500",
-     "gp_t300",
-     "gp_t300@1.3",
-     "gp_t325",
-     "gp_t325@1.3",
-     "gp_t350",
-     "gp_t000",
-     "gp_t025@1.3"
+     "gp_t22",
+     "gp_t23",
+     "gp_t24",
+     "gp_t25",
+     "gp_t26",
+     "gp_t27",
+     "gp_t28",
+     "gp_t29",
+     "gp_t30",
+     "gp_t31",
+     "gp_t32"
     ],
     "fx": [
      {
@@ -168,19 +149,17 @@
     "id": "3",
     "text": "Range ton sac à l'arrière de la camionnette. Ensuite, mets un repère sur la centrale électrique près de Hamlet, roule jusque-là, puis fais demi-tour vers la carrière.",
     "clips": [
-     "gp_t350",
-     "gp_t350@1.3",
-     "gp_t375",
-     "gp_t375@1.3",
-     "gp_t400",
-     "gp_t400@1.3",
-     "gp_t425",
-     "gp_t425@1.3",
-     "gp_t450",
-     "gp_t125",
-     "gp_t150",
-     "gp_t520",
-     "gp_t520@1.3"
+     "gp_t33",
+     "gp_t34",
+     "gp_t35",
+     "gp_t36",
+     "gp_t37",
+     "gp_t38",
+     "gp_t39",
+     "gp_t40",
+     "gp_t41",
+     "gp_t42",
+     "gp_t43"
     ],
     "fx": [
      {
@@ -196,20 +175,16 @@
     "id": "4",
     "text": "C'est la distance parfaite : assez loin pour que le butin réapparaisse, mais pas trop pour ne pas perdre ton temps. Presque tout revient, alors tu refais le plein de sacs, encore et encore.",
     "clips": [
-     "gp_t425",
-     "gp_t450",
-     "gp_t475",
-     "gp_t475@1.3",
-     "gp_t500",
-     "gp_t500@1.3",
-     "gp_t250@1.3",
-     "gp_t520",
-     "gp_t550",
-     "gp_t550@1.3",
-     "gp_t575",
-     "gp_t575@1.3",
-     "gp_t350@1.3",
-     "gp_t325"
+     "gp_t44",
+     "gp_t45",
+     "gp_t46",
+     "gp_t50",
+     "gp_t51",
+     "gp_t53",
+     "gp_t54",
+     "gp_t57",
+     "gp_t58",
+     "gp_t59"
     ],
     "fx": [
      {
@@ -225,18 +200,14 @@
     "id": "5",
     "text": "Quand la camionnette est pleine avec ses 10 sacs, va tout revendre d'un coup. Et le meilleur, c'est que tu peux recommencer autant de fois que tu veux.",
     "clips": [
-     "gp_t600",
-     "gp_t600@1.3",
-     "gp_t625",
-     "gp_t625@1.3",
-     "gp_t575",
-     "gp_t300",
-     "gp_t300@1.3",
-     "gp_t150",
-     "gp_t425",
-     "gp_t225",
-     "gp_t550",
-     "gp_t350"
+     "gp_t60",
+     "gp_t63",
+     "gp_t64",
+     "gp_t65",
+     "gp_t13",
+     "gp_t06",
+     "gp_t07",
+     "gp_t52"
     ],
     "fx": [
      {
@@ -267,17 +238,14 @@
      }
     ],
     "clips": [
-     "gp_t475",
-     "gp_t300",
-     "gp_t350",
-     "gp_t425@1.3",
-     "gp_t550@1.3",
-     "gp_t600",
-     "gp_t175",
-     "gp_t200",
-     "gp_hook@0.5",
-     "gp_t520",
-     "gp_t025"
+     "gp_t30@1.0",
+     "gp_t44@1.0",
+     "gp_t36@1.0",
+     "gp_t20@1.0",
+     "gp_t57@1.0",
+     "gp_t12@1.0",
+     "gp_t05@1.0",
+     "gp_hook@0.5"
     ]
    }
   ]
@@ -293,138 +261,333 @@
     1.25
    ],
    [
-    "gp_t000",
-    0.0,
+    "gp_t00",
+    0,
     0
    ],
    [
-    "gp_t025",
-    2.5,
+    "gp_t01",
+    1,
     0
    ],
    [
-    "gp_t050",
-    5.0,
+    "gp_t02",
+    2,
     0
    ],
    [
-    "gp_t075",
-    7.5,
+    "gp_t03",
+    3,
     0
    ],
    [
-    "gp_t100",
-    10.0,
+    "gp_t04",
+    4,
     0
    ],
    [
-    "gp_t125",
-    12.5,
+    "gp_t05",
+    5,
     0
    ],
    [
-    "gp_t150",
-    15.0,
+    "gp_t06",
+    6,
     0
    ],
    [
-    "gp_t175",
-    17.5,
+    "gp_t07",
+    7,
     0
    ],
    [
-    "gp_t200",
-    20.0,
+    "gp_t08",
+    8,
     0
    ],
    [
-    "gp_t225",
-    22.5,
+    "gp_t09",
+    9,
+    0
+   ],
+   [
+    "gp_t10",
+    10,
+    0
+   ],
+   [
+    "gp_t11",
+    11,
+    0
+   ],
+   [
+    "gp_t12",
+    12,
+    0
+   ],
+   [
+    "gp_t13",
+    13,
+    0
+   ],
+   [
+    "gp_t14",
+    14,
+    0
+   ],
+   [
+    "gp_t15",
+    15,
+    0
+   ],
+   [
+    "gp_t16",
+    16,
+    0
+   ],
+   [
+    "gp_t17",
+    17,
+    0
+   ],
+   [
+    "gp_t18",
+    18,
+    0
+   ],
+   [
+    "gp_t19",
+    19,
+    0
+   ],
+   [
+    "gp_t20",
+    20,
+    0
+   ],
+   [
+    "gp_t21",
+    21,
+    0
+   ],
+   [
+    "gp_t22",
+    22,
     1
    ],
    [
-    "gp_t250",
-    25.0,
+    "gp_t23",
+    23,
     1
    ],
    [
-    "gp_t275",
-    27.5,
+    "gp_t24",
+    24,
     1
    ],
    [
-    "gp_t300",
-    30.0,
-    0
-   ],
-   [
-    "gp_t325",
-    32.5,
-    0
-   ],
-   [
-    "gp_t350",
-    35.0,
-    0
-   ],
-   [
-    "gp_t375",
-    37.5,
-    0
-   ],
-   [
-    "gp_t400",
-    40.0,
-    0
-   ],
-   [
-    "gp_t425",
-    42.5,
-    0
-   ],
-   [
-    "gp_t450",
-    45.0,
-    0
-   ],
-   [
-    "gp_t475",
-    47.5,
+    "gp_t25",
+    25,
     1
    ],
    [
-    "gp_t500",
-    50.0,
+    "gp_t26",
+    26,
     1
    ],
    [
-    "gp_t525",
-    52.5,
+    "gp_t27",
+    27,
+    1
+   ],
+   [
+    "gp_t28",
+    28,
+    1
+   ],
+   [
+    "gp_t29",
+    29,
+    1
+   ],
+   [
+    "gp_t30",
+    30,
     0
    ],
    [
-    "gp_t550",
-    55.0,
+    "gp_t31",
+    31,
     0
    ],
    [
-    "gp_t575",
-    57.5,
+    "gp_t32",
+    32,
     0
    ],
    [
-    "gp_t600",
-    60.0,
+    "gp_t33",
+    33,
     0
    ],
    [
-    "gp_t625",
-    62.5,
+    "gp_t34",
+    34,
     0
    ],
    [
-    "gp_t650",
-    65.0,
+    "gp_t35",
+    35,
+    0
+   ],
+   [
+    "gp_t36",
+    36,
+    0
+   ],
+   [
+    "gp_t37",
+    37,
+    0
+   ],
+   [
+    "gp_t38",
+    38,
+    0
+   ],
+   [
+    "gp_t39",
+    39,
+    0
+   ],
+   [
+    "gp_t40",
+    40,
+    0
+   ],
+   [
+    "gp_t41",
+    41,
+    0
+   ],
+   [
+    "gp_t42",
+    42,
+    0
+   ],
+   [
+    "gp_t43",
+    43,
+    0
+   ],
+   [
+    "gp_t44",
+    44,
+    0
+   ],
+   [
+    "gp_t45",
+    45,
+    0
+   ],
+   [
+    "gp_t46",
+    46,
+    1
+   ],
+   [
+    "gp_t47",
+    47,
+    1
+   ],
+   [
+    "gp_t48",
+    48,
+    1
+   ],
+   [
+    "gp_t49",
+    49,
+    1
+   ],
+   [
+    "gp_t50",
+    50,
+    1
+   ],
+   [
+    "gp_t51",
+    51,
+    0
+   ],
+   [
+    "gp_t52",
+    52,
+    0
+   ],
+   [
+    "gp_t53",
+    53,
+    0
+   ],
+   [
+    "gp_t54",
+    54,
+    0
+   ],
+   [
+    "gp_t55",
+    55,
+    0
+   ],
+   [
+    "gp_t56",
+    56,
+    0
+   ],
+   [
+    "gp_t57",
+    57,
+    0
+   ],
+   [
+    "gp_t58",
+    58,
+    0
+   ],
+   [
+    "gp_t59",
+    59,
+    0
+   ],
+   [
+    "gp_t60",
+    60,
+    0
+   ],
+   [
+    "gp_t61",
+    61,
+    0
+   ],
+   [
+    "gp_t62",
+    62,
+    0
+   ],
+   [
+    "gp_t63",
+    63,
+    0
+   ],
+   [
+    "gp_t64",
+    64,
+    0
+   ],
+   [
+    "gp_t65",
+    65,
     0
    ]
   ]
