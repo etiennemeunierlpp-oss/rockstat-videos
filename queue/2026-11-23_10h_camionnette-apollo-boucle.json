@@ -1,0 +1,430 @@
+{
+ "slug": "2026-11-23_10h_camionnette-apollo-boucle",
+ "preset": "v4",
+ "thumb": [
+  "rush_tv/gp_coffre1.mp4",
+  1.0,
+  "4 000 $ PAR TOUR",
+  "BUTIN INFINI",
+  "CAMIONNETTE APOLLO"
+ ],
+ "tg_msg": "🎬 Le glitch de la camionnette Apollo — publication auto à 10 h sur les 4 réseaux. Réponds « stop » pour bloquer.",
+ "cfg": {
+  "title": "Le glitch de la camionnette Apollo dans GTA 6",
+  "style": "v2",
+  "max_shot": 1.6,
+  "music": "music_pack/m1_1114.mp3",
+  "music_offset": 22,
+  "music_volume": 0.12,
+  "logo": "assets/logo_gta6.webp",
+  "handle": "@rockstat433",
+  "caption": "Ce bâtiment se remplit tout seul : 10 sacs de butin en boucle avec la camionnette Apollo 💰 Tu l'as déjà testé ? #gta6 #gtavi #gta #gta6news #lucia #argentgta6",
+  "sources": [
+   "https://www.youtube.com/watch?v=KV8ptd3U7UM"
+  ],
+  "gameplay": {
+   "src": "g-KV8ptd3U7UM",
+   "cuts": [
+    [
+     "gp_cash1",
+     0,
+     0
+    ],
+    [
+     "gp_cash2",
+     3,
+     0
+    ],
+    [
+     "gp_map1",
+     8,
+     0
+    ],
+    [
+     "gp_map2",
+     10,
+     0
+    ],
+    [
+     "gp_map3",
+     12,
+     0
+    ],
+    [
+     "gp_arr1",
+     13.5,
+     0
+    ],
+    [
+     "gp_van1",
+     15.5,
+     0
+    ],
+    [
+     "gp_van2",
+     17.5,
+     0
+    ],
+    [
+     "gp_van3",
+     19.5,
+     0
+    ],
+    [
+     "gp_sac1",
+     21.5,
+     1
+    ],
+    [
+     "gp_int1",
+     23.5,
+     1
+    ],
+    [
+     "gp_int2",
+     25,
+     1
+    ],
+    [
+     "gp_int3",
+     26.5,
+     1
+    ],
+    [
+     "gp_int4",
+     28,
+     1
+    ],
+    [
+     "gp_coffre1",
+     29.5,
+     0
+    ],
+    [
+     "gp_coffre2",
+     31,
+     0
+    ],
+    [
+     "gp_sortie1",
+     32.5,
+     0
+    ],
+    [
+     "gp_depot1",
+     34,
+     0
+    ],
+    [
+     "gp_depot2",
+     35.5,
+     0
+    ],
+    [
+     "gp_depot3",
+     37,
+     0
+    ],
+    [
+     "gp_ping1",
+     38.5,
+     0
+    ],
+    [
+     "gp_ping2",
+     40,
+     0
+    ],
+    [
+     "gp_route1",
+     41.5,
+     0
+    ],
+    [
+     "gp_route2",
+     43,
+     0
+    ],
+    [
+     "gp_route3",
+     44.5,
+     0
+    ],
+    [
+     "gp_retour1",
+     46,
+     1
+    ],
+    [
+     "gp_retour2",
+     47.5,
+     0
+    ],
+    [
+     "gp_retour3",
+     49,
+     0
+    ],
+    [
+     "gp_retour4",
+     50.5,
+     0
+    ],
+    [
+     "gp_van51",
+     52,
+     0
+    ],
+    [
+     "gp_van52",
+     53.5,
+     0
+    ],
+    [
+     "gp_depot51",
+     55,
+     0
+    ],
+    [
+     "gp_depot52",
+     56.5,
+     0
+    ],
+    [
+     "gp_depot53",
+     58,
+     0
+    ],
+    [
+     "gp_menu1",
+     60,
+     0
+    ],
+    [
+     "gp_menu2",
+     61.5,
+     0
+    ],
+    [
+     "gp_menu3",
+     63,
+     0
+    ],
+    [
+     "gp_menu4",
+     64.5,
+     0
+    ]
+   ]
+  },
+  "sections": [
+   {
+    "id": "hook",
+    "text": "Dans GTA 6, il y a un bâtiment qui se remplit tout seul. Et avec la camionnette garée juste devant, tu peux le vider en boucle et te faire plus de 4 000 dollars à chaque tour.",
+    "kws": [
+     "braquage",
+     "sac"
+    ],
+    "n": 9,
+    "fx": [
+     {
+      "type": "logo",
+      "at": 0.0,
+      "dur": 1.5,
+      "y": 640,
+      "width": 640
+     },
+     {
+      "type": "counter",
+      "to": 4000,
+      "suffix": " $",
+      "label": "PAR TOUR",
+      "word": "4 000",
+      "dur": 2.2,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "abo",
+    "text": "Abonne-toi et enregistre cette vidéo si tu veux connaître toutes les astuces argent facile dans GTA 6.",
+    "kws": [
+     "vice city",
+     "nuit"
+    ],
+    "n": 4,
+    "fx": [
+     {
+      "type": "subscribe",
+      "at": 0.0,
+      "dur": 2.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "1",
+    "text": "Va à la carrière Apollo Aggregates. Devant le hangar, tu trouves une camionnette blanche Apollo. Ouvre les portes arrière : tu peux y stocker jusqu'à 10 sacs de butin, alors démarre-la et garde-la à côté.",
+    "clips": [
+     "gp_map1",
+     "gp_map2",
+     "gp_map3",
+     "gp_arr1",
+     "gp_van1",
+     "gp_van2",
+     "gp_van3",
+     "gp_sac1",
+     "gp_depot1@0.3",
+     "gp_cash1"
+    ],
+    "fx": [
+     {
+      "type": "image",
+      "src": "assets/map_gta6.png",
+      "word": "Apollo",
+      "dur": 1.8,
+      "y": 640
+     },
+     {
+      "type": "big",
+      "text": "10 SACS",
+      "word": "10",
+      "dur": 1.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "2",
+    "text": "Entre dans le bâtiment juste derrière. La première fois, c'est rempli de butin, fouille chaque pièce, et il y a même un coffre-fort plein de cash. Rien que ce premier passage rapporte plus de 4 000 dollars.",
+    "clips": [
+     "gp_int1",
+     "gp_int2",
+     "gp_int3",
+     "gp_int4",
+     "gp_coffre1",
+     "gp_coffre2",
+     "gp_sortie1",
+     "gp_cash2",
+     "gp_sac1@0.8",
+     "gp_retour3@0.4"
+    ],
+    "fx": [
+     {
+      "type": "alert",
+      "text": "COFFRE-FORT",
+      "word": "coffre-fort",
+      "dur": 1.6,
+      "y": 640
+     },
+     {
+      "type": "counter",
+      "to": 4000,
+      "suffix": " $",
+      "label": "1ER PASSAGE",
+      "word": "4 000",
+      "dur": 2.0,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "3",
+    "text": "Range ton sac à l'arrière de la camionnette. Ensuite, mets un repère sur la centrale électrique près de Hamlet, roule jusque-là, puis fais demi-tour vers la carrière.",
+    "clips": [
+     "gp_depot1",
+     "gp_depot2",
+     "gp_depot3",
+     "gp_ping1",
+     "gp_ping2",
+     "gp_route1",
+     "gp_route2",
+     "gp_route3",
+     "gp_van2@0.6"
+    ],
+    "fx": [
+     {
+      "type": "label",
+      "text": "CENTRALE PRÈS DE HAMLET",
+      "word": "centrale",
+      "dur": 1.8,
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "4",
+    "text": "C'est la distance parfaite : assez loin pour que le butin réapparaisse, mais pas trop pour ne pas perdre ton temps. Presque tout revient, alors tu refais le plein de sacs, encore et encore.",
+    "clips": [
+     "gp_retour1",
+     "gp_retour2",
+     "gp_retour3",
+     "gp_retour4",
+     "gp_van51",
+     "gp_van52",
+     "gp_depot51",
+     "gp_depot52",
+     "gp_depot53",
+     "gp_int2@0.6",
+     "gp_coffre1@0.8"
+    ],
+    "fx": [
+     {
+      "type": "sticker",
+      "text": "LE BUTIN RÉAPPARAÎT",
+      "word": "réapparaisse",
+      "dur": 1.8,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "5",
+    "text": "Quand la camionnette est pleine avec ses 10 sacs, va tout revendre d'un coup. Et le meilleur, c'est que tu peux recommencer autant de fois que tu veux.",
+    "clips": [
+     "gp_menu1",
+     "gp_menu2",
+     "gp_menu3",
+     "gp_menu4",
+     "gp_van3@0.5",
+     "gp_depot2@0.7",
+     "gp_cash1@0.6"
+    ],
+    "fx": [
+     {
+      "type": "big",
+      "text": "À L'INFINI",
+      "word": "recommencer",
+      "dur": 1.6,
+      "y": 640
+     },
+     {
+      "type": "emoji",
+      "text": "💰",
+      "word": "revendre",
+      "dur": 1.4,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "outro",
+    "text": "Tu préfères cette boucle ou les gros braquages de banque ? Dis-le en commentaire, et abonne-toi.",
+    "kws": [
+     "braquage",
+     "vice city",
+     "nuit"
+    ],
+    "n": 8,
+    "fx": [
+     {
+      "type": "stars",
+      "word": "braquages",
+      "dur": 1.6,
+      "y": 640
+     }
+    ]
+   }
+  ]
+ }
+}
