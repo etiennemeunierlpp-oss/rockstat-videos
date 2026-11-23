@@ -35,7 +35,10 @@ sys.path.insert(0,"."); from montage import Picker, check
 P=Picker(seed=q["slug"])
 if q.get("preset","v4")=="v4": cfg.setdefault("music","music_pack/m1_1114.mp3"); cfg.setdefault("music_offset",22)   # preset v4 PAR DÉFAUT (vidéo Randy) : musique du fichier
 else: cfg["music"]="music_pack/flower.mp3"; cfg["music_offset"]=80   # preset v5 (abandonné) : musique unique (Etienne 20/11) : Flower In A Hurricane remix, départ à 1:20
+gp=bool(q.get("gameplay") or cfg.get("gameplay"))
 for s in cfg["sections"]:
+    if gp:   # format gameplay (Etienne 23/11) : TOUTES les parties sur le gameplay, jamais la banque du Drive
+        assert s.get("clips") and all(c.split("@")[0].split("|")[0].startswith("gp_") for c in s["clips"]), f"partie {s['id']} : clips gp_ obligatoires"
     if not s.get("clips"): s["clips"]=P.take(s.pop("kws",["vice city"]), int(s.pop("n",12)))
     for f in s.get("fx",[]):
         if f.get("type")=="subscribe": f.setdefault("logo","assets/logo_rs.png"); f.setdefault("handle","@rockstat433")
@@ -44,6 +47,8 @@ json.dump(cfg,open(f"scripts/{q['slug']}.json","w"),ensure_ascii=False)
 print(q["slug"],*[str(x).replace(" "," ") for x in q["thumb"]])
 PY
 )
+  [ -n "$S" ] || { python3 tg.py send "❌ Script refusé : $(basename $f) (voir log Actions)"; continue; }
+  if python3 -c "import json,sys;q=json.load(open(sys.argv[1]));sys.exit(0 if q.get('gameplay') or q['cfg'].get('gameplay') else 1)" "$f"; then export GP_ONLY=1; else unset GP_ONLY; fi
   if [ "$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('preset','v4'))" "$f")" = v4 ]; then export MV=make_video_v4.py VOICE=Fenrir; else unset MV VOICE; fi
   u(){ echo "${1//$' '/ }"; }
   export TG_MSG="$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('tg_msg',''))" "$f")"

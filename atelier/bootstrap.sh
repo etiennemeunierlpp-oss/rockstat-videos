@@ -42,8 +42,7 @@ bash setup.sh $G >/tmp/setup.log 2>&1; tail -1 /tmp/setup.log
 python3 setup_v2.py | tail -2
 grep -q "v3" remotion/src/Video.tsx && grep -q 'subscribe' remotion/src/Video.tsx || { cp remotion/src/Video.tsx remotion_Video.tsx && patch -p1 -i v3.patch && cp remotion_Video.tsx remotion/src/Video.tsx; }
 python3 fix_sans_numeros.py
-# plans gameplay gp_* : jamais pris en bouche-trou dans les autres vidéos
-sed -i 's/if f.endswith(".mp4") and n.lower() not in EXCLUDE:/if f.endswith(".mp4") and n.lower() not in EXCLUDE and not n.startswith("gp_"):/' make_video.py; grep -c 'startswith("gp_")' make_video.py
+# plans gameplay : filtre gp_ / GP_ONLY directement dans make_video.py (all_clips)
 # copie AVANT sfx v5 = rendu de la vidéo Randy du 21/11 (voix Fenrir énergique, SFX v4) -> preset "v4"
 cp make_video.py make_video_v4.py
 python3 sfx_v5.py

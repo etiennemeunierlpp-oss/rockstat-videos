@@ -335,7 +335,9 @@ def all_clips():
     for d in RUSH_DIRS:
         for f in sorted(os.listdir(d)):
             n = os.path.splitext(f)[0]
-            if f.endswith(".mp4") and n.lower() not in EXCLUDE:
+            gp = n.startswith("gp_")
+            # GP_ONLY=1 (format gameplay, Etienne 23/11) : uniquement les plans gp_ ; sinon jamais de gp_ en bouche-trou
+            if f.endswith(".mp4") and n.lower() not in EXCLUDE and (gp if os.environ.get("GP_ONLY") else not gp):
                 out.append(n)
     return out
 
