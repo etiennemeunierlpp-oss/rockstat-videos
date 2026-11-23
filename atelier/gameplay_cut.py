@@ -3,8 +3,10 @@
 Dans le fichier de file : "gameplay":{"src":"g-<id>","cuts":[["gp_map1",20.5,0],["gp_corps1",46,1,0.4],...]}
   cut = [nom (commence par gp_), début en s, sombre 0/1, (option) cadrage x 0-1 (0,5 = centre)] ; chaque plan dure 2,5 s."""
 import json, os, subprocess, sys, urllib.request
-q = json.load(open(sys.argv[1])); g = q.get("gameplay")
-if not g: sys.exit(0)
+q = json.load(open(sys.argv[1])); g = q.get("gameplay") or q.get("cfg", {}).get("gameplay")   # tolère "gameplay" rangé dans cfg (bug 23/11)
+if not g:
+    if '"gp_' in json.dumps(q.get("cfg", {})): sys.exit("plans gp_ référencés mais aucun bloc \"gameplay\" (à mettre au niveau racine du fichier)")
+    sys.exit(0)
 R = os.path.expanduser("~/gta/rush_tv"); os.makedirs(R, exist_ok=True)
 src = f"/tmp/{g['src']}.mp4"
 if not os.path.exists(src):
