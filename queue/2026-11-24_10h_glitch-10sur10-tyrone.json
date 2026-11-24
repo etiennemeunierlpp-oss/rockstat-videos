@@ -1,0 +1,877 @@
+{
+ "slug": "2026-11-24_10h_glitch-10sur10-tyrone",
+ "preset": "v4",
+ "gameplay": {
+  "src": "g-hham",
+  "cuts": [
+   [
+    "gp_hook",
+    98.5,
+    0,
+    0.45,
+    1.25
+   ],
+   [
+    "gp_t100",
+    100.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t018",
+    18.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t019",
+    19.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t062",
+    62.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t063",
+    63.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t064",
+    64.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t101",
+    101.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t103",
+    103.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t000",
+    0.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t002",
+    2.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t004",
+    4.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t001",
+    1.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t003",
+    3.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t005",
+    5.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t006",
+    6.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t007",
+    7.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t010",
+    10.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t020",
+    20.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t021",
+    21.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t022",
+    22.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t023",
+    23.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t024",
+    24.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t025",
+    25.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t026",
+    26.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t027",
+    27.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t028",
+    28.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t029",
+    29.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t030",
+    30.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t031",
+    31.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t033",
+    33.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t034",
+    34.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t035",
+    35.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t032",
+    32.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t038",
+    38.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t039",
+    39.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t040",
+    40.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t041",
+    41.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t042",
+    42.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t043",
+    43.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t070",
+    70.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t071",
+    71.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t053",
+    53.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t054",
+    54.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t055",
+    55.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t056",
+    56.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t057",
+    57.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t058",
+    58.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t059",
+    59.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t060",
+    60.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t061",
+    61.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t065",
+    65.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t066",
+    66.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t067",
+    67.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t068",
+    68.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t069",
+    69.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t046",
+    46.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t047",
+    47.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t074",
+    74.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t075",
+    75.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t076",
+    76.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t077",
+    77.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t078",
+    78.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t079",
+    79.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t080",
+    80.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t081",
+    81.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t044",
+    44.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t045",
+    45.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t036",
+    36.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t037",
+    37.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t073",
+    73.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t083",
+    83.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t011",
+    11.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t012",
+    12.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t084",
+    84.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t085",
+    85.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t086",
+    86.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t087",
+    87.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t088",
+    88.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t089",
+    89.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t090",
+    90.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t091",
+    91.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t092",
+    92.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t093",
+    93.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t094",
+    94.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t095",
+    95.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t096",
+    96.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t097",
+    97.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t098",
+    98.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t099",
+    99.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t102",
+    102.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t104",
+    104.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t105",
+    105.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t106",
+    106.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t107",
+    107.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t109",
+    109.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t110",
+    110.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t111",
+    111.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t008",
+    8.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t009",
+    9.0,
+    0,
+    0.5
+   ],
+   [
+    "gp_t013",
+    13.0,
+    0,
+    0.5
+   ]
+  ]
+ },
+ "thumb": [
+  "rush_tv/gp_hook.mp4",
+  1.0,
+  "173 000 $",
+  "EN UNE VENTE",
+  "GLITCH 10/10"
+ ],
+ "tg_msg": "🎬 Glitch du 10/10 : 173 000 $ chez Tyrone — publication auto à 10 h sur les 4 réseaux. Réponds « stop » pour bloquer.",
+ "cfg": {
+  "title": "Le glitch du 10/10 qui rapporte 173 000 $ dans GTA 6",
+  "style": "v2",
+  "max_shot": 1.0,
+  "music": "music_pack/m1_1114.mp3",
+  "music_offset": 22,
+  "music_volume": 0.16,
+  "logo": "assets/logo_gta6.webp",
+  "handle": "@rockstat433",
+  "caption": "Les sacs restent bloqués à 10/10 dans la camionnette : 173 000 $ par vente chez Tyrone 💰 Tu le testes avant le patch ? #gta6 #gtavi #gta #gta6news #lucia #argentgta6",
+  "sources": [
+   "https://www.youtube.com/watch?v=hhamkvuIKtI"
+  ],
+  "sections": [
+   {
+    "id": "hook",
+    "text": "Dans GTA 6, tu peux te faire 173 000 dollars en une seule vente, et refaire ça en boucle. Le glitch du 10 sur 10 garde tes sacs dans la camionnette, même quand tu les vends.",
+    "clips": [
+     "gp_hook",
+     "gp_t100",
+     "gp_t018",
+     "gp_t019",
+     "gp_t062",
+     "gp_t063",
+     "gp_t064",
+     "gp_t101",
+     "gp_t103",
+     "gp_t000",
+     "gp_t002",
+     "gp_t004"
+    ],
+    "fx": [
+     {
+      "type": "logo",
+      "at": 0.0,
+      "dur": 1.5,
+      "y": 640,
+      "width": 640
+     },
+     {
+      "type": "counter",
+      "to": 173000,
+      "suffix": " $",
+      "label": "EN UNE VENTE",
+      "word": "173 000",
+      "dur": 2.2,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "abo",
+    "text": "Abonne-toi et enregistre cette vidéo si tu veux connaître toutes les astuces argent facile dans GTA 6.",
+    "clips": [
+     "gp_t001",
+     "gp_t003",
+     "gp_t005",
+     "gp_t006",
+     "gp_t007",
+     "gp_t010"
+    ],
+    "fx": [
+     {
+      "type": "subscribe",
+      "at": 0.0,
+      "dur": 2.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "1",
+    "text": "Ouvre ta map et va à la carrière Apollo Aggregates. Devant l'entrepôt, une première camionnette : remplis ton sac de cocaïne à fond. Puis passe à la deuxième camionnette, entre dans le bureau et force le coffre-fort.",
+    "clips": [
+     "gp_t020",
+     "gp_t021",
+     "gp_t022",
+     "gp_t023",
+     "gp_t024",
+     "gp_t025",
+     "gp_t026",
+     "gp_t027",
+     "gp_t028",
+     "gp_t029",
+     "gp_t030",
+     "gp_t031",
+     "gp_t033",
+     "gp_t034",
+     "gp_t035",
+     "gp_t032",
+     "gp_t038",
+     "gp_t039",
+     "gp_t040",
+     "gp_t041"
+    ],
+    "fx": [
+     {
+      "type": "label",
+      "text": "APOLLO AGGREGATES",
+      "word": "Apollo",
+      "dur": 1.8,
+      "y": 640
+     },
+     {
+      "type": "alert",
+      "text": "COFFRE-FORT",
+      "word": "coffre-fort",
+      "dur": 1.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "2",
+    "text": "L'astuce : une fois le premier tour récupéré, passe sur Lucia, puis reviens sur Jason. Tout se recharge, plus besoin de partir en voiture. Répète jusqu'à remplir les deux camionnettes. À la fin, Jason garde 2 sacs sur lui, et Lucia peut en porter 2 aussi.",
+    "clips": [
+     "gp_t042",
+     "gp_t043",
+     "gp_t070",
+     "gp_t071",
+     "gp_t053",
+     "gp_t054",
+     "gp_t055",
+     "gp_t056",
+     "gp_t057",
+     "gp_t058",
+     "gp_t059",
+     "gp_t060",
+     "gp_t061",
+     "gp_t065",
+     "gp_t066",
+     "gp_t067",
+     "gp_t068",
+     "gp_t069",
+     "gp_t046",
+     "gp_t047"
+    ],
+    "fx": [
+     {
+      "type": "sticker",
+      "text": "SWITCH LUCIA / JASON",
+      "word": "Lucia,",
+      "dur": 1.8,
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "3",
+    "text": "Résultat : 24 sacs à chaque fois. Et là, le glitch : quand tu sors les sacs de la camionnette, le compteur reste bloqué à 10 sur 10. Les sacs ne partent jamais, tu revends le même butin encore et encore.",
+    "clips": [
+     "gp_t074",
+     "gp_t075",
+     "gp_t076",
+     "gp_t077",
+     "gp_t078",
+     "gp_t079",
+     "gp_t080",
+     "gp_t081",
+     "gp_t044",
+     "gp_t045",
+     "gp_t036",
+     "gp_t037",
+     "gp_t073",
+     "gp_t083",
+     "gp_t011",
+     "gp_t012"
+    ],
+    "fx": [
+     {
+      "type": "big",
+      "text": "24 SACS",
+      "word": "24",
+      "dur": 1.6,
+      "y": 700
+     },
+     {
+      "type": "alert",
+      "text": "BLOQUÉ À 10/10",
+      "word": "bloqué",
+      "dur": 1.6,
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "4",
+    "text": "Appelle Lucia pour conduire une camionnette et file chez Tyrone. Gare-toi dans ce coin. Surtout, ne touche pas aux sacs du coffre : vends d'abord ceux que tu portes. Entre chez Tyrone, appuie sur vendre, et boum : 173 000 dollars en un seul passage.",
+    "clips": [
+     "gp_t084",
+     "gp_t085",
+     "gp_t086",
+     "gp_t087",
+     "gp_t088",
+     "gp_t089",
+     "gp_t090",
+     "gp_t091",
+     "gp_t092",
+     "gp_t093",
+     "gp_t094",
+     "gp_t095",
+     "gp_t096",
+     "gp_t097",
+     "gp_t098",
+     "gp_t099",
+     "gp_t102",
+     "gp_t104"
+    ],
+    "fx": [
+     {
+      "type": "counter",
+      "to": 173000,
+      "suffix": " $",
+      "label": "UN SEUL PASSAGE",
+      "word": "173 000",
+      "dur": 2.2,
+      "y": 700
+     },
+     {
+      "type": "emoji",
+      "text": "💰",
+      "word": "boum",
+      "dur": 1.4,
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "outro",
+    "text": "Ce glitch peut sauter au prochain patch, alors fais-le vite. Tu le testes ce soir ? Envoie ça à un pote qui joue à GTA 6, et abonne-toi.",
+    "clips": [
+     "gp_t105",
+     "gp_t106",
+     "gp_t107",
+     "gp_t109",
+     "gp_t110",
+     "gp_t111",
+     "gp_t008",
+     "gp_t009",
+     "gp_t013",
+     "gp_hook@0.5"
+    ],
+    "fx": [
+     {
+      "type": "stars",
+      "word": "patch,",
+      "dur": 1.6,
+      "y": 640
+     }
+    ]
+   }
+  ]
+ }
+}
