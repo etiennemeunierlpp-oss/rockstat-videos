@@ -86,6 +86,8 @@ Le slug DOIT contenir `_10h_` ou `_18h_` : c'est ainsi que la tâche Publication
 3. Attendre `bash atelier/attendre.sh v-<slug>` (timeout 540000 ms) ; relancer tant que PAS_ENCORE et que l'heure < créneau + 60 min. ECHEC ou trop tard → `python3 tg.py send "❌ …"` et s'arrêter.
 4. Lire seulement `cfg.title` et `cfg.caption` du JSON (`python3 -c` ou `jq`), rien d'autre. URL : `https://raw.githubusercontent.com/etiennemeunierlpp-oss/rockstat-videos/v-<slug>/<slug>.mp4`
 Juste avant : `python3 tg.py read` ; si Etienne a écrit « stop » → ne rien publier, répondre « OK, bloquée » sur Telegram. (Autres messages : les ajouter à `idees_etienne.txt` et le dire en une ligne sur Telegram.)
+Anti-doublon : `getScheduledPosts` (blogId 7690282, journée du jour, Europe/Paris) ; si un post a déjà ce texte/titre → ne rien republier, s'arrêter.
+Toute commande bloquée plus de 10 min = échec : `python3 tg.py send "❌ …"` et s'arrêter (jamais d'attente au-delà de créneau + 60 min).
 Sinon `createScheduledPost` : blogId `7690282`, date = créneau (10:00 ou 18:00 Europe/Paris ; si passé : maintenant + 5 min), autoPublish true,
 providers tiktok, instagram, youtube, facebook ; media = [URL] ; `videoCoverMilliseconds: 100` ;
 tiktokData.title = accroche ; instagramData.type REEL ; youtubeData {title: accroche + " #shorts", type "short", privacy "public", category "GAMING", madeForKids false} ; facebookData.type REEL ; text = caption.
