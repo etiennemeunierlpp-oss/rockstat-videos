@@ -1,0 +1,761 @@
+{
+ "slug": "2026-11-26_10h_sac-infini-apollo",
+ "preset": "v4",
+ "gameplay": {
+  "src": "g-rRLpw_z0",
+  "cuts": [
+   [
+    "gp_hook",
+    8.0,
+    0,
+    0.55,
+    1.3
+   ],
+   [
+    "gp_t00",
+    0.0,
+    0
+   ],
+   [
+    "gp_t01",
+    1.0,
+    0
+   ],
+   [
+    "gp_t02",
+    2.0,
+    0
+   ],
+   [
+    "gp_t03",
+    3.0,
+    0
+   ],
+   [
+    "gp_t04",
+    4.0,
+    0
+   ],
+   [
+    "gp_t05",
+    5.0,
+    0
+   ],
+   [
+    "gp_t06",
+    6.0,
+    0
+   ],
+   [
+    "gp_t07",
+    7.0,
+    0
+   ],
+   [
+    "gp_t09",
+    9.0,
+    0
+   ],
+   [
+    "gp_t10",
+    10.0,
+    0
+   ],
+   [
+    "gp_t11",
+    11.0,
+    0
+   ],
+   [
+    "gp_t12",
+    12.0,
+    0
+   ],
+   [
+    "gp_t27",
+    27.0,
+    0
+   ],
+   [
+    "gp_t49",
+    49.0,
+    0
+   ],
+   [
+    "gp_t51",
+    51.0,
+    0
+   ],
+   [
+    "gp_t53",
+    53.0,
+    0
+   ],
+   [
+    "gp_t57",
+    57.0,
+    0
+   ],
+   [
+    "gp_t58",
+    58.0,
+    0
+   ],
+   [
+    "gp_t13",
+    13.0,
+    0
+   ],
+   [
+    "gp_t20",
+    20.0,
+    0
+   ],
+   [
+    "gp_t21",
+    21.0,
+    0
+   ],
+   [
+    "gp_t26",
+    26.0,
+    0
+   ],
+   [
+    "gp_t50",
+    50.0,
+    0
+   ],
+   [
+    "gp_t84",
+    84.0,
+    0
+   ],
+   [
+    "gp_t22",
+    22.0,
+    0
+   ],
+   [
+    "gp_t23",
+    23.0,
+    0
+   ],
+   [
+    "gp_t24",
+    24.0,
+    0
+   ],
+   [
+    "gp_t48",
+    48.0,
+    0
+   ],
+   [
+    "gp_t25",
+    25.0,
+    0
+   ],
+   [
+    "gp_t54",
+    54.0,
+    0
+   ],
+   [
+    "gp_t28",
+    28.0,
+    0
+   ],
+   [
+    "gp_t52",
+    52.0,
+    0
+   ],
+   [
+    "gp_t64",
+    64.0,
+    0
+   ],
+   [
+    "gp_t88",
+    88.0,
+    0
+   ],
+   [
+    "gp_t29",
+    29.0,
+    1
+   ],
+   [
+    "gp_t30",
+    30.0,
+    1
+   ],
+   [
+    "gp_t31",
+    31.0,
+    0
+   ],
+   [
+    "gp_t32",
+    32.0,
+    0
+   ],
+   [
+    "gp_t92",
+    92.0,
+    1
+   ],
+   [
+    "gp_t94",
+    94.0,
+    0
+   ],
+   [
+    "gp_t33",
+    33.0,
+    0
+   ],
+   [
+    "gp_t55",
+    55.0,
+    0
+   ],
+   [
+    "gp_t56",
+    56.0,
+    0
+   ],
+   [
+    "gp_t34",
+    34.0,
+    0
+   ],
+   [
+    "gp_t35",
+    35.0,
+    0
+   ],
+   [
+    "gp_t36",
+    36.0,
+    0
+   ],
+   [
+    "gp_t37",
+    37.0,
+    0
+   ],
+   [
+    "gp_t38",
+    38.0,
+    0
+   ],
+   [
+    "gp_t40",
+    40.0,
+    0
+   ],
+   [
+    "gp_t41",
+    41.0,
+    0
+   ],
+   [
+    "gp_t42",
+    42.0,
+    0
+   ],
+   [
+    "gp_t60",
+    60.0,
+    0
+   ],
+   [
+    "gp_t61",
+    61.0,
+    0
+   ],
+   [
+    "gp_t62",
+    62.0,
+    0
+   ],
+   [
+    "gp_t44",
+    44.0,
+    0
+   ],
+   [
+    "gp_t45",
+    45.0,
+    0
+   ],
+   [
+    "gp_t46",
+    46.0,
+    0
+   ],
+   [
+    "gp_t47",
+    47.0,
+    0
+   ],
+   [
+    "gp_t86",
+    86.0,
+    0
+   ],
+   [
+    "gp_t89",
+    89.0,
+    0
+   ],
+   [
+    "gp_t90",
+    90.0,
+    0
+   ],
+   [
+    "gp_t95",
+    95.0,
+    0
+   ],
+   [
+    "gp_t63",
+    63.0,
+    0
+   ],
+   [
+    "gp_t70",
+    70.0,
+    0
+   ],
+   [
+    "gp_t71",
+    71.0,
+    0
+   ],
+   [
+    "gp_t72",
+    72.0,
+    0
+   ],
+   [
+    "gp_t73",
+    73.0,
+    0
+   ],
+   [
+    "gp_t74",
+    74.0,
+    0
+   ],
+   [
+    "gp_t75",
+    75.0,
+    0
+   ],
+   [
+    "gp_t76",
+    76.0,
+    0
+   ],
+   [
+    "gp_t80",
+    80.0,
+    0
+   ],
+   [
+    "gp_t77",
+    77.0,
+    0
+   ],
+   [
+    "gp_t78",
+    78.0,
+    0
+   ],
+   [
+    "gp_t79",
+    79.0,
+    0
+   ],
+   [
+    "gp_t81",
+    81.0,
+    0
+   ],
+   [
+    "gp_t82",
+    82.0,
+    0
+   ],
+   [
+    "gp_t83",
+    83.0,
+    0
+   ],
+   [
+    "gp_t85",
+    85.0,
+    0
+   ],
+   [
+    "gp_t87",
+    87.0,
+    0
+   ],
+   [
+    "gp_t91",
+    91.0,
+    0
+   ],
+   [
+    "gp_t93",
+    93.0,
+    0
+   ],
+   [
+    "gp_t96",
+    96.0,
+    0
+   ],
+   [
+    "gp_t97",
+    97.0,
+    0
+   ],
+   [
+    "gp_t101",
+    101.0,
+    0
+   ],
+   [
+    "gp_t102",
+    102.0,
+    0
+   ],
+   [
+    "gp_t39",
+    39.0,
+    0
+   ],
+   [
+    "gp_t43",
+    43.0,
+    0
+   ],
+   [
+    "gp_t59",
+    59.0,
+    0
+   ],
+   [
+    "gp_t65",
+    65.0,
+    0
+   ],
+   [
+    "gp_t66",
+    66.0,
+    0
+   ],
+   [
+    "gp_t67",
+    67.0,
+    0
+   ],
+   [
+    "gp_t68",
+    68.0,
+    0
+   ],
+   [
+    "gp_t69",
+    69.0,
+    0
+   ],
+   [
+    "gp_t103",
+    103.0,
+    0
+   ]
+  ]
+ },
+ "thumb": [
+  "rush_tv/gp_hook.mp4",
+  1.0,
+  "118 000 $",
+  "DANS UN SEUL SAC",
+  "GLITCH SAC INFINI"
+ ],
+ "tg_msg": "🎬 Le glitch du sac infini dans GTA 6 — publication auto à 10 h sur les 4 réseaux. Réponds « stop » pour bloquer.",
+ "cfg": {
+  "title": "Le glitch du sac infini dans GTA 6",
+  "style": "v2",
+  "max_shot": 1.0,
+  "music": "music_pack/m1_1114.mp3",
+  "music_offset": 22,
+  "music_volume": 0.16,
+  "logo": "assets/logo_gta6.webp",
+  "handle": "@rockstat433",
+  "caption": "118 000 $ dans un seul sac : le glitch des camionnettes Apollo passe en stockage infini 💰 Tu le testes avant le patch ? #gta6 #gtavi #gta #gta6news #lucia #argentgta6",
+  "sources": [
+   "https://www.youtube.com/watch?v=rRLpw_z0Sng"
+  ],
+  "sections": [
+   {
+    "id": "hook",
+    "text": "Dans GTA 6, tu peux mettre plus de 118 000 dollars dans un seul sac de butin. Le glitch des camionnettes Apollo vient de passer en stockage infini, et ça se fait en moins d'une minute.",
+    "clips": [
+     "gp_hook",
+     "gp_t00",
+     "gp_t01",
+     "gp_t02",
+     "gp_t03",
+     "gp_t04",
+     "gp_t05",
+     "gp_t06",
+     "gp_t07",
+     "gp_t09",
+     "gp_t10",
+     "gp_t11",
+     "gp_t12"
+    ],
+    "fx": [
+     {
+      "type": "logo",
+      "at": 0.0,
+      "dur": 1.5,
+      "y": 640,
+      "width": 640
+     },
+     {
+      "type": "counter",
+      "to": 118000,
+      "suffix": " $",
+      "label": "DANS UN SEUL SAC",
+      "word": "118",
+      "dur": 2.2,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "abo",
+    "text": "Abonne-toi et enregistre cette vidéo si tu veux connaître toutes les astuces argent facile dans GTA 6.",
+    "clips": [
+     "gp_t27",
+     "gp_t49",
+     "gp_t51",
+     "gp_t53",
+     "gp_t57",
+     "gp_t58",
+     "gp_t13"
+    ],
+    "fx": [
+     {
+      "type": "subscribe",
+      "at": 0.0,
+      "dur": 2.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "1",
+    "text": "Ouvre ta map et va au fameux entrepôt d'Apollo Aggregates, à South Vice-Dale. Dans ta camionnette, garde un seul sac avec une seule brique de coke : 1 200 dollars, pas plus.",
+    "clips": [
+     "gp_t20",
+     "gp_t21",
+     "gp_t26",
+     "gp_t50",
+     "gp_t84",
+     "gp_t22",
+     "gp_t23",
+     "gp_t24",
+     "gp_t48",
+     "gp_t25",
+     "gp_t54"
+    ],
+    "fx": [
+     {
+      "type": "label",
+      "text": "APOLLO AGGREGATES",
+      "word": "Apollo",
+      "y": 640
+     },
+     {
+      "type": "counter",
+      "to": 1200,
+      "suffix": " $",
+      "label": "1 SEUL SAC",
+      "word": "1 200",
+      "dur": 1.8,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "2",
+    "text": "Ensuite, sur l'autre camionnette, prends seulement la coke du côté gauche. Puis entre dans l'entrepôt et vide la camionnette garée à l'intérieur. Maximum 6 000 dollars dans ce sac.",
+    "clips": [
+     "gp_t28",
+     "gp_t52",
+     "gp_t64",
+     "gp_t88",
+     "gp_t29",
+     "gp_t30",
+     "gp_t31",
+     "gp_t32",
+     "gp_t92",
+     "gp_t94",
+     "gp_t33",
+     "gp_t55",
+     "gp_t56"
+    ],
+    "fx": [
+     {
+      "type": "alert",
+      "text": "CÔTÉ GAUCHE SEULEMENT",
+      "word": "gauche",
+      "y": 700
+     },
+     {
+      "type": "big",
+      "text": "6 000 $ MAX",
+      "word": "Maximum",
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "3",
+    "text": "Range ce sac dans ta camionnette, passe sur Lucia, puis reviens sur Jason. Prends d'abord le sac à 6 000 dollars, garde-le toujours sur l'épaule, puis récupère le sac à 1 200.",
+    "clips": [
+     "gp_t34",
+     "gp_t35",
+     "gp_t36",
+     "gp_t37",
+     "gp_t38",
+     "gp_t40",
+     "gp_t41",
+     "gp_t42",
+     "gp_t60",
+     "gp_t61",
+     "gp_t62",
+     "gp_t44",
+     "gp_t45",
+     "gp_t46",
+     "gp_t47"
+    ],
+    "fx": [
+     {
+      "type": "sticker",
+      "text": "SWITCH LUCIA → JASON",
+      "word": "Lucia",
+      "y": 640
+     },
+     {
+      "type": "emoji",
+      "emoji": "🎒",
+      "word": "épaule",
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "4",
+    "text": "Et là, tu recommences : coke du côté gauche, switch sur Lucia, retour sur Jason. Si ton premier sac dépasse 9 000 dollars, c'est gagné. Lui, il est déjà à 15 000.",
+    "clips": [
+     "gp_t86",
+     "gp_t89",
+     "gp_t90",
+     "gp_t95",
+     "gp_t63",
+     "gp_t70",
+     "gp_t71",
+     "gp_t72",
+     "gp_t73",
+     "gp_t74",
+     "gp_t75",
+     "gp_t76",
+     "gp_t80"
+    ],
+    "fx": [
+     {
+      "type": "counter",
+      "to": 15000,
+      "suffix": " $",
+      "label": "1ER SAC",
+      "word": "15 000",
+      "dur": 1.8,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "5",
+    "text": "Continue jusqu'à environ 120 000 dollars par sac. Remplis toute la camionnette et tu dépasses le million. Attention : si tu prends la coke du côté droit, le glitch saute.",
+    "clips": [
+     "gp_t77",
+     "gp_t78",
+     "gp_t79",
+     "gp_t81",
+     "gp_t82",
+     "gp_t83",
+     "gp_t85",
+     "gp_t87",
+     "gp_t91",
+     "gp_t93",
+     "gp_t96",
+     "gp_t97",
+     "gp_t101",
+     "gp_t102"
+    ],
+    "fx": [
+     {
+      "type": "counter",
+      "to": 1000000,
+      "suffix": " $",
+      "label": "PAR CAMIONNETTE",
+      "word": "million",
+      "dur": 2.0,
+      "y": 640
+     },
+     {
+      "type": "alert",
+      "text": "JAMAIS LE CÔTÉ DROIT",
+      "word": "droit",
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "outro",
+    "text": "Tu le testes ce soir ou t'attends le patch de Rockstar ? Envoie ça à un pote qui joue à GTA 6, et abonne-toi.",
+    "clips": [
+     "gp_t39",
+     "gp_t43",
+     "gp_t59",
+     "gp_t65",
+     "gp_t66",
+     "gp_t67",
+     "gp_t68",
+     "gp_t69",
+     "gp_t103",
+     "gp_hook@0.5"
+    ],
+    "fx": [
+     {
+      "type": "emoji",
+      "emoji": "🤑",
+      "word": "patch",
+      "y": 640
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -12,3 +12,4 @@
 2026-11-24 garder son argent après le chapitre 1 (Buckme Family Savings 5 000 $, cash du plancher de Jason déposé avant Recalibration, surplus en armes/vêtements)
 2026-11-25 glitch duplication hypercar bleue Starfish Island (pick-up au portail, téléphone dans le coin du garage, revente + sauvegarde/recharge = réapparition infinie, sans faire l'easter egg)
 2026-11-25 8 cartes à collectionner Port Gellhorn début chap. 2 (tour 1 150 $, bâtiment 175, wagon 350, maison 100+herbe 180, drive-in coffre + Lexi 650, caravane 125, maison 200, aérodrome 200+boîte 197 = 3 541 $, revente Avery Pawn)
+2026-11-26 glitch sac infini camionnettes Apollo (1 sac 1 200 $ + coke côté gauche ≤ 6 000 $, switch Lucia/Jason, sac > 9 000 puis ~120 000 $/sac, > 1 M$/camionnette, jamais côté droit)
