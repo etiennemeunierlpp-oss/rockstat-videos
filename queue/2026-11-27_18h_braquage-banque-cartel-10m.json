@@ -1,0 +1,961 @@
+{
+ "slug": "2026-11-27_18h_braquage-banque-cartel-10m",
+ "preset": "v4",
+ "gameplay": {
+  "src": "g-agPJ42QAa8E",
+  "cuts": [
+   [
+    "gp_hook",
+    0.3,
+    1,
+    0.55,
+    1.2
+   ],
+   [
+    "gp_t02",
+    2.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t03",
+    3.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t04",
+    4.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t05",
+    5.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t06",
+    6.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t07",
+    7.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t08",
+    8.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t09",
+    9.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t10",
+    10.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t11",
+    11.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t12",
+    12.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t13",
+    13.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t14",
+    14.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t15",
+    15.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t16",
+    16.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t17",
+    17.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t18",
+    18.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t19",
+    19.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t21",
+    21.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t22",
+    22.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t23",
+    23.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t24",
+    24.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t25",
+    25.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t26",
+    26.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t27",
+    27.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t28",
+    28.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t29",
+    29.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t30",
+    30.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t31",
+    31.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t32",
+    32.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t33",
+    33.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t34",
+    34.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t35",
+    35.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t36",
+    36.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t37",
+    37.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t38",
+    38.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t39",
+    39.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t40",
+    40.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t41",
+    41.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t42",
+    42.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t43",
+    43.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t44",
+    44.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t45",
+    45.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t46",
+    46.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t47",
+    47.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t48",
+    48.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t49",
+    49.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t50",
+    50.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t51",
+    51.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t52",
+    52.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t53",
+    53.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t54",
+    54.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t55",
+    55.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t56",
+    56.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t57",
+    57.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t58",
+    58.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t60",
+    60.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t62",
+    62.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t64",
+    64.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t66",
+    66.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t67",
+    67.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t68",
+    68.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t70",
+    70.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t72",
+    72.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t74",
+    74.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t76",
+    76.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t78",
+    78.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t82",
+    82.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t84",
+    84.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t90",
+    90.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t91",
+    91.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t92",
+    92.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t94",
+    94.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t96",
+    96.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t98",
+    98.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t100",
+    100.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t102",
+    102.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t104",
+    104.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t105",
+    105.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t110",
+    110.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t112",
+    112.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t114",
+    114.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t116",
+    116.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t118",
+    118.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t122",
+    122.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t124",
+    124.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t126",
+    126.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t128",
+    128.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t130",
+    130.0,
+    0,
+    0.55
+   ],
+   [
+    "gp_t132",
+    132.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t133",
+    133.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t134",
+    134.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t135",
+    135.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t136",
+    136.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t137",
+    137.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t138",
+    138.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t139",
+    139.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t140",
+    140.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t141",
+    141.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t142",
+    142.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t143",
+    143.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t144",
+    144.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t145",
+    145.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t146",
+    146.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t147",
+    147.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t148",
+    148.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t149",
+    149.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t150",
+    150.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t151",
+    151.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t152",
+    152.0,
+    1,
+    0.55
+   ],
+   [
+    "gp_t153",
+    153.0,
+    1,
+    0.55
+   ]
+  ]
+ },
+ "thumb": [
+  "rush_tv/gp_hook.mp4",
+  1.0,
+  "10 000 000 $",
+  "BRAQUAGE PARFAIT",
+  "CHAPITRE 3"
+ ],
+ "tg_msg": "🎬 Braquage de la banque du cartel : les 10 M$ + Nicole sauvée — publication auto à 18 h sur les 4 réseaux. Réponds « stop » pour bloquer.",
+ "cfg": {
+  "title": "Les 10 millions du braquage du cartel dans GTA 6",
+  "style": "v2",
+  "max_shot": 1.0,
+  "music": "music_pack/m1_1114.mp3",
+  "music_offset": 22,
+  "music_volume": 0.16,
+  "logo": "assets/logo_gta6.webp",
+  "handle": "@rockstat433",
+  "caption": "Le braquage parfait de la banque du cartel : les 10 millions ET Nicole sauvée 💰 Tu l'as réussi du premier coup ? #gta6 #gtavi #gta #gta6news #lucia #argentgta6",
+  "sources": [
+   "https://www.youtube.com/watch?v=agPJ42QAa8E"
+  ],
+  "sections": [
+   {
+    "id": "hook",
+    "text": "Dans GTA 6, tu peux repartir avec les 10 millions de dollars du braquage de la banque du cartel, et sauver Nicole en prime. Voilà comment réussir le braquage parfait du chapitre 3.",
+    "clips": [
+     "gp_hook",
+     "gp_t02",
+     "gp_t03",
+     "gp_t04",
+     "gp_t05",
+     "gp_t06",
+     "gp_t07",
+     "gp_t138",
+     "gp_t139",
+     "gp_t140",
+     "gp_t141",
+     "gp_t142",
+     "gp_t143",
+     "gp_t144"
+    ],
+    "fx": [
+     {
+      "type": "logo",
+      "at": 0.0,
+      "dur": 1.5,
+      "y": 640,
+      "width": 640
+     },
+     {
+      "type": "counter",
+      "to": 10000000,
+      "suffix": " $",
+      "label": "TOUT LE BUTIN",
+      "word": "10",
+      "dur": 2.2,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "abo",
+    "text": "Abonne-toi et enregistre cette vidéo si tu veux connaître toutes les astuces argent facile dans GTA 6.",
+    "clips": [
+     "gp_t10",
+     "gp_t11",
+     "gp_t14",
+     "gp_t15",
+     "gp_t16",
+     "gp_t17",
+     "gp_t18",
+     "gp_t19"
+    ],
+    "fx": [
+     {
+      "type": "subscribe",
+      "at": 0.0,
+      "dur": 2.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "1",
+    "text": "Avant tout, termine toutes les missions d'avant : chaque antenne relais doit exploser pour avoir la bonne fin. Le braquage est chronométré. Juste après l'explosion, ignore le GPS : prends tout de suite à gauche, puis à droite. C'est la route la plus rapide jusqu'à la banque.",
+    "clips": [
+     "gp_t12",
+     "gp_t13",
+     "gp_t09",
+     "gp_t24",
+     "gp_t25",
+     "gp_t26",
+     "gp_t27",
+     "gp_t28",
+     "gp_t29",
+     "gp_t30",
+     "gp_t31",
+     "gp_t32",
+     "gp_t33",
+     "gp_t34",
+     "gp_t35",
+     "gp_t36",
+     "gp_t37"
+    ],
+    "fx": [
+     {
+      "type": "alert",
+      "text": "CHRONOMÉTRÉ",
+      "word": "chronométré",
+      "dur": 1.6,
+      "y": 640
+     },
+     {
+      "type": "label",
+      "text": "GAUCHE PUIS DROITE",
+      "word": "gauche",
+      "dur": 1.8,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "2",
+    "text": "Dans la banque, n'attends pas le signal de Karim : fonce sur le vigile et assomme-le, tu gagnes 10 à 15 secondes. Rassemble vite les otages et neutralise le garde en civil : c'est ça qui décide du temps que Raul met à ouvrir l'ascenseur. Dès que l'alarme est coupée, frappe le vigile de la sécurité.",
+    "clips": [
+     "gp_t38",
+     "gp_t39",
+     "gp_t40",
+     "gp_t41",
+     "gp_t42",
+     "gp_t43",
+     "gp_t44",
+     "gp_t45",
+     "gp_t46",
+     "gp_t47",
+     "gp_t48",
+     "gp_t49",
+     "gp_t50",
+     "gp_t51",
+     "gp_t52",
+     "gp_t53",
+     "gp_t54",
+     "gp_t55",
+     "gp_t56",
+     "gp_t57",
+     "gp_t58",
+     "gp_t60",
+     "gp_t62",
+     "gp_t64"
+    ],
+    "fx": [
+     {
+      "type": "big",
+      "text": "-15 SECONDES",
+      "word": "15",
+      "dur": 1.6,
+      "y": 700
+     },
+     {
+      "type": "sticker",
+      "text": "ALARME COUPÉE",
+      "word": "alarme",
+      "dur": 1.6,
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "3",
+    "text": "Ensuite, Jason passe une fusillade : équipe ton arme préférée avant le braquage, la carabine spéciale est parfaite, et sers-toi de la concentration pour viser. Sur le toit, ignore les ennemis : saute par-dessus les tuyaux, passe par le climatiseur au fond, et prends une adrénaline si ta vie baisse.",
+    "clips": [
+     "gp_t66",
+     "gp_t67",
+     "gp_t68",
+     "gp_t70",
+     "gp_t72",
+     "gp_t74",
+     "gp_t114",
+     "gp_t76",
+     "gp_t78",
+     "gp_t82",
+     "gp_t84",
+     "gp_t90",
+     "gp_t91",
+     "gp_t96",
+     "gp_t98",
+     "gp_t100",
+     "gp_t102",
+     "gp_t104",
+     "gp_t105",
+     "gp_t116",
+     "gp_t118"
+    ],
+    "fx": [
+     {
+      "type": "label",
+      "text": "CARABINE SPÉCIALE",
+      "word": "carabine",
+      "dur": 1.8,
+      "y": 640
+     },
+     {
+      "type": "emoji",
+      "text": "💉",
+      "word": "adrénaline",
+      "dur": 1.4,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "4",
+    "text": "Au coffre, il faut être parfait : entraîne-toi avant, ou active le mini-jeu simplifié dans les options. Si tout est bon, il te reste environ 50 secondes. Ramasse les liasses dans le sens des aiguilles d'une montre, en commençant par l'avant, puis prends les trois sacs devant le coffre et file au fourgon.",
+    "clips": [
+     "gp_t122",
+     "gp_t124",
+     "gp_t126",
+     "gp_t128",
+     "gp_t130",
+     "gp_t132",
+     "gp_t133",
+     "gp_t134",
+     "gp_t135",
+     "gp_t136",
+     "gp_t137",
+     "gp_t145",
+     "gp_t146",
+     "gp_t147",
+     "gp_t148",
+     "gp_t149",
+     "gp_t150",
+     "gp_t151",
+     "gp_t152",
+     "gp_t153"
+    ],
+    "fx": [
+     {
+      "type": "counter",
+      "to": 50,
+      "suffix": " s",
+      "label": "POUR TOUT RAFLER",
+      "word": "50",
+      "dur": 2.0,
+      "y": 700
+     },
+     {
+      "type": "big",
+      "text": "3 SACS",
+      "word": "trois",
+      "dur": 1.5,
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "outro",
+    "text": "Tu as réussi à sauver Nicole du premier coup ? Dis-le en commentaire, envoie ça à un pote qui joue à GTA 6, et abonne-toi.",
+    "clips": [
+     "gp_t21",
+     "gp_t22",
+     "gp_t23",
+     "gp_t08",
+     "gp_t92",
+     "gp_t94",
+     "gp_t110",
+     "gp_t112",
+     "gp_hook@0.5"
+    ],
+    "fx": [
+     {
+      "type": "stars",
+      "word": "Nicole",
+      "dur": 1.6,
+      "y": 640
+     }
+    ]
+   }
+  ]
+ }
+}
