@@ -1,0 +1,628 @@
+{
+ "slug": "2026-11-28_10h_glitch-sacs-sans-switch",
+ "preset": "v4",
+ "gameplay": {
+  "src": "g-HfOkqvto",
+  "cuts": [
+   [
+    "gp_hook",
+    69.5,
+    0,
+    0.5,
+    1.25
+   ],
+   [
+    "gp_t00",
+    0,
+    0
+   ],
+   [
+    "gp_t01",
+    1,
+    0
+   ],
+   [
+    "gp_t02",
+    2,
+    0
+   ],
+   [
+    "gp_t03",
+    3,
+    0
+   ],
+   [
+    "gp_t04",
+    4,
+    0
+   ],
+   [
+    "gp_t05",
+    5,
+    0
+   ],
+   [
+    "gp_t06",
+    6,
+    0
+   ],
+   [
+    "gp_t07",
+    7,
+    0
+   ],
+   [
+    "gp_t08",
+    8,
+    0
+   ],
+   [
+    "gp_t09",
+    9,
+    0
+   ],
+   [
+    "gp_t10",
+    10,
+    0
+   ],
+   [
+    "gp_t11",
+    11,
+    0
+   ],
+   [
+    "gp_t12",
+    12,
+    0
+   ],
+   [
+    "gp_t13",
+    13,
+    0
+   ],
+   [
+    "gp_t14",
+    14,
+    0
+   ],
+   [
+    "gp_t15",
+    15,
+    0
+   ],
+   [
+    "gp_t22",
+    22,
+    0
+   ],
+   [
+    "gp_t23",
+    23,
+    0
+   ],
+   [
+    "gp_t24",
+    24,
+    0
+   ],
+   [
+    "gp_t25",
+    25,
+    0
+   ],
+   [
+    "gp_t26",
+    26,
+    0
+   ],
+   [
+    "gp_t27",
+    27,
+    0
+   ],
+   [
+    "gp_t28",
+    28,
+    0
+   ],
+   [
+    "gp_t29",
+    29,
+    0
+   ],
+   [
+    "gp_t30",
+    30,
+    0
+   ],
+   [
+    "gp_t31",
+    31,
+    0
+   ],
+   [
+    "gp_t32",
+    32,
+    0
+   ],
+   [
+    "gp_t33",
+    33,
+    0
+   ],
+   [
+    "gp_t34",
+    34,
+    0
+   ],
+   [
+    "gp_t35",
+    35,
+    0
+   ],
+   [
+    "gp_t36",
+    36,
+    0
+   ],
+   [
+    "gp_t37",
+    37,
+    0
+   ],
+   [
+    "gp_t38",
+    38,
+    0
+   ],
+   [
+    "gp_t39",
+    39,
+    0
+   ],
+   [
+    "gp_t40",
+    40,
+    0
+   ],
+   [
+    "gp_t41",
+    41,
+    0
+   ],
+   [
+    "gp_t42",
+    42,
+    0
+   ],
+   [
+    "gp_t43",
+    43,
+    0
+   ],
+   [
+    "gp_t44",
+    44,
+    0
+   ],
+   [
+    "gp_t45",
+    45,
+    0
+   ],
+   [
+    "gp_t46",
+    46,
+    0
+   ],
+   [
+    "gp_t47",
+    47,
+    0
+   ],
+   [
+    "gp_t48",
+    48,
+    0
+   ],
+   [
+    "gp_t49",
+    49,
+    0
+   ],
+   [
+    "gp_t50",
+    50,
+    0
+   ],
+   [
+    "gp_t51",
+    51,
+    0
+   ],
+   [
+    "gp_t52",
+    52,
+    0
+   ],
+   [
+    "gp_t53",
+    53,
+    0
+   ],
+   [
+    "gp_t54",
+    54,
+    0
+   ],
+   [
+    "gp_t55",
+    55,
+    0
+   ],
+   [
+    "gp_t56",
+    56,
+    0
+   ],
+   [
+    "gp_t57",
+    57,
+    0
+   ],
+   [
+    "gp_t58",
+    58,
+    0
+   ],
+   [
+    "gp_t59",
+    59,
+    0
+   ],
+   [
+    "gp_t60",
+    60,
+    0
+   ],
+   [
+    "gp_t61",
+    61,
+    0
+   ],
+   [
+    "gp_t62",
+    62,
+    0
+   ],
+   [
+    "gp_t63",
+    63,
+    0
+   ],
+   [
+    "gp_t64",
+    64,
+    0
+   ],
+   [
+    "gp_t65",
+    65,
+    0
+   ],
+   [
+    "gp_t66",
+    66,
+    0
+   ],
+   [
+    "gp_t67",
+    67,
+    0
+   ],
+   [
+    "gp_t68",
+    68,
+    0
+   ],
+   [
+    "gp_t70",
+    70,
+    0
+   ],
+   [
+    "gp_t71",
+    71,
+    0
+   ],
+   [
+    "gp_t72",
+    72,
+    0
+   ],
+   [
+    "gp_t73",
+    73,
+    0
+   ],
+   [
+    "gp_t74",
+    74,
+    0
+   ],
+   [
+    "gp_t80",
+    80,
+    0
+   ],
+   [
+    "gp_t81",
+    81,
+    0
+   ],
+   [
+    "gp_t69",
+    69,
+    0
+   ]
+  ]
+ },
+ "thumb": [
+  "rush_tv/gp_hook.mp4",
+  1.0,
+  "200 000 $",
+  "EN QUELQUES SECONDES",
+  "SANS SWITCH"
+ ],
+ "tg_msg": "🎬 Nouveau glitch sacs sans switch (200 000 $) — publication auto à 10 h sur les 4 réseaux. Réponds « stop » pour bloquer.",
+ "cfg": {
+  "title": "Le nouveau glitch des sacs dans GTA 6",
+  "style": "v2",
+  "max_shot": 1.0,
+  "music": "music_pack/m1_1114.mp3",
+  "music_offset": 22,
+  "music_volume": 0.16,
+  "logo": "assets/logo_gta6.webp",
+  "handle": "@rockstat433",
+  "caption": "Plus besoin de switcher : tu poses tes sacs, tu spammes, et ça double 💰 Tu l'as testé avant le patch ? #gta6 #gtavi #gta #gta6news #lucia #argentgta6",
+  "sources": [
+   "https://www.youtube.com/watch?v=HfOkqvtoxSk"
+  ],
+  "sections": [
+   {
+    "id": "hook",
+    "text": "Dans GTA 6, tu peux te faire 200 000 dollars en quelques secondes, sans même changer de perso. C'est un nouveau glitch de duplication des sacs, et il est encore plus simple que l'ancien.",
+    "clips": [
+     "gp_hook",
+     "gp_t12",
+     "gp_t13",
+     "gp_t14",
+     "gp_t15",
+     "gp_t05",
+     "gp_t06",
+     "gp_t07",
+     "gp_t10",
+     "gp_t11"
+    ],
+    "fx": [
+     {
+      "type": "logo",
+      "at": 0.0,
+      "dur": 1.5,
+      "y": 640,
+      "width": 640
+     },
+     {
+      "type": "counter",
+      "to": 200000,
+      "suffix": " $",
+      "label": "EN QUELQUES SECONDES",
+      "word": "200 000",
+      "dur": 2.2,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "abo",
+    "text": "Abonne-toi et enregistre cette vidéo si tu veux connaître toutes les astuces argent facile dans GTA 6.",
+    "clips": [
+     "gp_t08",
+     "gp_t09",
+     "gp_t69",
+     "gp_t63",
+     "gp_t64"
+    ],
+    "fx": [
+     {
+      "type": "subscribe",
+      "at": 0.0,
+      "dur": 2.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "1",
+    "text": "Ouvre ta map et va à l'entrepôt Apollo Aggregates, dans South Vice-Dale. C'est le même hangar que pour le glitch de la camionnette, mais cette fois, pas besoin de switcher entre Lucia et Jason.",
+    "clips": [
+     "gp_t22",
+     "gp_t23",
+     "gp_t24",
+     "gp_t28",
+     "gp_t29",
+     "gp_t25",
+     "gp_t74",
+     "gp_t80",
+     "gp_t81"
+    ],
+    "fx": [
+     {
+      "type": "label",
+      "text": "ENTREPÔT APOLLO",
+      "word": "entrepôt",
+      "dur": 1.8,
+      "y": 640
+     },
+     {
+      "type": "sticker",
+      "text": "SANS SWITCH",
+      "word": "switcher",
+      "dur": 1.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "2",
+    "text": "Rentre et remplis tes deux sacs de butin à fond. Ensuite, sors avec, et trouve n'importe quelle surface bien plate, comme ce terrain vague juste à côté.",
+    "clips": [
+     "gp_t26",
+     "gp_t27",
+     "gp_t30",
+     "gp_t31",
+     "gp_t32",
+     "gp_t33",
+     "gp_t34",
+     "gp_t35"
+    ],
+    "fx": [
+     {
+      "type": "big",
+      "text": "2 SACS",
+      "word": "deux",
+      "dur": 1.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "3",
+    "text": "Là, ouvre le menu d'interaction, va sur les sacs, et maintiens B sur Xbox, ou rond sur PlayStation, pour les poser par terre.",
+    "clips": [
+     "gp_t36",
+     "gp_t37",
+     "gp_t38",
+     "gp_t39",
+     "gp_t40",
+     "gp_t41",
+     "gp_t00",
+     "gp_t01"
+    ],
+    "fx": [
+     {
+      "type": "alert",
+      "text": "MAINTIENS B / ROND",
+      "word": "maintiens",
+      "dur": 1.8,
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "4",
+    "text": "Surtout, ne touche pas au joystick. Spamme Y, ou triangle, pour les ramasser direct. Regarde : 18 000 dollars dans le sac, et d'un coup, 28 000.",
+    "clips": [
+     "gp_t42",
+     "gp_t43",
+     "gp_t44",
+     "gp_t45",
+     "gp_t46",
+     "gp_t47",
+     "gp_t02",
+     "gp_t03",
+     "gp_t04"
+    ],
+    "fx": [
+     {
+      "type": "emoji",
+      "text": "🚫🕹️",
+      "word": "joystick",
+      "dur": 1.4,
+      "y": 640
+     },
+     {
+      "type": "counter",
+      "to": 28000,
+      "suffix": " $",
+      "label": "AU LIEU DE 18 000",
+      "word": "28 000",
+      "dur": 2.0,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "5",
+    "text": "Et tu recommences : tu poses, tu spammes, tu ramasses. En quelques secondes, t'es déjà à presque 100 000 dollars. Continue, et tu dépasses les 200 000.",
+    "clips": [
+     "gp_t48",
+     "gp_t49",
+     "gp_t50",
+     "gp_t51",
+     "gp_t52",
+     "gp_t53",
+     "gp_t54",
+     "gp_t55",
+     "gp_t56"
+    ],
+    "fx": [
+     {
+      "type": "big",
+      "text": "100 000 $",
+      "word": "100 000",
+      "dur": 1.6,
+      "y": 640
+     }
+    ]
+   },
+   {
+    "id": "6",
+    "text": "Selon les joueurs qui l'ont testé, 5 à 10 minutes suffisent pour faire plusieurs millions. Fais-le vite, avant que Rockstar le corrige.",
+    "clips": [
+     "gp_t57",
+     "gp_t58",
+     "gp_t59",
+     "gp_t60",
+     "gp_t61",
+     "gp_t62",
+     "gp_t12@1.2",
+     "gp_t40@1.2"
+    ],
+    "fx": [
+     {
+      "type": "alert",
+      "text": "AVANT LE PATCH",
+      "word": "corrige",
+      "dur": 1.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "outro",
+    "text": "Tu préfères cette méthode ou celle avec le switch ? Dis-le en commentaire. Envoie ça à un pote qui joue à GTA 6, et abonne-toi.",
+    "clips": [
+     "gp_t65",
+     "gp_t66",
+     "gp_t67",
+     "gp_t68",
+     "gp_t70",
+     "gp_t71",
+     "gp_t72",
+     "gp_t73",
+     "gp_hook@0.5"
+    ],
+    "fx": [
+     {
+      "type": "stars",
+      "word": "commentaire",
+      "dur": 1.6,
+      "y": 640
+     }
+    ]
+   }
+  ]
+ }
+}
