@@ -1,0 +1,806 @@
+{
+ "slug": "2026-11-28_18h_glitch-4-camionnettes-erreurs",
+ "preset": "v4",
+ "gameplay": {
+  "src": "g-XAsDq9x2afw",
+  "cuts": [
+   [
+    "gp_hook",
+    9.5,
+    0,
+    0.6,
+    1.0
+   ],
+   [
+    "gp_t000",
+    0,
+    0
+   ],
+   [
+    "gp_t001",
+    1,
+    0
+   ],
+   [
+    "gp_t003",
+    3,
+    0
+   ],
+   [
+    "gp_t004",
+    4,
+    0
+   ],
+   [
+    "gp_t005",
+    5,
+    0
+   ],
+   [
+    "gp_t006",
+    6,
+    0
+   ],
+   [
+    "gp_t007",
+    7,
+    0
+   ],
+   [
+    "gp_t008",
+    8,
+    0
+   ],
+   [
+    "gp_t016",
+    16,
+    0
+   ],
+   [
+    "gp_t017",
+    17,
+    0
+   ],
+   [
+    "gp_t018",
+    18,
+    0
+   ],
+   [
+    "gp_t020",
+    20,
+    0
+   ],
+   [
+    "gp_t022",
+    22,
+    0
+   ],
+   [
+    "gp_t034",
+    34,
+    0
+   ],
+   [
+    "gp_t035",
+    35,
+    0
+   ],
+   [
+    "gp_t036",
+    36,
+    0
+   ],
+   [
+    "gp_t037",
+    37,
+    0
+   ],
+   [
+    "gp_t038",
+    38,
+    0
+   ],
+   [
+    "gp_t039",
+    39,
+    0
+   ],
+   [
+    "gp_t040",
+    40,
+    0
+   ],
+   [
+    "gp_t041",
+    41,
+    0
+   ],
+   [
+    "gp_t042",
+    42,
+    0
+   ],
+   [
+    "gp_t043",
+    43,
+    0
+   ],
+   [
+    "gp_t044",
+    44,
+    0
+   ],
+   [
+    "gp_t046",
+    46,
+    0
+   ],
+   [
+    "gp_t048",
+    48,
+    0
+   ],
+   [
+    "gp_t060",
+    60,
+    0
+   ],
+   [
+    "gp_t061",
+    61,
+    0
+   ],
+   [
+    "gp_t062",
+    62,
+    0
+   ],
+   [
+    "gp_t063",
+    63,
+    0
+   ],
+   [
+    "gp_t064",
+    64,
+    0
+   ],
+   [
+    "gp_t065",
+    65,
+    0
+   ],
+   [
+    "gp_t066",
+    66,
+    0
+   ],
+   [
+    "gp_t067",
+    67,
+    0
+   ],
+   [
+    "gp_t068",
+    68,
+    0
+   ],
+   [
+    "gp_t069",
+    69,
+    0
+   ],
+   [
+    "gp_t070",
+    70,
+    0
+   ],
+   [
+    "gp_t071",
+    71,
+    0
+   ],
+   [
+    "gp_t074",
+    74,
+    0
+   ],
+   [
+    "gp_t075",
+    75,
+    0
+   ],
+   [
+    "gp_t080",
+    80,
+    0
+   ],
+   [
+    "gp_t081",
+    81,
+    0
+   ],
+   [
+    "gp_t082",
+    82,
+    0
+   ],
+   [
+    "gp_t083",
+    83,
+    0
+   ],
+   [
+    "gp_t084",
+    84,
+    0
+   ],
+   [
+    "gp_t085",
+    85,
+    0
+   ],
+   [
+    "gp_t086",
+    86,
+    0
+   ],
+   [
+    "gp_t087",
+    87,
+    0
+   ],
+   [
+    "gp_t088",
+    88,
+    0
+   ],
+   [
+    "gp_t089",
+    89,
+    0
+   ],
+   [
+    "gp_t090",
+    90,
+    0
+   ],
+   [
+    "gp_t091",
+    91,
+    0
+   ],
+   [
+    "gp_t092",
+    92,
+    0
+   ],
+   [
+    "gp_t093",
+    93,
+    0
+   ],
+   [
+    "gp_t094",
+    94,
+    0
+   ],
+   [
+    "gp_t116",
+    116,
+    0
+   ],
+   [
+    "gp_t117",
+    117,
+    0
+   ],
+   [
+    "gp_t126",
+    126,
+    0
+   ],
+   [
+    "gp_t127",
+    127,
+    0
+   ],
+   [
+    "gp_t128",
+    128,
+    0
+   ],
+   [
+    "gp_t129",
+    129,
+    0
+   ],
+   [
+    "gp_t130",
+    130,
+    0
+   ],
+   [
+    "gp_t131",
+    131,
+    0
+   ],
+   [
+    "gp_t132",
+    132,
+    0
+   ],
+   [
+    "gp_t133",
+    133,
+    0
+   ],
+   [
+    "gp_t134",
+    134,
+    0
+   ],
+   [
+    "gp_t135",
+    135,
+    0
+   ],
+   [
+    "gp_t136",
+    136,
+    0
+   ],
+   [
+    "gp_t137",
+    137,
+    0
+   ],
+   [
+    "gp_t138",
+    138,
+    0
+   ],
+   [
+    "gp_t144",
+    144,
+    0
+   ],
+   [
+    "gp_t145",
+    145,
+    0
+   ],
+   [
+    "gp_t151",
+    151,
+    0
+   ],
+   [
+    "gp_t152",
+    152,
+    0
+   ],
+   [
+    "gp_t153",
+    153,
+    0
+   ],
+   [
+    "gp_t154",
+    154,
+    0
+   ],
+   [
+    "gp_t155",
+    155,
+    0
+   ],
+   [
+    "gp_t156",
+    156,
+    0
+   ],
+   [
+    "gp_t157",
+    157,
+    0
+   ],
+   [
+    "gp_t158",
+    158,
+    0
+   ],
+   [
+    "gp_t159",
+    159,
+    0
+   ],
+   [
+    "gp_t160",
+    160,
+    0
+   ],
+   [
+    "gp_t161",
+    161,
+    0
+   ],
+   [
+    "gp_t164",
+    164,
+    0
+   ],
+   [
+    "gp_t165",
+    165,
+    0
+   ],
+   [
+    "gp_t166",
+    166,
+    0
+   ],
+   [
+    "gp_t167",
+    167,
+    0
+   ],
+   [
+    "gp_t168",
+    168,
+    0
+   ],
+   [
+    "gp_t169",
+    169,
+    0
+   ],
+   [
+    "gp_t170",
+    170,
+    0
+   ],
+   [
+    "gp_t171",
+    171,
+    0
+   ],
+   [
+    "gp_t172",
+    172,
+    0
+   ],
+   [
+    "gp_t173",
+    173,
+    0
+   ],
+   [
+    "gp_t174",
+    174,
+    0
+   ],
+   [
+    "gp_t175",
+    175,
+    0
+   ],
+   [
+    "gp_t176",
+    176,
+    0
+   ],
+   [
+    "gp_t177",
+    177,
+    0
+   ],
+   [
+    "gp_t181",
+    181,
+    0
+   ],
+   [
+    "gp_t182",
+    182,
+    0
+   ],
+   [
+    "gp_t198",
+    198,
+    0
+   ]
+  ]
+ },
+ "thumb": [
+  "rush_tv/gp_hook.mp4",
+  1.0,
+  "1 000 000 $",
+  "4 ERREURS",
+  "QUI CASSENT LE GLITCH"
+ ],
+ "tg_msg": "🎬 Glitch 4 camionnettes : les 4 erreurs (1 M$) — publication auto à 18 h sur les 4 réseaux. Réponds « stop » pour bloquer.",
+ "cfg": {
+  "title": "Ton glitch des camionnettes bugge ? Voici pourquoi",
+  "style": "v2",
+  "max_shot": 1.0,
+  "music": "music_pack/m1_1114.mp3",
+  "music_offset": 22,
+  "music_volume": 0.16,
+  "logo": "assets/logo_gta6.webp",
+  "handle": "@rockstat433",
+  "caption": "4 erreurs qui cassent le glitch des camionnettes 💸 Tu faisais laquelle ? #gta6 #gtavi #gta #gta6news #lucia #argentgta6",
+  "sources": [
+   "https://www.youtube.com/watch?v=XAsDq9x2afw"
+  ],
+  "sections": [
+   {
+    "id": "hook",
+    "text": "Dans GTA 6, tu peux te faire plus d'un million de dollars en une seule vente avec le glitch des 4 camionnettes. Mais si chez toi ça bugge, tu fais sûrement une de ces 4 erreurs.",
+    "clips": [
+     "gp_hook",
+     "gp_t000",
+     "gp_t001",
+     "gp_t003",
+     "gp_t004",
+     "gp_t005",
+     "gp_t006",
+     "gp_t007",
+     "gp_t008",
+     "gp_t016",
+     "gp_t017",
+     "gp_t018"
+    ],
+    "fx": [
+     {
+      "type": "logo",
+      "at": 0.0,
+      "dur": 1.5,
+      "y": 640,
+      "width": 640
+     },
+     {
+      "type": "counter",
+      "to": 1000000,
+      "suffix": " $",
+      "label": "EN UNE VENTE",
+      "word": "million",
+      "dur": 2.2,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "abo",
+    "text": "Abonne-toi et enregistre cette vidéo si tu veux connaître toutes les astuces argent facile dans GTA 6.",
+    "clips": [
+     "gp_t164",
+     "gp_t165",
+     "gp_t166",
+     "gp_t167",
+     "gp_t168",
+     "gp_t169",
+     "gp_t170"
+    ],
+    "fx": [
+     {
+      "type": "subscribe",
+      "at": 0.0,
+      "dur": 2.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "1",
+    "text": "Erreur numéro un : garer les deux camionnettes avec le même perso. À l'entrepôt Apollo, à côté de Hamlet, Jason en rentre une, Lucia rentre l'autre. Et arrache les portes arrière, tu gagneras du temps.",
+    "clips": [
+     "gp_t020",
+     "gp_t022",
+     "gp_t034",
+     "gp_t035",
+     "gp_t036",
+     "gp_t037",
+     "gp_t038",
+     "gp_t039",
+     "gp_t040",
+     "gp_t041",
+     "gp_t042",
+     "gp_t043",
+     "gp_t044",
+     "gp_t046",
+     "gp_t048"
+    ],
+    "fx": [
+     {
+      "type": "alert",
+      "text": "1 VAN = 1 PERSO",
+      "word": "même",
+      "dur": 1.8,
+      "y": 640
+     },
+     {
+      "type": "label",
+      "text": "ENTREPÔT APOLLO",
+      "word": "entrepôt",
+      "dur": 1.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "2",
+    "text": "Erreur numéro deux : te séparer sur place. Prends un taxi jusqu'à l'appart avec les deux, sépare-les là-bas, puis reviens en taxi. Regarde : tes camionnettes ont doublé, t'en as quatre.",
+    "clips": [
+     "gp_t060",
+     "gp_t061",
+     "gp_t062",
+     "gp_t063",
+     "gp_t064",
+     "gp_t065",
+     "gp_t066",
+     "gp_t067",
+     "gp_t068",
+     "gp_t069",
+     "gp_t070",
+     "gp_t071",
+     "gp_t074",
+     "gp_t075"
+    ],
+    "fx": [
+     {
+      "type": "sticker",
+      "text": "TAXI 🚕",
+      "word": "taxi",
+      "dur": 1.5,
+      "y": 640
+     },
+     {
+      "type": "big",
+      "text": "x4",
+      "word": "quatre",
+      "dur": 1.5,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "3",
+    "text": "Erreur numéro trois : ramasser n'importe quoi. Prends un sac plein, puis un sac vide, et spamme seulement la paire de briques à gauche. Ton sac dépasse sa limite, jusqu'à 118 000 dollars. La brique de droite, tu n'y touches pas.",
+    "clips": [
+     "gp_t080",
+     "gp_t081",
+     "gp_t082",
+     "gp_t083",
+     "gp_t084",
+     "gp_t085",
+     "gp_t086",
+     "gp_t087",
+     "gp_t088",
+     "gp_t089",
+     "gp_t090",
+     "gp_t091",
+     "gp_t092",
+     "gp_t093",
+     "gp_t094",
+     "gp_t116",
+     "gp_t117"
+    ],
+    "fx": [
+     {
+      "type": "counter",
+      "to": 118000,
+      "suffix": " $",
+      "label": "DANS UN SEUL SAC",
+      "word": "118 000",
+      "dur": 2.0,
+      "y": 640
+     },
+     {
+      "type": "emoji",
+      "text": "🚫👉",
+      "word": "droite",
+      "dur": 1.4,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "4",
+    "text": "Erreur numéro quatre : monter au volant d'une autre voiture. Ça fait disparaître les copies. Si ça arrive, switche deux fois. Et si les briques ne reviennent pas, attends 45 secondes sur l'autre perso.",
+    "clips": [
+     "gp_t144",
+     "gp_t145",
+     "gp_t151",
+     "gp_t152",
+     "gp_t153",
+     "gp_t154",
+     "gp_t155",
+     "gp_t156",
+     "gp_t157",
+     "gp_t158",
+     "gp_t159",
+     "gp_t160",
+     "gp_t161"
+    ],
+    "fx": [
+     {
+      "type": "alert",
+      "text": "PAS AU VOLANT",
+      "word": "volant",
+      "dur": 1.8,
+      "y": 640
+     },
+     {
+      "type": "big",
+      "text": "45 S",
+      "word": "45",
+      "dur": 1.5,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "5",
+    "text": "Ensuite, taxi jusqu'à Tyrone, appelle ta camionnette avec l'appli Scooter Bros, et vends tout d'un coup. Selon les joueurs qui l'ont testé, avec dix sacs pleins, tu dépasses le million.",
+    "clips": [
+     "gp_t126",
+     "gp_t127",
+     "gp_t128",
+     "gp_t129",
+     "gp_t130",
+     "gp_t131",
+     "gp_t132",
+     "gp_t133",
+     "gp_t134",
+     "gp_t135",
+     "gp_t136",
+     "gp_t137",
+     "gp_t138"
+    ],
+    "fx": [
+     {
+      "type": "label",
+      "text": "TYRONE",
+      "word": "Tyrone",
+      "dur": 1.6,
+      "y": 640
+     },
+     {
+      "type": "source",
+      "text": "selon les joueurs",
+      "word": "Selon",
+      "dur": 1.6,
+      "y": 700
+     }
+    ]
+   },
+   {
+    "id": "outro",
+    "text": "Toi, t'as déjà fait combien de tours avec ce glitch ? Dis-le en commentaire. Envoie ça à un pote qui joue à GTA 6, et abonne-toi.",
+    "clips": [
+     "gp_t171",
+     "gp_t172",
+     "gp_t173",
+     "gp_t174",
+     "gp_t175",
+     "gp_t176",
+     "gp_t177",
+     "gp_t181",
+     "gp_t182",
+     "gp_t198",
+     "gp_hook@0.5"
+    ],
+    "fx": [
+     {
+      "type": "stars",
+      "word": "commentaire",
+      "dur": 1.6,
+      "y": 640
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -15,3 +15,4 @@
 2026-11-26 glitch sac infini camionnettes Apollo (1 sac 1 200 $ + coke côté gauche ≤ 6 000 $, switch Lucia/Jason, sac > 9 000 puis ~120 000 $/sac, > 1 M$/camionnette, jamais côté droit)
 2026-11-27 braquage parfait banque du cartel chap. 3 (10 M$ + sauver Nicole : antennes relais, gauche/droite après explosion, assommer vigile, garde en civil, toit tuyaux/clim, coffre 50 s sens horaire, 3 sacs)
 2026-11-28 glitch sacs SANS switch (entrepôt Apollo, 2 sacs, surface plate, menu interaction maintenir B/rond pour poser, ne pas toucher le stick, spammer Y/triangle : 18 000 → 28 000, ~100 000 puis 200 000 $ en secondes)
+2026-11-28 glitch 4 camionnettes Apollo : 4 erreurs (1 van/perso, split à l'appart en taxi, briques gauche sac 118 000 $, jamais au volant d'une autre voiture / switch x2 / 45 s), vente Tyrone via Scooter Bros > 1 M$
